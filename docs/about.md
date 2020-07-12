@@ -7,12 +7,13 @@ article: false
 
 ## about
 ::: center
-
-ID: 令则  :beers:
-
-二进制方向 ctfer
+::: cardList
+```yaml
+- name: 令则
+  desc: 二进制方向 ctfer
+  avatar: /img/avatar2.jpg # 可选
+```
 :::
-
 
 syclover 
 
@@ -26,4 +27,4 @@ qq： 2484805199
 
 email： wl200103124@163.com
 
-csdn: https://blog.csdn.net/wlz_lc_4
+csdn: [](https://blog.csdn.net/wlz_lc_4)
