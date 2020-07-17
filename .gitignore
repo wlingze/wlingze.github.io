@@ -5,6 +5,9 @@ node_modules
 # vscode
 .vscode
 
+.temp
+
+.log
 # vuepress 
 docs/.vuepress/dist
 
