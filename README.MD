@@ -3,6 +3,7 @@
 令则 ：ctfer 
 信息安全二进制方向，
 
+[blog](http://lingze.xyz/)
 
 # 关于搭建此博客
 

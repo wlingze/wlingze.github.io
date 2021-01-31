@@ -7,7 +7,7 @@ node_modules
 
 .temp
 
-.log
+*.log
 # vuepress 
 docs/.vuepress/dist
 
