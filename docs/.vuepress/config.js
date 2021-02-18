@@ -7,7 +7,7 @@ module.exports = {
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: 'ctfer' }],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }],// 百度统计博主验证
+    //['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }],// 百度统计博主验证
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
   ],
@@ -46,7 +46,7 @@ module.exports = {
     //   '图标地址2'
     // ],
 
-    sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: 'none', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
@@ -58,74 +58,87 @@ module.exports = {
       name: 'lingze', // 必需
       link: 'https://github.com/wlingze' // 可选的
     },
+
+
     blogger: { // 博主信息，显示在首页侧边栏
       avatar: '/img/avatar2.jpg',
       name: 'lingze',
       slogan: 'bin不是垃圾桶的意思!'
     },
-    // social: { // 社交图标，显示于博主信息栏和页脚栏
-    //   // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
-    //   icons: [
-    //     {
-    //       iconClass: 'icon-youjian',
-    //       title: '发邮件',
-    //       link: 'mailto:wl200103124@163.com'
-    //     },
-    //     {
-    //       iconClass: 'icon-github',
-    //       title: 'GitHub',
-    //       link: 'https://github.com/wlingze'
-    //     },
-    //     // {
-    //     //   iconClass: 'icon-erji',
-    //     //   title: '听音乐',
-    //     //   link: 'https://music.163.com/#/playlist?id=755597173'
-    //     // }
-    //     // {
-    //     //   iconClass: 'icon-view',
-    //     //   title: 'csdn',
-    //     //   link: 'https://blog.csdn.net/wlz_lc_4'
-    //     // }
-    //   ]
-    // },
+
+
+    social: { // 社交图标，显示于博主信息栏和页脚栏
+      // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+      icons: [
+        {
+          iconClass: 'icon-youjian',
+          title: '发邮件',
+          link: 'mailto:wl200103124@163.com'
+        },
+        {
+          iconClass: 'icon-github',
+          title: 'GitHub',
+          link: 'https://github.com/wlingze'
+        },
+        // {
+        //   iconClass: 'icon-erji',
+        //   title: '听音乐',
+        //   link: 'https://music.163.com/#/playlist?id=755597173'
+        // }
+        {
+          iconClass: 'icon-csdn',
+          title: 'csdn',
+          link: 'https://blog.csdn.net/wlz_lc_4'
+        },
+        {
+          iconClass: 'icon-zhihu',
+          title: 'zhihu',
+          link: 'https://www.zhihu.com/people/wlingze'
+        }
+      ]
+    },
     footer: { // 页脚信息
       createYear: 2019, // 博客创建年份
       copyrightInfo: 'lingze | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
   },
+
+
+  
   plugins: [ // 插件
     // [require('./plugins/love-me'), { // 鼠标点击爱心特效
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // }],
 
-    // ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
-    //   thirdparty: [ // 可选，默认 []
-    //     {
-    //       title: '在MDN中搜索',
-    //       frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-    //       behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
-    //     },
-    //     {
-    //       title: '在Runoob中搜索',
-    //       frontUrl: 'https://www.runoob.com/?s=',
-    //     },
-    //     {
-    //       title: '在Vue API中搜索',
-    //       frontUrl: 'https://cn.vuejs.org/v2/api/#',
-    //     },
-    //     {
-    //       title: '在Bing中搜索',
-    //       frontUrl: 'https://cn.bing.com/search?q='
-    //     },
-    //     {
-    //       title: '通过百度搜索本站的',
-    //       frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20'
-    //     }
-    //   ]
-    // }],
+    ['thirdparty-search', { // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
+      thirdparty: [ // 可选，默认 []
+        // {
+        //   title: '在MDN中搜索',
+        //   frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
+        //   behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
+        // },
+        // {
+        //   title: '在Runoob中搜索',
+        //   frontUrl: 'https://www.runoob.com/?s=',
+        // },
+        // {
+        //   title: '在Vue API中搜索',
+        //   frontUrl: 'https://cn.vuejs.org/v2/api/#',
+        // },
+        {
+          title: 'google',
+          frontUrl: 'https://www.google.com/search?q='
+        },
+        {
+          title: 'Bing',
+          frontUrl: 'https://www.bing.com/search?q='
+        }
+      ]
+    }],
 
-    // 'vuepress-plugin-baidu-autopush', // 百度自动推送
+    'vuepress-plugin-baidu-autopush', // 百度自动推送
+      'vuepress-plugin-smooth-scroll',
 
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array

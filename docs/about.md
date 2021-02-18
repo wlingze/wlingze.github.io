@@ -6,18 +6,23 @@ article: false
 ---
 
 ## about
-::: center
-::: cardList
+
+::: cardList 2
+
 ```yaml
 - name: 令则
   desc: 二进制方向 ctfer
   avatar: /img/avatar2.jpg # 可选
+- name: syclover
+  desc: 三叶草安全技术小组
+  avatar: https://avatars.githubusercontent.com/u/11567722?s=400&u=2ed13c2e54ed907a25bb73bf39428571da48839e&v=4
 ```
+
 :::
 
-syclover 
+cuit - 2019 届
 
-cuit - 2019届
+opentoall
 
 ## 联系
 
