@@ -30,6 +30,6 @@ opentoall
 
 qq： 2484805199
 
-email： wl200103124@163.com
+email： lingze.wl@gmail.com
 
 csdn: [](https://blog.csdn.net/wlz_lc_4)

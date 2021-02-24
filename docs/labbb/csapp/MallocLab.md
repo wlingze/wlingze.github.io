@@ -12,6 +12,30 @@ tags:
 
 [toc]
 
+## 思路
+
+在最开始写下思路吧，
+
+* 按照课本上的方法，基本可以抄一遍， 然后自己写出来一个first_fit，大概得分应该在**60左右**， 这是种隐式链表的实现，问题出在了在从freed_chunk中取出chunk时查找会遍历根本就无用的allocted_chunk， 
+
+* 然后下一个思路为next_fit， 得分应该到了**82左右**，每次free或合并之后设置遍历起始位置， 于是在`find_fit`时可以比较快速的获得到chunk, 但是不理想情况下也会进行对allocted_chunk的遍历， 毕竟这也是一种隐式链表实现，
+
+* 然后开始写一个显式链表， 得分应该**也是82左右**，不必要进行allocted_chunk的遍历了，但是每次在开头开始遍历，且size排序无意义， 也会导致效率不高， 而且每次起始位置不同next_fit命中率应该要比每次从头遍历的显式链表高一些，
+
+* 接下来我开始考虑先进行realloc的优化，这时候可以得到**89分**， 主要就是独立成为单独的relloc而不是每次都要进入malloc和free, 思路是先考虑realloc是扩张还是缩小，如果缩小，可以直接切割后部分，如果扩张，先考虑前后chunk是否可以合并，合并后是否满足要求， 且考虑返回后内容要一致， 因此优先考虑向后拓展，最后无法获取恰好的chunk, 再考虑malloc和free, 
+
+* 接下来进行bin的分箱， 最开始我设计fastbin(0x10分界) + unsortedbin, 但是fastbin太小，几乎没有什么用处，繁琐的判断甚至拖累效率， 只能得到**88分**， 
+
+* 然后重新设计， seg_bins(2倍关系分界)， 但是2倍会导致单个bin中的size差距还是有些大，且单向链表无序排放， 导致效率仍然比较低， 还是得到88分， 
+
+* 然后针对`binary-bal.req`优化了下， 这个主要是针对大小chunk合并机制，不仅要分箱，为了大chunk合并要进行分离，尽量小chunk在前面，大chunk在后面，优化完成可以得到**91分**， 
+
+* 然后针对seg_bins进行重构， 相似的思路，采用了双向链表， 插入链表中部的操作可以比较流畅，于是使用size进行排序， 加快查找的命中率，可以**得分95分**， 
+
+下一步应该是针对size排序和选择进行一个优化，另外其实`realloc2-bal.rep`得分并不高， 属于拖累整个评分的重要原因了， 但是并没有考虑好如何处理优化，emmm, 暂时搁置。
+
+下面是比较详细的代码：
+
 ## foot+head
 
 一种chunk设计方案，另一种查看目录后面， [去掉foot]
@@ -734,5 +758,65 @@ static void *realloc_place(void *tmp, size_t newsize, size_t oldsize) {
 }
 ```
 
-## 分类link： todo
+## 分类link 
 
+这个就是实现对不同size的分箱， 
+
+这个分类我写了两套， 
+
+最开始想模仿glibc, 于是fastbin(以0x10间隔) + unsorted bin, 但是并没有解决之前对对应size的`find_fit`函数中的命中率问题， 因此分数反而因为操作繁琐降低了，
+
+![](https://i.loli.net/2021/02/24/IVQDCNPHMzmGqa3.png)
+
+写完以后才意识到，根本问题不是分箱size就会快， 而是分箱size以后提高了`find_fit`的命中率， 于是只有一个seg_bins,  以2倍分割， 从最小0x20到0x1000， 更大的size也会放到0x1000的bin中，
+
+但是这里2倍导致单个bin中size的大小差值还是比较大，即使在某个bin中查找，但是仍然效率不高， 仍然在88分，和上一个基本差别不大，
+
+期间， 突然发现`./trace/binary*`两个评分样例的规则是， 先malloc小大小大小大规则chunk，然后free掉大的chunk， 再malloc大一点点的chunk, 这时候如果小chunk在中间就会导致大chunk之间无法合并，这时候会遍历整个链表，仍然不能找到满足的chunk, 优化方案就是在malloc的时候，切割函数`place`保证大chunk在后面，小chunk在前面，
+
+:::details  优化的place()
+
+通过判断临界条件88, 大chunk在后， 小chunk在前，
+
+```c
+static void *place(void *p, size_t size) {
+  size_t psize = GETSIZE((p));
+  if ((psize - size) < (2 * DSIZE)) {
+    inuse(p, psize);
+  } else if (size >= 88) {
+    unuse(p, (psize - size));
+    inuse(NEXT(p), size);
+    return NEXT(p);
+  } else {
+    inuse(p, size);
+    unuse(NEXT(p), (psize - size));
+  }
+  return p;
+}
+```
+
+:::
+
+
+
+::: details 而其中的分界点可以这样计算
+
+`binary-bal.rep`的size分别为：64, 488, free后再malloc的size为512, 
+
+`binary2-bal.rep`的size分别为16, 112, free后再malloc的size为128， 
+
+则我们希望16, 64被认为是小chunk, 而112, 128,  488, 512被认为是大chunk, 
+
+取两个边界64, 112其中任意一个都应该可以达到目的， 这里取(64+112)/2 = 88
+
+:::
+
+这样的优化可以提高效率， 大概可以达到91分了， 
+
+![](https://i.loli.net/2021/02/24/iHsqxpOwT9G3von.png)
+
+但是仍然在`find_fit`位置没有处理的很好，
+
+这时候我们重构原来的思路， 并且每次free后插入bin中的时候先比较size, 按照size形成对应的bin链表， 并且将原来宏写成的`link`, `unlink`修改为函数`mm_link`, `mm_unlink`,  这样的设计比较好的解决了问题， 可以获得95分，
+
+![](https://i.loli.net/2021/02/24/Ou3mZCTIRU8n5QW.png)
