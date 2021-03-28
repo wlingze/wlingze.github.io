@@ -165,6 +165,9 @@ module.exports = {
         },
       },
     ],
+    [ 'feed', {
+    	 canonical_base: 'https://webmasterish.com',
+    } ]
     // [
     //   'vuepress-plugin-baidu-tongji', // 百度统计
     //   {

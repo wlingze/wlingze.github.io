@@ -10,7 +10,7 @@ tags:
 ---
 # malloclab 
 
-[toc]
+[[toc]]
 
 ## 思路
 
@@ -462,7 +462,7 @@ malloc chunk的结构
   {                                                                            \
     put(p, 0, (size | (prev_isuse(p) << 1)));                                  \
     put(p, size - WSIZE, size);                                                \
-    put(p, size, (GET(NEXT(p)) & (~PREV_INUSE)));                              \
+    put(p, size, (GET(NEXT(p)) & (~)));                              \
   }
 ```
 
@@ -471,6 +471,10 @@ malloc chunk的结构
 其他位置其实并没有改动, PRVE查找上一个堆块还是原来的，代码中注意在确定prev处于unuse才可以使用PREV获得上个chunk, 
 
 不然获取到的prev_size=0, PREV以后仍然是自己，
+
+----
+
+ 另一个重要的点在于去掉foot以后，  `mm_malloc`中的`newsize`应该只需要比用户申请的size大`WSIZE`， 存放一个size位即可，
 
 :::
 
