@@ -154,6 +154,8 @@ string other() {
 
 可以自己定义类型，定义类，这里的类其实是类似集合的概念，表示符合某种属性的集合
 
+
+
 ```sql
 class SmallInt extends int {3
 	SmallInt() {this in [1..10] }
@@ -204,8 +206,6 @@ Person ancestorOf(Person p){
 
 * `parentOf+(p)` 将会调用p一次到多次，等同于上面的`ancestorOf(p)`，
 * `parentOf*(p)` 将会调用p 0次到多次，他会返回p和p的祖先，
-
-
 
 
 
