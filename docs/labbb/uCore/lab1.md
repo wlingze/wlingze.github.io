@@ -1,3 +1,13 @@
+---
+title: lab1
+date: 2021-06-02 12:49:46
+permalink: /pages/cfd3c4/
+categories:
+  - labbb
+  - uCore
+tags:
+  - 
+---
 #  lab1-boot
 
 ## 基础知识

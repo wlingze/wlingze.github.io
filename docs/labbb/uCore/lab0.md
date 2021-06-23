@@ -1,3 +1,13 @@
+---
+title: lab0
+date: 2021-05-31 14:14:11
+permalink: /pages/be71bd/
+categories:
+  - labbb
+  - uCore
+tags:
+  - 
+---
 # uCore_lab0_环境搭建
 
 [[toc]]
