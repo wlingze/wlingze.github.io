@@ -1,5 +1,5 @@
 ---
-title: lab1
+title: ucore_lab1
 date: 2021-06-02 12:49:46
 permalink: /pages/cfd3c4/
 categories:

@@ -18,6 +18,8 @@ tags:
 
 ![image-20210725191956753](https://i.loli.net/2021/07/25/jqWs231AuFgGICa.png)
 
+[题目文件](https://github.com/wlingze/ctf_events/tree/main/cybrics/2021/pwn)
+
 ## gross(done)
 
 ### 逆向
