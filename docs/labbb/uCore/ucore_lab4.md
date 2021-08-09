@@ -1,3 +1,13 @@
+---
+title: ucore_lab4
+date: 2021-08-07 09:01:09
+permalink: /pages/4069d3/
+categories:
+  - labbb
+  - uCore
+tags:
+  - 
+---
 # ucore_lab4 
 
 [[toc]]
