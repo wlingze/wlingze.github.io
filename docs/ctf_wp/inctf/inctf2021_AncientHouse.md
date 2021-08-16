@@ -1,5 +1,5 @@
 ---
-title: inctf2021_wp
+title: inctf2021_Ancient House
 date: 2021-08-16 12:06:33
 permalink: /pages/b5b027/
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - 
 ---
-# inctf 2021 wp 
+# inctf 2021 Ancient House
 
 [[toc]]
 
