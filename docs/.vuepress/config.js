@@ -1,6 +1,9 @@
-const nav = require('./config/nav.js');
+const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
+const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
+  theme: 'vdoing', // 使用npm包主题
+
   title: "Lingze's blog",
   description: 'ctfer', // 描述,以 <meta> 标签渲染到页面html中
   // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/' 
@@ -15,11 +18,15 @@ module.exports = {
     lineNumbers: true // 代码行号
   },
 
-  theme: 'vdoing', // 使用依赖包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
-
   themeConfig: { // 主题配置
-    nav,
+    nav: [
+      { text: 'timeline', link: '/archives/' },
+      { text: 'about', link: '/about' },
+      { text: 'friends', link: '/friends' },
+      { text: 'categories', link: '/categories/' },
+      { text: 'tags', link: '/tags/' },
+    ]
+    ,
     categoryText: '随笔',
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/EB-logo.png', // 导航栏logo
@@ -220,3 +227,4 @@ module.exports = {
   //   }
   // }
 }
+
