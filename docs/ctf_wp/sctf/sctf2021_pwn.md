@@ -46,11 +46,11 @@ Christmas Wishes， Christmas Song， Christmas Bash
 
 然后这个题目之后我还去看了下sudo那个洞和接下来又写了那个json的题目，后来下半年[liveoverflow也发布了一个视频](https://www.youtube.com/watch?v=zdzcTh9kUrc&ab_channel=LiveOverflow)，这种 c指针魔法确实有趣， have fun， 
 
-[详细题解]()
+[详细题解](https://lingze.xyz/pages/51ab44/)
 
 ### Gadget 
 
-出题思路其实来自[这个题目]()，非常规的gadget拼凑，
+出题思路其实来自[这个题目](https://lingze.xyz/pages/ea4dff/)，非常规的gadget拼凑，
 
 偶然遇到的题目，然后做完以后感觉挺有趣，现在很多栈题目使用的gadget都是套路化的那几个gatget，反而变成了模板题目，这个题目想真正考察下对于gadget的拼凑能力吧，
 
@@ -58,7 +58,7 @@ Christmas Wishes， Christmas Song， Christmas Bash
 
 这个题目的编译环境是ollvm编译出的musl libc， 然后使用这个去静态编译出文件来。从而得到的文件中gadget就很少见了。
 
-[详细题解]()
+[详细题解](https://lingze.xyz/pages/baaef3/)
 
 
 
@@ -78,7 +78,7 @@ Christmas Wishes， Christmas Song， Christmas Bash
 
 得到parser_string中的堆溢出(这个是个和年初sudo很像的洞)和delete_item中的单向链表修改， 预期解是这两个配合可以达成任意地址写的效果，修改so文件的free_got为system_plt， 可以反弹shell或者`ls > /tmp/ls`然后读取目录 运行对应的指令即可。也可以直接攻击tcache 修改free_hook， 地址是可以知道的，所以也还比较简单。
 
-[详细题解]()
+[详细题解](https://lingze.xyz/pages/d91dc6/)
 
 ### Slang
 
@@ -96,7 +96,7 @@ vm部分：原本想弄成python类似的，但是明显的时间不足水平不
 
 非预期里面比较好玩，有的师傅再次调用open参数为flag， 通过报错可以打印出来flag
 
-[详细题解]()
+[详细题解](https://lingze.xyz/pages/306f8a/)
 
 #### Christmas Bash
 
@@ -116,7 +116,7 @@ vm部分：原本想弄成python类似的，但是明显的时间不足水平不
 * open read可以让scom文件自我修改，只需要覆盖一些前面的head和头几个opcode即可，配合want实现的if结构完全可以让scom每次运行都不一样，
 * 提到的scom子修改配合指针操作，可以先把rop链布置在堆中，然后写入文件，配合sprintf的栈溢出实现栈迁移，
 
-[详细题解]()
+[详细题解](https://lingze.xyz/pages/0cbf9f/)
 
 
 

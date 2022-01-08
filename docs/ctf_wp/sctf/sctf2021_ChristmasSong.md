@@ -1,5 +1,7 @@
 # SCTF2021 pwn Christmas Song 出题思路+预期解
 
+[sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)
+
 * [Christmas Song](#christmas-song)
   * [题目描述](#题目描述)
   * [Slang-christmas设计思路 1](#slang-christmas设计思路-1)

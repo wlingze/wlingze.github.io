@@ -1,5 +1,7 @@
 # SCTF2021 pwn Christmas Wishes 出题思路+预期解
 
+[sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)
+
 
 
 * [Christmas Wishes](#christmas-wishes)

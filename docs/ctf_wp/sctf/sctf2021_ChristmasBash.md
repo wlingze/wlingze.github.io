@@ -1,5 +1,7 @@
 # SCTF2021 pwn Christmas Bash 出题思路+预期解
 
+[sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)
+
 * [Christmas Bash](#christmas-bash)
   * [题目描述](#题目描述)
   * [Slang-christmas设计思路 2](#slang-christmas设计思路-2)

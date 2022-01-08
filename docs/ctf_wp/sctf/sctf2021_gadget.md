@@ -1,6 +1,6 @@
 # SCTF2021 pwn gadget 出题思路+预期非预期解
 
-[sctf2021 pwn出题思路]()
+[sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)
 
 [[toc]]
 
