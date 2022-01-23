@@ -1,3 +1,13 @@
+---
+title: sctf2021_ChristmasWishes
+date: 2022-01-09 02:29:09
+permalink: /pages/28faed/
+categories:
+  - ctf_wp
+  - sctf
+tags:
+  - 
+---
 # SCTF2021 pwn Christmas Wishes 出题思路+预期解
 
 [sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)

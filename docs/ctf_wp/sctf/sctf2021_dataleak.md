@@ -1,3 +1,13 @@
+---
+title: sctf2021_dataleak
+date: 2022-01-02 22:07:26
+permalink: /pages/dae74e/
+categories:
+  - ctf_wp
+  - sctf
+tags:
+  - 
+---
 # sctf2021 data leak 出题思路和题解
 
 [sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)

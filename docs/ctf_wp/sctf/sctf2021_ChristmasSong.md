@@ -1,3 +1,13 @@
+---
+title: sctf2021_ChristmasSong
+date: 2022-01-09 02:29:09
+permalink: /pages/b618de/
+categories:
+  - ctf_wp
+  - sctf
+tags:
+  - 
+---
 # SCTF2021 pwn Christmas Song 出题思路+预期解
 
 [sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)

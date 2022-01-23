@@ -1,3 +1,13 @@
+---
+title: sctf2021_ChristmasBash
+date: 2022-01-09 02:29:09
+permalink: /pages/27d6a6/
+categories:
+  - ctf_wp
+  - sctf
+tags:
+  - 
+---
 # SCTF2021 pwn Christmas Bash 出题思路+预期解
 
 [sctf2021 pwn出题思路](https://lingze.xyz/pages/6d05cb/)
