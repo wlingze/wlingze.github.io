@@ -41,7 +41,7 @@ tags:
 * 在获取gdb运行结果的时候直接通过 `subprocess.check_output`进行， 
   * 主要是没有管其他插件的加载问题， 万一有个gef pwngdb, 那么这个每次运行整个context都会被检测一遍，这个简直不可忍受。
 
-于是我对这个程序进行了一些小修改，主要是以上两点。
+于是我对这个程序进行了一些[小修改](https://github.com/wlingze/afl-utils)，主要是以上两点。
 
 然后对于exploitable， 增加了一个[对于是否在运行的检测](https://github.com/wlingze/exploitable/commit/4f63e52722fc37750e9c5f8e9cb9b4f6d6835d1a)，有一些crash崩溃后直接退出，运行exploitable的话会报错， 这一部分的原因我还没搞清楚。
 
@@ -82,11 +82,51 @@ void *gmallocn(int nObjs, int objSize) GMEM_EXCEP {
 
 有三个不同的dos洞， 发现这种东西确实特别容易写出来dos， 只要引用循环基本上就会开始无限递归。
 
+分别是这三个位置 `Catalog::countPageTree`,  `Catalog::readPageLabelTree2`， `AcroForm::scanField`
+
 然后看了下论坛发现大伙都已经交过了，而且作者说下个大版本xpdf 5系列会加入对象引用循环的检测，这几个crash也索然无味。
+
+
 
 ### null指针引用
 
-这个也没啥用，因为有的初始化在if语句内，如果特殊构造不进入if 直接运行接下来的逻辑会出现对0指针的引用，会造成crash, 但是不会崩溃。
+```
+stack_frame_hash: 3472571ec2746ce0aafa603325b09e70
+stack_frame
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!XFAScanner::getFieldValue+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!XFAScanner::scanField+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!XFAScanner::scanNode+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!XFAScanner::scanNode+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!XFAScanner::load+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!AcroForm::load+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!Catalog::Catalog+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!PDFDoc::setup2+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!PDFDoc::setup+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!PDFDoc::PDFDoc+0x0
+/home/wlz/lab/fuzz/Fuzzing101/fuzzing_xpdf/install/pdftotext!main+0x0
+INVOKING_0
+```
+
+这个也没啥用，
+
+在函数`XFAScanner.cc: XFAScanner::scanNode`函数中，调用函数`XFAScanner::scanField`， 
+传入的第二个参数默认值为0, 在if语句中进行复制，则可以不进行赋值直接进入函数运行，传入0, 
+
+![image-20220411141323342](https://s2.loli.net/2022/04/11/Wq3aJVIBZ1ENfPD.png)
+
+然后传入下层函数，
+
+![image-20220411141224049](https://s2.loli.net/2022/04/11/PK1mIF78MgnWjkN.png)
+
+`XFAScanner::getFieldValue`中， 会尝试获取这个`name->getCString`这时候会使用这个0进行引用。
+
+![image-20220411141139698](https://s2.loli.net/2022/04/11/VhC4dqcbMkSzv7N.png)
+
+无法利用。
+
+### while 1
+
+出现了一个死循环的crash, 但是不会导致程序崩溃， 在尝试跟踪。
 
 ## 改进
 
