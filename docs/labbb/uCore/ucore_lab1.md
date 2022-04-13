@@ -71,6 +71,137 @@ bootloader的访问硬盘都是LBA模式的PIO（Program IO）方式，即所有
 
 一般的方案是， 先等待磁盘准备好，然后设置对应的命令，设置好扇区，然后再次等待磁盘准备好，然后把磁盘数据读取到指定内存中。
 
+### 函数调用规则
+
+在汇编层的函数调用规则这里也要清楚，基本就是 `call` 和`ret`指令， 
+
+简单来讲就是 `call target`指令相当于 `push $+5; jmp target`， 然后在调用之前会进行参数的压栈， 这里编写的是32位的系统， 因此参数全部使用栈进行传递。
+
+## 系统中断处理
+
+### int n指令
+
+在这里我们也会看到关于 `int n`系列的中断处理，
+
+在32位intel cpu上，使用` int n`汇编指令会产生软件中断， 系统立刻切入内核状态，然后通过` idt (interrupt descriptor table)`查找对应的中断处理函数 `idt[n].handler`， 然后跳转过去运行，  运行结束以后通过 `iret`可以回到中断产生的位置继续运行。
+
+这里的 `int n  + iret`其实和我们前面看到的`call + ret`其实是一致的，都是通过栈储存返回的位置。
+
+注意这里有一个坑点，我们使用 `int n `进入处理函数的时候有以下两种情况: 
+
+* 从用户态产生的话会依次压入 `ss, esp, eflags, cs, eip`， 
+* 从内核态产生的话会依次压入 `eflags, cs, eip`
+
+对于`iret`来说也是如此， 按照cs和当前cs可以看出返回到什么状态， 从而决定是否有 `ss esp`两个寄存器弹出。
+
+###  相关函数
+
+那么我们再来看下ucore中对于中断的处理函数， 
+
+在最开始初始化 idt， 指向 `kernel/trap/vectors.S`文件中的`__verctors`数组，其中每一个元素都是一个处理函数， 只是简单的压入中断的号码然后跳转到 `__alltraps`位置，这段汇编定义在 `kernel/trap/trapentry.S`文件中， 
+
+作用是继续保存各种寄存器， 然后设置 ds es为`GD_KDATA`即全部转入到内核态运行，(在 `int n`指令运行的时候cpu已经按照 `idt[n]`设置好了cs寄存器)， 最后 `push esp`跳转到 `trap`函数运行， 
+
+注意这个位置， 其实这个`esp`指向的是刚刚压入栈的各种寄存器信息，对应的的`trap`函数的参数 `struct trapframe`， 
+
+```c
+/* registers as pushed by pushal */
+struct pushregs {
+    uint32_t reg_edi;
+    uint32_t reg_esi;
+    uint32_t reg_ebp;
+    uint32_t reg_oesp;            /* Useless */
+    uint32_t reg_ebx;
+    uint32_t reg_edx;
+    uint32_t reg_ecx;
+    uint32_t reg_eax;
+};
+
+struct trapframe {
+    struct pushregs tf_regs;
+    uint16_t tf_gs;
+    uint16_t tf_padding0;
+    uint16_t tf_fs;
+    uint16_t tf_padding1;
+    uint16_t tf_es;
+    uint16_t tf_padding2;
+    uint16_t tf_ds;
+    uint16_t tf_padding3;
+    uint32_t tf_trapno;
+    /* below here defined by x86 hardware */
+    uint32_t tf_err;
+    uintptr_t tf_eip;
+    uint16_t tf_cs;
+    uint16_t tf_padding4;
+    uint32_t tf_eflags;
+    /* below here only when crossing rings, such as from user to kernel */
+    uintptr_t tf_esp;
+    uint16_t tf_ss;
+    uint16_t tf_padding5;
+} __attribute__((packed));
+```
+
+接下来根据 `tf->trapno`可以进行各种中断的分发，
+
+然后通过修改内部的`fs, es, ds`可以在返回trap函数后的恢复寄存器中进行寄存器修改等操作。
+
+`trap`函数返回以后，首先 `pop esp`， 弹出刚刚的tf， 然后逐步恢复寄存器，最后使用`iret`返回。 
+
+## 内核-用户 状态切换
+
+对于用户和内核状态切换，其实只需要更改 tf的数据即可，主要是 `ds es cs`这三个，然后`eflags`要保证io的权限。
+
+但是另一个问题出在我们前面提到的在两种状态进入内核的时候 `int n`和`iret` 表现是不一的， 
+
+简单来说， 用户态返回时需要 `ss esp`而内核态不需要，那么这个数据如果多了或少了都会导致崩溃。
+
+于是我们要记得， 在用户态切入内核态， 最后会多出一段栈， 从内核态切入用户态会有一段内存少了导致esp错误，
+
+### 切换时维护
+
+那么 其实如果在状态切换的函数最后增加个 `mov ebp, esp`即可恢复esp， 然后内核切入用户态在函数前增加 `sub esp, 8`给出这段空间即可。
+
+这是在入口函数进行处理的方案， 大概结果如下， 
+
+```c
+static void
+lab1_switch_to_user(void) {
+    //LAB1 CHALLENGE 1 : TODO
+    asm volatile (
+        "sub $0x8, %%esp \n"
+        "int %0 \n"
+        "movl %%ebp, %%esp"
+        : 
+        : "i"(T_SWITCH_TOU)
+    );
+}
+
+static void
+lab1_switch_to_kernel(void) {
+    //LAB1 CHALLENGE 1 :  TODO
+	   asm volatile (
+	       "int %0 \n"
+	       "movl %%ebp, %%esp"
+	       : 
+	       : "i"(T_SWITCH_TOK)
+	   );
+}
+```
+
+### 中断内维护
+
+这个就是在中断时进行维护， 基本需要我们修改整个trapframe， 
+
+修改的方法是，我们已经知道`tf`位置就是栈上， 而这个数据当作参数传递也是在栈上，  进入`trap`函数前的那句`push esp`， 因此我们可以通过 `*(uint32_t *)(tf - 1) = new_tf`修改整个tf, 在trap函数返回以后的 `pop esp`中整个栈都会是这个被修改的 new_tf， 
+
+于是我们的内核切换到用户态的时候，要设置好 `ss, esp`寄存器，这个`esp` 寄存器默认是没有值的， 但是根据一步步运行过来的偏移量， 其实切换到` & tf->tf_esp`位置即可，
+
+> 因为是内核切换过来的，所以int n运行以后压入了 eflag cs eip， 因此原本的栈应该就是 tf->tf_eflags下面一个。
+
+从用户态切换到内核态的时候，因为原本应该是 iret返回时切换esp到指定的位置，而现在iret不设置esp了，于是我们也要保证iret以后esp应该和原本一致， 于是在esp之前放置整个`new_tf`， 逐步返回， 最后正好回到原本预设的esp位置。
+
+## 练习 
+
 ### 练习1
 
 #### makefile
@@ -277,8 +408,6 @@ print_stackframe(void) {
 }
 ```
 
-
-
 ### 练习6
 
 填充idt表, 并在载入idt表, 按照setgate的格式写入即可, 
@@ -306,6 +435,8 @@ print_stackframe(void) {
         break;
 ```
 
+
+
 ## 拓展练习
 
 ### 练习1 
@@ -313,41 +444,33 @@ print_stackframe(void) {
 切换, 对于段寄存器切换即可, 然后后续的输入输出需要eflag寄存器的io权限位
 
 ```c
+struct trapframe frame_utk, frame_ktu;
 
-static void
-switch_to_user(struct trapframe *tf) {
-    if(tf->tf_cs  != USER_CS){
-        tf->tf_cs = USER_CS;
-        tf->tf_es = tf->tf_ds = tf->tf_ss = tf->tf_gs = tf->tf_fs = USER_DS;
-        tf->tf_eflags |= FL_IOPL_MASK;
-    }
+void switch_to_user(struct trapframe *tf) {
+  if (tf->tf_cs == KERNEL_CS) {
+    frame_ktu = *tf;
+    frame_ktu.tf_cs = USER_CS;
+    frame_ktu.tf_ds = frame_ktu.tf_es = frame_ktu.tf_ss= USER_DS;
+    frame_ktu.tf_eflags |= FL_IOPL_MASK;
+
+    frame_ktu.tf_esp = (uint32_t)tf + sizeof(struct trapframe) - 8;
+
+    *((uint32_t *)tf - 1) = (uint32_t)&frame_ktu;
+  }
 }
 
-static void
-switch_to_kernel(struct trapframe * tf) {
-    if(tf->tf_cs  != KERNEL_CS){
-        tf->tf_cs = KERNEL_CS;
-        tf->tf_es = tf->tf_ds = tf->tf_ss = tf->tf_gs = tf->tf_fs = KERNEL_DS;
-        tf->tf_eflags &= ~FL_IOPL_MASK;
-    }
+void switch_to_kernel(struct trapframe *tf) {
+  if (tf->tf_cs == USER_CS) {
+    frame_utk = *tf;
+    frame_utk.tf_cs = KERNEL_CS;
+    frame_utk.tf_ds = frame_utk.tf_es = KERNEL_DS;
+    // frame_utk.tf_esp = tf->tf_esp;
+    frame_utk.tf_eflags &= ~FL_IOPL_MASK;
+
+    uint32_t offset = (uint32_t)(tf->tf_esp  - (sizeof(struct trapframe) - 8));
+    memmove(offset, &frame_utk, sizeof(struct trapframe) - 8);
+    *((uint32_t *)tf - 1) = offset;
+  }
 }
-```
-
-### 练习2
-
-直接调用对应的函数即可.
-
-```c
-        c = cons_getc();
-        if (c == '3'){
-            // k2u
-            switch_to_user(tf);
-            print_trapframe(tf);
-        }
-        if (c == '0'){
-            // u2k
-            switch_to_kernel(tf);
-            print_trapframe(tf);
-        }
 ```
 
