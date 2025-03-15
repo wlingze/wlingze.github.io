@@ -10,7 +10,7 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-echo 'lingze.xyz' > CNAME
+# echo 'lingze.xyz' > CNAME # I loss this domain!!!! 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:wlingze/blog.git
