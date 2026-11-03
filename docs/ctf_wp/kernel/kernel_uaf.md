@@ -1,5 +1,5 @@
 ---
-title: kernel_uaf
+title: Linux 内核 UAF 漏洞利用
 date: 2022-02-13 00:09:12
 permalink: /pages/def829/
 categories:

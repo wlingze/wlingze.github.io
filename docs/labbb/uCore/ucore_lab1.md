@@ -1,5 +1,5 @@
 ---
-title: ucore_lab1
+title: uCore 实验 1：启动与中断
 date: 2021-06-02 12:49:46
 permalink: /pages/cfd3c4/
 categories:

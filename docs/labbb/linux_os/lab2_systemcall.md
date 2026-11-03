@@ -1,5 +1,5 @@
 ---
-title: lab2_systemcall
+title: 操作系统实验 2：系统调用
 date: 2021-01-25 18:19:48
 permalink: /pages/b52e48/
 categories:

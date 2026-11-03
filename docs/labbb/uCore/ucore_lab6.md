@@ -1,5 +1,5 @@
 ---
-title: ucore_lab6
+title: uCore 实验 6：调度器
 date: 2021-08-19 16:21:03
 permalink: /pages/13f498/
 categories:

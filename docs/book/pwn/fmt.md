@@ -1,5 +1,5 @@
 ---
-title: 格式化字符串漏洞
+title: 格式化字符串漏洞原理与利用
 permalink: /book/pwn/fm/
 categories: 
   - 知识库

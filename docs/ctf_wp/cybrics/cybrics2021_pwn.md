@@ -1,5 +1,5 @@
 ---
-title: cybrics2021_pwn
+title: CyBRICS 2021 Pwn 题解
 date: 2021-07-25 19:16:11
 permalink: /pages/cc208d/
 categories:

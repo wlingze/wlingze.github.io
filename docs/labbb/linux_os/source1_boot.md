@@ -1,5 +1,5 @@
 ---
-title: source1_boot
+title: Linux 内核源码分析 1：启动
 date: 2021-01-25 21:35:20
 permalink: /pages/c17299/
 categories:

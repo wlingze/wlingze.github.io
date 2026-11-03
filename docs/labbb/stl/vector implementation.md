@@ -1,5 +1,5 @@
 ---
-title: vector implemetation
+title: STL vector 的实现
 date: 2022-02-07 12:41:23
 permalink: /pages/24e379/
 categories:

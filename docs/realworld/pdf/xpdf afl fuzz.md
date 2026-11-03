@@ -1,5 +1,5 @@
 ---
-title: xpdf afl fuzz
+title: 用 AFL 模糊测试 xpdf
 date: 2022-04-08 15:32:07
 permalink: /pages/08d22e/
 categories:

@@ -1,5 +1,5 @@
 ---
-title: sctf2021_ChristmasBash
+title: SCTF 2021 Christmas Bash 出题与题解
 date: 2022-01-09 02:29:09
 permalink: /pages/27d6a6/
 categories:

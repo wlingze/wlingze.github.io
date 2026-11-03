@@ -1,5 +1,5 @@
 ---
-title: memory allocator traits
+title: STL 内存分配器 traits
 date: 2022-02-02 15:23:26
 permalink: /pages/8e8d47/
 categories:

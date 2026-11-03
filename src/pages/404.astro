@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/article.css';
+---
+<Base title="页面没有找到" description="这个地址没有对应的页面。">
+  <section class="notfound wrap">
+    <h1>页面没有找到</h1>
+    <p>链接可能来自旧版本，或者地址写错了。可以从文章索引重新找。</p>
+    <p style="margin-top: 1.5rem; display: flex; gap: 1.5rem;">
+      <a class="link-arrow" href="/writing/">浏览文章索引</a>
+      <a class="link-arrow" href="/">返回首页</a>
+    </p>
+  </section>
+</Base>

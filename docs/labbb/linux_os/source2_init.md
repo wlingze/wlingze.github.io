@@ -1,5 +1,5 @@
 ---
-title: source2_init
+title: Linux 内核源码分析 2：初始化
 date: 2021-01-26 11:49:48
 permalink: /pages/c7b9e2/
 categories:

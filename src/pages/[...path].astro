@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/article.css';
+import { documents, articles, renderDocument, formatDate, stamp } from '../lib/content.mjs';
+
+export function getStaticPaths() {
+  return documents.map((doc) => ({ params: { path: doc.url.replace(/^\/|\/$/g, '') }, props: { doc } }));
+}
+
+const { doc } = Astro.props;
+const { html, headings } = renderDocument(doc);
+const articleIndex = articles.findIndex((item) => item.url === doc.url);
+const newer = articleIndex > 0 ? articles[articleIndex - 1] : null;
+const older = articleIndex >= 0 && articleIndex < articles.length - 1 ? articles[articleIndex + 1] : null;
+const isArticle = doc.article !== false;
+const toc = headings.filter((heading) => heading.level === 2 || heading.level === 3);
+const displayTitle = doc.title === 'about' ? '关于' : doc.title === 'friends' ? '友链' : doc.title;
+const hasSource = doc.source && doc.dateBasis === 'source-created';
+const categories = doc.categories ?? [];
+const tags = doc.tags ?? [];
+const description = doc.excerpt || `${displayTitle} — 令则的个人站点。`;
+
+// Put the heading permalink inside the heading so it is reachable from the keyboard.
+const linkedHtml = html.replace(/<h([23]) id="([^"]+)"([^>]*)>([\s\S]*?)<\/h\1>/g, (match, level, id, attrs, inner) => `<h${level} id="${id}"${attrs}>${inner}<a class="anchor-link" href="#${id}" aria-label="链接到这一节">#</a></h${level}>`);
+---
+<Base title={displayTitle} description={description} ogType={isArticle ? 'article' : 'website'}>
+  <article>
+    <header class="article-head wrap">
+      <div class="article-head__top">
+        <span>{categories[0] ?? (isArticle ? '文章' : '站点')}</span>
+        {isArticle ? <a href="/writing/">返回文章索引</a> : <a href="/">返回首页</a>}
+      </div>
+      <h1>{displayTitle}</h1>
+      <dl class="article-meta">
+        {isArticle ? (
+          <>
+            <div><dt class="visually-hidden">日期</dt><dd><span class="meta-label">日期</span> <time class="meta-value" datetime={doc.date}>{stamp(doc.date)}</time></dd></div>
+            <div><dt class="visually-hidden">阅读时间</dt><dd><span class="meta-label">阅读</span> <span class="meta-value">{doc.readingTime} 分钟</span></dd></div>
+            {hasSource && (
+              <div><dt class="visually-hidden">原文</dt><dd><span class="meta-label">原文</span> <a class="meta-value" href={doc.source} rel="noopener noreferrer">飞书文档</a></dd></div>
+            )}
+          </>
+        ) : (
+          <div><dt class="visually-hidden">整理时间</dt><dd><span class="meta-label">整理</span> <time class="meta-value" datetime={doc.date}>{stamp(doc.date)}</time></dd></div>
+        )}
+      </dl>
+      {hasSource && (
+        <aside class="article-note" aria-label="日期与来源说明">
+          <span class="label">日期依据</span>
+          <p>这是飞书源文档的创建时间（{formatDate(doc.date)}），不是经过核实的公开发表日期。原文可能需要飞书访问权限。<a href={doc.source} rel="noopener noreferrer">查看原文</a></p>
+          {doc.conversionNotes?.length > 0 && (
+            <ul>{doc.conversionNotes.map((note) => <li>{note}</li>)}</ul>
+          )}
+        </aside>
+      )}
+      {tags.length > 0 && (
+        <p class="tag-row" aria-label="标签">
+          {tags.map((tag) => <span class="tag">{tag}</span>)}
+        </p>
+      )}
+    </header>
+
+    <div class={isArticle && toc.length ? 'article-grid wrap' : 'article-grid article-grid--page wrap'}>
+      {isArticle && toc.length > 0 && (
+        <nav class="toc" aria-label="本文目录" data-toc>
+          <p class="toc__label">目录</p>
+          <ol>
+            {toc.map((heading) => (
+              <li class={`lvl-${heading.level}`}><a href={`#${heading.id}`}>{heading.title}</a></li>
+            ))}
+          </ol>
+        </nav>
+      )}
+      <div class="article-body">
+        <div class="prose" set:html={linkedHtml} />
+        {isArticle && (newer || older) && (
+          <nav class="article-foot" aria-label="文章导航">
+            {older ? (
+              <a href={older.url}>
+                <span class="dir">← 上一篇</span>
+                <span class="t">{older.title}</span>
+              </a>
+            ) : <span />}
+            {newer ? (
+              <a class="next" href={newer.url}>
+                <span class="dir">下一篇 →</span>
+                <span class="t">{newer.title}</span>
+              </a>
+            ) : <span />}
+          </nav>
+        )}
+      </div>
+    </div>
+  </article>
+</Base>
+
+<script>
+  const toc = document.querySelector('[data-toc]');
+  if (toc) {
+    const links = new Map([...toc.querySelectorAll('a')].map((link) => [decodeURIComponent(link.hash.slice(1)), link]));
+    const targets = [...links.keys()].map((id) => document.getElementById(id)).filter(Boolean);
+    const setCurrent = (id) => {
+      for (const [key, link] of links) {
+        if (key === id) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      }
+    };
+    if (targets.length && 'IntersectionObserver' in window) {
+      const visible = new Set();
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) visible.add(entry.target.id);
+          else visible.delete(entry.target.id);
+        }
+        const current = targets.find((target) => visible.has(target.id));
+        if (current) setCurrent(current.id);
+      }, { rootMargin: '-10% 0px -70% 0px' });
+      targets.forEach((target) => observer.observe(target));
+    }
+  }
+</script>

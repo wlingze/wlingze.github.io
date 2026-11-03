@@ -1,0 +1,25 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="colophon">
+  <div class="wrap">
+    <div class="colophon__id">
+      <p class="colophon__name">令则 · wlingze</p>
+      <p>程序分析、终端应用与技术写作。</p>
+    </div>
+    <nav aria-label="页脚导航">
+      <a href="/about/">关于</a>
+      <a href="/now/">近况</a>
+      <a href="/projects/">项目</a>
+      <a href="/writing/">文章</a>
+      <a href="/links/">链接</a>
+      <a href="/rss.xml">RSS</a>
+      <a href="https://github.com/wlingze" rel="noopener noreferrer">GitHub</a>
+    </nav>
+    <p class="colophon__meta">
+      内容为 Markdown，站点用 Astro 构建<br />
+      正文与标题 Newsreader，标注 Hanken Grotesk，日期 IBM Plex Mono<br />
+      构建于 {year} 年，<a href="https://github.com/wlingze/wlingze.github.io">站点源码</a>
+    </p>
+  </div>
+</footer>

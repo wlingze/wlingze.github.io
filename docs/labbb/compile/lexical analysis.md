@@ -1,5 +1,5 @@
 ---
-title: lexical analysis
+title: 词法分析：原理与实现
 date: 2022-02-09 18:28:46
 permalink: /pages/81c94f/
 categories:

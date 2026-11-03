@@ -1,5 +1,5 @@
 ---
-title: xctf2020_musl
+title: XCTF 2020 musl 题解
 date: 2021-10-18 00:12:01
 permalink: /pages/1b136e/
 categories:

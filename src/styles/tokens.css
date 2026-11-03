@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+
+  /* Space */
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px;
+  --space-md: 16px; --space-lg: 24px; --space-xl: 32px; --space-2xl: 48px;
+  --space-3xl: 72px; --space-4xl: 104px;
+
+  /* Type */
+  --text-xs: 0.75rem; --text-sm: 0.8125rem; --text-md: 0.9375rem;
+  --text-body: 1.0625rem; --text-lg: 1.1875rem; --text-xl: 1.5rem;
+  --text-2xl: 1.875rem; --text-3xl: 2.5rem; --text-4xl: 3.25rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 120ms; --dur-short: 200ms;
+
+  /* Colour — warm paper, ink, a single brick accent */
+  --color-paper: oklch(95.4% 0.009 92);
+  --color-paper-2: oklch(92.8% 0.010 90);
+  --color-paper-3: oklch(89.6% 0.011 88);
+  --color-sheet: oklch(97.8% 0.006 92);
+  --color-ink: oklch(24% 0.014 60);
+  --color-ink-2: oklch(33% 0.012 60);
+  --color-muted: oklch(48% 0.014 60);
+  --color-rule: oklch(89% 0.010 80);
+  --color-rule-2: oklch(74% 0.012 75);
+  --color-accent: oklch(42% 0.105 352);
+  --color-accent-2: oklch(35% 0.10 352);
+  --color-accent-ink: oklch(97% 0.005 92);
+  --color-focus: oklch(43% 0.115 352);
+  --color-scrim: oklch(24% 0.015 60 / 0.34);
+  --color-error: oklch(48% 0.15 27);
+  --color-success: oklch(46% 0.09 150);
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: 40px;
+  --measure: 34em;
+  --control-h: 28px;
+
+  /* Faces */
+  --font-display: "Newsreader", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  --font-body: "Newsreader", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  --font-ui: "Hanken Grotesk", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Surfaces */
+  --radius-card: 2px;
+  --radius-pill: 2px;
+  --rule-hair: 1px;
+  --rule-bar: 1px;
+  --shadow-card: none;
+
+  /* Layers */
+  --z-raised: 10; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400;
+  --z-toast: 500; --z-tooltip: 600;
+}
+
+@media (max-width: 60rem) {
+  :root { --gutter: 28px; }
+}
+@media (max-width: 40rem) {
+  :root { --gutter: 20px; --text-3xl: 2.125rem; --text-4xl: 2.5rem; }
+}

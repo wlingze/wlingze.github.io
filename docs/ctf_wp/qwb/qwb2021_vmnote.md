@@ -1,5 +1,5 @@
 ---
-title: qwb2021_vmnote
+title: 强网杯 2021 vmnote 题解
 date: 2021-07-28 19:45:59
 permalink: /pages/55fac3/
 categories:

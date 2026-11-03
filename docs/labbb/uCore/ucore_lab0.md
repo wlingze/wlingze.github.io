@@ -1,5 +1,5 @@
 ---
-title: ucore_lab0
+title: uCore 实验 0：环境搭建
 date: 2021-05-31 14:14:11
 permalink: /pages/be71bd/
 categories:

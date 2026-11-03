@@ -1,5 +1,5 @@
 ---
-title: sctf2021_ChristmasWishes
+title: SCTF 2021 Christmas Wishes 出题与题解
 date: 2022-01-09 02:29:09
 permalink: /pages/28faed/
 categories:

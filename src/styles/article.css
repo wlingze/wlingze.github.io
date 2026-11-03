@@ -1,0 +1,11 @@
+/* Hallmark · shape: long document · genre: engineering notebook · theme: almanac · job: read
+ * hero: none, the title carries the page · nav: quiet masthead over one hairline · footer: single colophon line
+ * imagery: the article's own diagrams · signature: quiet contents rail beside a serif measure
+ * axes: rail plus measure, hairlines · serif voice, sans labels, mono dates · evidence imagery
+ * contrast: pass · v2.1.0 */
+@import url("./tokens.css");
+@import url("./base.css");
+
+.article-note .label { display: block; margin-bottom: var(--space-3xs); color: var(--color-ink-2); }
+.article-note ul { margin: var(--space-2xs) 0 0; padding-left: 1.1em; }
+.article-note li + li { margin-top: var(--space-3xs); }

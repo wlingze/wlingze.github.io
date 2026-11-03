@@ -2,26 +2,24 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - master
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [master]
+  schedule:
+    # Refresh the project and pull-request data once a day, then rebuild.
+    - cron: '23 1 * * *'
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,22 +27,29 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: '22'
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Refresh public GitHub data
+        # Pull requests and public repositories only. The committed snapshot is
+        # the fallback when the API is rate-limited or unavailable.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/refresh-github.mjs || echo "Keeping the committed GitHub snapshot."
 
       - name: Build
         run: npm run build
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vuepress/dist
+          path: dist
 
   deploy:
     environment:
@@ -52,7 +57,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

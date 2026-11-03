@@ -1,5 +1,5 @@
 ---
-title: SSA简述
+title: SSA 中间表示简介
 date: 2023-09-25 20:44:49
 permalink: /pages/81b93a/
 categories:

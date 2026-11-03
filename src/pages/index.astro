@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import '../styles/home.css';
+import github from '../data/github.json';
+import { articles, stamp } from '../lib/content.mjs';
+
+const { contributions, activity } = github;
+const byId = new Map(github.projects.map((project) => [project.id, project]));
+const featured = ['muxterm', 'yaklang', 'ecapture', 'irify'].map((id) => byId.get(id)).filter(Boolean);
+const latest = articles.slice(0, 5);
+const merged = activity.filter((item) => item.state === 'merged');
+const recent = merged.slice(0, 3);
+const stateLabel = { merged: '已合并', open: '开放中', closed: '已关闭' };
+const latestUpdate = github.projects.map((project) => project.updatedAt).filter(Boolean).sort().at(-1);
+const linkOf = (project) => project.url || project.site;
+---
+<Base
+  title="令则"
+  description="令则（wlingze）的个人站点：YakSSA、SyntaxFlow、Muxterm 与 eCapture 的开发记录，以及 2019 年以来的技术文章索引。"
+>
+  <div class="wrap home">
+    <aside class="identity" aria-labelledby="identity-name">
+      <img class="identity__avatar" src="/img/avatar2.jpg" width="56" height="56" alt="令则的头像" loading="lazy" decoding="async" />
+      <h1 class="identity__name" id="identity-name">令则</h1>
+      <p class="identity__handle">wlingze · 程序分析与终端应用</p>
+      <p class="identity__note">YakSSA、SyntaxFlow 与 Muxterm，代码在 <a href="https://github.com/wlingze" rel="noopener noreferrer">GitHub</a>。</p>
+      <dl class="identity__facts">
+        <div><dt>现在</dt><dd>yaklang.io</dd></div>
+        <div><dt>写作</dt><dd>{articles.length} 篇</dd></div>
+        <div><dt>更新</dt><dd>{stamp(latestUpdate)}</dd></div>
+      </dl>
+      <nav class="identity__links" aria-label="外部链接">
+        <a href="https://github.com/wlingze" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/wlingze" rel="noopener noreferrer">Twitter</a>
+        <a href="/links/">链接</a>
+        <a href="/rss.xml">RSS</a>
+      </nav>
+    </aside>
+
+    <div class="stream">
+      <section class="stream-section" id="now" aria-labelledby="now-title">
+        <header class="stream-head">
+          <h2 id="now-title">近况</h2>
+          <a class="more" href="/now/">完整近况</a>
+        </header>
+        <p class="stream-note">近一年 {contributions.total.toLocaleString('zh-CN')} 次公开贡献，合并 {merged.length} 个 PR。最近在做 YakSSA 的 SSA 前端与并发编译、SyntaxFlow 的扫描性能与风险分级。</p>
+        <ol class="pr-list">
+          {recent.map((item) => (
+            <li class="pr">
+              <a href={item.url} rel="noopener noreferrer">{item.title}</a>
+              <span class={`badge badge--${item.state}`}>{stateLabel[item.state]}</span>
+              <span class="meta">{item.repository} · {stamp(item.mergedAt ?? item.updatedAt)}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section class="stream-section" id="work" aria-labelledby="work-title">
+        <header class="stream-head">
+          <h2 id="work-title">项目</h2>
+          <a class="more" href="/projects/">全部项目</a>
+        </header>
+        <ul class="project-list">
+          {featured.map((project) => (
+            <li class="project">
+              <p class="project__name"><a href={`/projects/#${project.id}`}>{project.title}</a></p>
+              <p class="project__desc">{project.description}</p>
+              <p class="project__links">
+                {project.url && <a href={project.url} rel="noopener noreferrer"><Icon name="github" size={13} /> {project.repository}</a>}
+                {project.site && <a href={project.site} rel="noopener noreferrer"><Icon name="globe" size={13} /> {project.siteLabel ?? project.site.replace(/^https?:\/\//, '')}</a>}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="stream-section" id="writing" aria-labelledby="writing-title">
+        <header class="stream-head">
+          <h2 id="writing-title">文章</h2>
+          <a class="more" href="/writing/">全部 {articles.length} 篇</a>
+        </header>
+        <ol class="post-list">
+          {latest.map((article) => (
+            <li class="post">
+              <time class="post__date" datetime={article.date}>{stamp(article.date)}</time>
+              <a class="post__title" href={article.url}>{article.title}</a>
+              <span class="post__cat">{article.categories[0] ?? '笔记'}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </div>
+  </div>
+</Base>

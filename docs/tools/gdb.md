@@ -1,5 +1,5 @@
 ---
-title: gdb
+title: GDB 调试笔记
 date: 2021-02-21 22:15:08
 permalink: /pages/931009/
 categories:

@@ -1,5 +1,5 @@
 ---
-title: MallocLab
+title: CS:APP MallocLab：实现动态内存分配器
 date: 2021-02-21 12:02:06
 permalink: /pages/d1f73c/
 categories:

@@ -1,5 +1,5 @@
 ---
-title: redpwn2021_pwn
+title: redpwnCTF 2021 Pwn 题解
 date: 2021-07-26 16:47:55
 permalink: /pages/993e16/
 categories:

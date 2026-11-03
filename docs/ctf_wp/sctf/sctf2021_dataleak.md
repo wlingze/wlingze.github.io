@@ -1,5 +1,5 @@
 ---
-title: sctf2021_dataleak
+title: SCTF 2021 data leak 出题与题解
 date: 2022-01-02 22:07:26
 permalink: /pages/dae74e/
 categories:

@@ -1,35 +1,41 @@
 {
-  "name": "theme-vdoing-blog",
-  "version": "1.0.0",
+  "name": "lingze-blog",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "令则的工具、程序分析与技术写作。Markdown 内容保留在 docs/。",
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "editFm": "node utils/editFrontmatter.js",
-    "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
-    "publish": "cd ./theme-vdoing && npm publish && cd .. && yarn updateTheme",
-    "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "test": "node --test --test-force-exit tests/*.test.mjs",
+    "check:site": "node scripts/check-site.mjs",
+    "check:a11y": "node scripts/check-a11y.mjs",
+    "check": "npm test && npm run build && npm run check:site && npm run check:a11y",
+    "refresh:github": "node scripts/refresh-github.mjs",
+    "comments": "node scripts/comments.mjs"
   },
   "license": "MIT",
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "dayjs": "^1.11.10",
-    "inquirer": "^8.2.6",
-    "json2yaml": "^1.1.0",
-    "vuepress": "^1.9.10",
-    "vuepress-plugin-baidu-autopush": "^1.0.1",
-    "vuepress-plugin-baidu-tongji": "^1.0.1",
-    "vuepress-plugin-demo-block": "^0.7.2",
-    "vuepress-plugin-one-click-copy": "^1.0.6",
-    "vuepress-plugin-thirdparty-search": "^1.0.2",
-    "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.12.9",
-    "yamljs": "^0.3.0"
+  "engines": {
+    "node": ">=22.12.0"
   },
   "dependencies": {
-    "vuepress-plugin-comment": "^0.7.3"
+    "@fontsource/hanken-grotesk": "^5.2.8",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/newsreader": "^5.2.8",
+    "astro": "^7.4.4",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^15.0.3",
+    "markdown-it-anchor": "^10.0.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-emoji": "^3.0.0",
+    "shiki": "^4.5.0"
   },
-  "engines": {
-    "node": ">=14"
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.1",
+    "lighthouse": "^13.0.1",
+    "puppeteer-core": "^25.16.0",
+    "sharp": "^0.35.5"
   }
 }

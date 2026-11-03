@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import '../styles/projects.css';
+import github from '../data/github.json';
+import { stamp } from '../lib/content.mjs';
+import { languageColor } from '../lib/languages.mjs';
+
+const groups = [
+  { key: 'work', title: '参与开发', note: '公司与开源协作', items: github.projects.filter((project) => project.group === 'work') },
+  { key: 'contribution', title: '贡献', note: '向其他项目提交的代码', items: github.projects.filter((project) => project.group === 'contribution') },
+  { key: 'personal', title: '个人项目', note: '自己维护的仓库', items: github.projects.filter((project) => project.group === 'personal') },
+];
+const primary = (project) => project.url || project.site;
+---
+<Base title="项目" description="令则参与的产品与个人项目：Yaklang、YakSSA、SyntaxFlow、IRify、eCapture 与 Muxterm。">
+  <div class="wrap">
+    <header class="index-head">
+      <h1>项目</h1>
+      <p>参与的产品、贡献过的开源项目和个人仓库。维护时间与语言来自 GitHub，站点构建时自动更新。</p>
+    </header>
+
+    {groups.map((group) => (
+      <section class="group" aria-labelledby={`group-${group.key}`}>
+        <header class="group-head">
+          <h2 id={`group-${group.key}`}>{group.title}</h2>
+          <p>{group.note} · {group.items.length} 个</p>
+        </header>
+        {group.items.map((project) => (
+          <article class="entry" id={project.id}>
+            <div class="entry__main">
+              <h3>
+                {primary(project)
+                  ? <a href={primary(project)} rel="noopener noreferrer">{project.title}</a>
+                  : project.title}
+              </h3>
+              <p>{project.detail}</p>
+              <p class="entry__links">
+                {project.url && <a href={project.url} rel="noopener noreferrer"><Icon name="github" size={13} /> {project.repository}</a>}
+                {project.site && <a href={project.site} rel="noopener noreferrer"><Icon name="globe" size={13} /> {project.siteLabel ?? project.site.replace(/^https?:\/\//, '')}</a>}
+              </p>
+            </div>
+            <div class="entry__meta">
+              {project.language && <span class="lang"><span class="lang-dot" style={`--lang:${languageColor(project.language)}`}></span>{project.language}</span>}
+              {project.stars != null && <span>{project.stars.toLocaleString('zh-CN')} stars</span>}
+              {project.updatedAt && <span>更新 {stamp(project.updatedAt)}</span>}
+            </div>
+          </article>
+        ))}
+      </section>
+    ))}
+
+    <p class="more-repos">更多仓库见 <a href="https://github.com/wlingze?tab=repositories" rel="noopener noreferrer">GitHub</a>。</p>
+  </div>
+</Base>

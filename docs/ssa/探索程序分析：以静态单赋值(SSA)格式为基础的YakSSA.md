@@ -1,5 +1,5 @@
 ---
-title: 探索程序分析：以静态单赋值(SSA)格式为基础的YakSSA
+title: 探索程序分析：以 SSA 为基础的 YakSSA
 date: 2024-05-09 00:08:59
 permalink: /pages/a577f4/
 categories:

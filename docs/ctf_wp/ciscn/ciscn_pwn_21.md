@@ -1,5 +1,5 @@
 ---
-title: ciscn_pwn_21
+title: CISCN 2021 Pwn 题解
 date: 2021-05-18 23:17:21
 permalink: /pages/31b6cf/
 categories:

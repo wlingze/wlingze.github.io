@@ -1,5 +1,5 @@
 ---
-title: kernel 源码调试
+title: Linux 内核源码调试
 date: 2022-02-13 21:17:58
 permalink: /pages/6bb913/
 categories:

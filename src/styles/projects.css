@@ -1,0 +1,32 @@
+/* Hallmark · shape: project register · genre: engineering notebook · theme: almanac · job: try
+ * hero: a plain title, no slogan · nav: quiet masthead over one hairline · footer: single colophon line
+ * imagery: none, language dots and repository marks instead · signature: owner/repo and site as the only two links
+ * axes: one column of compact rows · serif names, sans metadata, mono dates · one accent for hover · no cards
+ * contrast: pass · v2.2.0 */
+@import url("./tokens.css");
+@import url("./base.css");
+
+.group { padding-top: var(--space-xl); }
+.group-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-md); padding-bottom: 7px; border-bottom: var(--rule-hair) solid var(--color-rule-2); }
+.group-head h2 { font-size: 1.0625rem; font-weight: 600; }
+.group-head p { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-muted); }
+
+.entry { display: grid; grid-template-columns: minmax(0, 1fr) 10.5rem; gap: var(--space-xs) var(--space-lg); padding: var(--space-sm) 0; border-bottom: var(--rule-hair) solid var(--color-rule); scroll-margin-top: 5rem; }
+.entry__main { min-width: 0; }
+.entry h3 { font-size: 1.0625rem; font-weight: 600; line-height: 1.35; }
+.entry h3 a { text-decoration: none; }
+.entry h3 a:hover { color: var(--color-accent-2); }
+.entry p { margin-top: 2px; font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-2); max-width: 58ch; }
+.entry__links { display: flex; flex-wrap: wrap; gap: 4px var(--space-md); margin-top: 6px; }
+.entry__links a { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-outlier); font-size: 0.6875rem; color: var(--color-muted); text-decoration: none; }
+.entry__links a:hover { color: var(--color-accent-2); }
+.entry__links svg { width: 13px; height: 13px; flex: none; }
+.entry__meta { display: flex; flex-direction: column; gap: 3px; padding-top: 2px; font-family: var(--font-ui); font-size: 0.6875rem; color: var(--color-muted); text-align: right; }
+.entry__meta .lang { display: inline-flex; align-items: center; justify-content: flex-end; gap: 5px; }
+@media (max-width: 48rem) {
+  .entry { grid-template-columns: minmax(0, 1fr); }
+  .entry__meta { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; gap: 4px 12px; text-align: left; }
+  .entry__meta .lang { justify-content: flex-start; }
+}
+.more-repos { margin-top: var(--space-xl); font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-muted); }
+.more-repos a { color: var(--color-ink-2); }

@@ -1,5 +1,5 @@
 ---
-title: lab1_boot
+title: 操作系统实验 1：系统启动
 date: 2021-01-25 18:15:39
 permalink: /pages/0109c4/
 categories:

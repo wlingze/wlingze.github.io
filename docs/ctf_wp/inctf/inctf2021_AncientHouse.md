@@ -1,5 +1,5 @@
 ---
-title: inctf2021_Ancient House
+title: INCTF 2021 Ancient House 题解
 date: 2021-08-16 12:06:33
 permalink: /pages/b5b027/
 categories:

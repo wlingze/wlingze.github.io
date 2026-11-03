@@ -1,0 +1,29 @@
+---
+const path = Astro.url.pathname;
+const isAbout = path.startsWith('/about');
+const isNow = path.startsWith('/now');
+const isProjects = path.startsWith('/projects');
+const isLinks = path.startsWith('/links');
+const isWriting = path === '/writing/' || path.startsWith('/writing/') && path !== '/writing/';
+const isArticle = !isAbout && !isNow && !isProjects && !isLinks && path !== '/' && !path.startsWith('/writing');
+---
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="/" aria-label="令则 · 首页">
+      <span class="wordmark__zh">令则</span>
+      <span class="wordmark__en">wlingze</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/about/" aria-current={isAbout ? 'page' : undefined}>关于</a>
+      <a href="/now/" aria-current={isNow ? 'page' : undefined}>近况</a>
+      <a href="/projects/" aria-current={isProjects ? 'page' : undefined}>项目</a>
+      <a href="/writing/" aria-current={isWriting || isArticle ? 'page' : undefined}>文章</a>
+      <a href="/links/" aria-current={isLinks ? 'page' : undefined}>链接</a>
+    </nav>
+    <button class="search-open" type="button" data-search-open aria-haspopup="dialog" aria-label="搜索文章">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="7" cy="7" r="4.4" /><path d="m10.4 10.4 3.6 3.6" /></svg>
+      <span>搜索</span>
+      <kbd>⌘K</kbd>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,127 @@
+---
+import { articles } from '../lib/content.mjs';
+const total = articles.length;
+---
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-label">
+  <form method="dialog" class="search-dialog__head">
+    <label id="search-label" for="search-input">搜索</label>
+    <input id="search-input" class="search-dialog__input" type="search" placeholder="标题、主题或正文…" autocomplete="off" spellcheck="false" />
+    <button class="search-dialog__close" type="submit" value="close" aria-label="关闭搜索">ESC</button>
+  </form>
+  <div class="search-dialog__body">
+    <p class="search-status" aria-live="polite" data-search-status>共 {total} 篇文章。输入关键词开始搜索。</p>
+    <ul class="search-results" data-search-results></ul>
+    <p class="search-hint">按 <kbd>/</kbd> 或 <kbd>⌘K</kbd> 打开，<kbd>Esc</kbd> 关闭。索引在浏览器本地过滤，不上传查询。</p>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.getElementById('search-dialog');
+  const input = document.getElementById('search-input');
+  const status = dialog.querySelector('[data-search-status]');
+  const list = dialog.querySelector('[data-search-results]');
+  let index = null;
+  let loading = null;
+  let opener = null;
+
+  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+
+  async function load() {
+    if (index) return index;
+    loading ??= fetch('/search-index.json').then(async (response) => {
+      if (!response.ok) throw new Error(String(response.status));
+      index = await response.json();
+      return index;
+    }).catch(() => {
+      loading = null;
+      return null;
+    });
+    return loading;
+  }
+
+  function render(items, query) {
+    if (!items.length) {
+      list.replaceChildren();
+      status.textContent = query ? `没有匹配「${query}」的文章。` : '输入关键词开始搜索。';
+      return;
+    }
+    status.textContent = `${items.length} 条结果${query ? ` · ${query}` : ''}`;
+    list.innerHTML = items.map((item) => `<li><a href="${escapeHtml(item.url)}"><span class="r-title">${escapeHtml(item.title)}</span><span class="r-meta">${escapeHtml(item.date)} · ${escapeHtml(item.categories.join(' / ') || '文章')}</span></a></li>`).join('');
+  }
+
+  function score(item, terms) {
+    const title = item.title.toLowerCase();
+    const categories = item.categories.join(' ').toLowerCase();
+    const tags = item.tags.join(' ').toLowerCase();
+    const text = item.text.toLowerCase();
+    let total = 0;
+    for (const term of terms) {
+      if (title.includes(term)) total += 12;
+      if (categories.includes(term) || tags.includes(term)) total += 4;
+      if (text.includes(term)) total += 1;
+      else if (!title.includes(term) && !categories.includes(term) && !tags.includes(term)) return 0;
+    }
+    return total;
+  }
+
+  async function run() {
+    const query = input.value.trim().toLowerCase();
+    const data = await load();
+    if (!data) {
+      status.textContent = '搜索索引加载失败，请刷新页面重试。';
+      return;
+    }
+    if (!query) {
+      render(data.slice(0, 6), '');
+      return;
+    }
+    const terms = query.split(/\s+/).filter(Boolean);
+    const hits = data.map((item) => ({ item, score: score(item, terms) })).filter((hit) => hit.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
+    render(hits.map((hit) => hit.item), query);
+  }
+
+  function open(event) {
+    if (!dialog) return;
+    opener = event?.currentTarget ?? document.activeElement;
+    dialog.showModal();
+    input.value = '';
+    run();
+    input.focus();
+  }
+
+  document.querySelectorAll('[data-search-open]').forEach((button) => button.addEventListener('click', open));
+
+  document.addEventListener('keydown', (event) => {
+    const target = event.target;
+    const typing = target instanceof HTMLElement && (target.matches('input, textarea, select') || target.isContentEditable);
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      if (dialog.open) dialog.close(); else open();
+      return;
+    }
+    if (event.key === '/' && !typing && !event.metaKey && !event.ctrlKey && !event.altKey) {
+      event.preventDefault();
+      open();
+    }
+  });
+
+  let timer;
+  input?.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(run, 120);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && dialog?.open) {
+      event.preventDefault();
+      dialog.close();
+    }
+  });
+
+  dialog?.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog?.addEventListener('close', () => {
+    if (opener instanceof HTMLElement) opener.focus();
+  });
+</script>

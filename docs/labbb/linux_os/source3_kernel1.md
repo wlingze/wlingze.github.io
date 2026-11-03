@@ -1,5 +1,5 @@
 ---
-title: source3_kernel
+title: Linux 内核源码分析 3：内核启动
 date: 2021-01-26 19:21:23
 permalink: /pages/a05c8d/
 categories:

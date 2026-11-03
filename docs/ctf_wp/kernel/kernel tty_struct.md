@@ -1,5 +1,5 @@
 ---
-title: kernel tty_struct
+title: Linux 内核漏洞：tty_struct 利用
 date: 2022-02-13 16:44:53
 permalink: /pages/9ab61d/
 categories:

@@ -1,5 +1,5 @@
 ---
-title: inctf2021_babyglob
+title: INCTF 2021 babyglob 题解
 date: 2021-08-20 11:58:11
 permalink: /pages/2247de/
 categories:

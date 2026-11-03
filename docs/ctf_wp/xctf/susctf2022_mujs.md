@@ -1,5 +1,5 @@
 ---
-title: susctf2022_mujs
+title: SUSCTF 2022 mujs 题解
 date: 2022-03-03 14:34:52
 permalink: /pages/864c37/
 categories:

@@ -1,5 +1,5 @@
 ---
-title: qwb2018_core
+title: 强网杯 2018 core 题解
 date: 2022-02-08 16:14:32
 permalink: /pages/3387f7/
 categories:

@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/now.css';
+import github from '../data/github.json';
+import { articles, stamp } from '../lib/content.mjs';
+
+const { contributions, activity } = github;
+const merged = activity.filter((item) => item.state === 'merged');
+const open = activity.filter((item) => item.state === 'open');
+const repos = new Set(activity.map((item) => item.repository));
+const recentArticles = articles.filter((article) => article.date.slice(0, 10) >= contributions.from);
+const stateLabel = { merged: '已合并', open: '开放中', closed: '已关闭' };
+const sorted = activity.filter((item) => item.state === 'merged').sort((a, b) => (b.mergedAt ?? b.updatedAt).localeCompare(a.mergedAt ?? a.updatedAt));
+
+const byMonth = new Map();
+for (const item of sorted) {
+  const key = (item.mergedAt ?? item.updatedAt).slice(0, 7);
+  if (!byMonth.has(key)) byMonth.set(key, new Map());
+  const projects = byMonth.get(key);
+  if (!projects.has(item.repository)) projects.set(item.repository, []);
+  projects.get(item.repository).push(item);
+}
+const months = [...byMonth.entries()].map(([key, projects]) => ({
+  key,
+  total: [...projects.values()].reduce((sum, items) => sum + items.length, 0),
+  projects: [...projects.entries()]
+    .map(([repository, items]) => ({ repository, items }))
+    .sort((a, b) => b.items.length - a.items.length || a.repository.localeCompare(b.repository)),
+}));
+
+// Contribution calendar: pad the first week to Sunday, then read column-wise.
+const first = new Date(`${contributions.days[0].date}T00:00:00Z`);
+const cells = [...Array(first.getUTCDay()).fill(null), ...contributions.days];
+const weeks = [];
+for (let index = 0; index < cells.length; index += 7) weeks.push(cells.slice(index, index + 7));
+const monthLabels = [];
+let lastMonth = '';
+let lastColumn = -10;
+weeks.forEach((week, index) => {
+  const day = week.find(Boolean);
+  if (!day) return;
+  const month = day.date.slice(5, 7);
+  if (month !== lastMonth) {
+    lastMonth = month;
+    if (index > 0 && index - lastColumn >= 4) {
+      monthLabels.push({ column: index + 1, label: `${Number(month)}月` });
+      lastColumn = index;
+    }
+  }
+});
+const range = `${stamp(contributions.from)} — ${stamp(contributions.to)}`;
+---
+<Base title="近况" description="令则最近一年的公开记录：GitHub 贡献、合并的 Pull Request 与正在做的事。">
+  <div class="wrap">
+    <header class="index-head">
+      <h1>近况</h1>
+      <p>过去一年的公开记录：GitHub 贡献、合并的 PR 与正在做的事。工作主要围绕 YakSSA 的 SSA 前端与并发编译、SyntaxFlow 的规则扫描与风险分级，以及 Muxterm 的 macOS 端；数据在站点构建时从 GitHub 获取，只包含公开仓库。</p>
+    </header>
+
+    <div class="summary">
+      <div class="summary__item"><span class="summary__value">{contributions.total.toLocaleString('zh-CN')}</span><span class="summary__label">近一年贡献</span></div>
+      <div class="summary__item"><span class="summary__value">{merged.length}</span><span class="summary__label">合并 PR</span></div>
+      <div class="summary__item"><span class="summary__value">{open.length}</span><span class="summary__label">开放 PR</span></div>
+      <div class="summary__item"><span class="summary__value">{repos.size}</span><span class="summary__label">活跃仓库</span></div>
+    </div>
+    {recentArticles.length > 0 && (
+      <p class="now-note">近一年还整理了 {recentArticles.length} 篇技术文档，见 <a href="/writing/">文章索引</a>。</p>
+    )}
+
+    <section class="calendar" aria-labelledby="calendar-title">
+      <div class="calendar__head">
+        <h2 id="calendar-title">贡献</h2>
+        <p>{range} · 共 {contributions.total.toLocaleString('zh-CN')} 次</p>
+      </div>
+      <div class="calendar__scroll" role="img" tabindex="0" aria-label={`${range} 共 ${contributions.total} 次公开贡献`}>
+        <div class="calendar__months" style={`--weeks:${weeks.length}`}>
+          {monthLabels.map((month) => <span style={`grid-column:${month.column}`}>{month.label}</span>)}
+        </div>
+        <div class="calendar__grid">
+          {weeks.flatMap((week) => week.map((day) => day
+            ? <span class={`calendar__day l${day.level}`} title={`${day.date} · ${day.count} 次`}></span>
+            : <span class="calendar__day is-empty"></span>))}
+        </div>
+      </div>
+      <div class="calendar__foot">
+        <span>颜色越深，当天贡献越多</span>
+        <span class="calendar__legend">少 <span class="calendar__day l0"></span><span class="calendar__day l1"></span><span class="calendar__day l2"></span><span class="calendar__day l3"></span><span class="calendar__day l4"></span> 多</span>
+      </div>
+    </section>
+
+    <section class="timeline" aria-labelledby="timeline-title">
+      <div class="calendar__head">
+        <h2 id="timeline-title">做的事情</h2>
+        <p>按月、按项目 · 近一年 {sorted.length} 个合并 PR</p>
+      </div>
+      {months.map((month) => (
+        <section class="timeline__month" aria-labelledby={`month-${month.key}`}>
+          <header class="timeline__month-head">
+            <h3 id={`month-${month.key}`}>{month.key.replace('-', '.')}</h3>
+            <p>{month.total} 个 PR · {month.projects.length} 个项目</p>
+          </header>
+          <ul class="timeline__projects">
+            {month.projects.map((project) => (
+              <li>
+                <details class="timeline__project">
+                  <summary class="timeline__project-head">
+                    <span class="timeline__repo">{project.repository}</span>
+                    <span class="timeline__count">{project.items.length}</span>
+                  </summary>
+                  <ol class="timeline__prs">
+                    {project.items.map((item) => (
+                      <li class="timeline__row">
+                        <span class="timeline__date">{stamp(item.mergedAt ?? item.createdAt).slice(5)}</span>
+                        <span class="timeline__main">
+                          <a class="timeline__title" href={item.url} rel="noopener noreferrer">{item.title}</a>
+                        </span>
+                        <span class={`badge badge--${item.state}`}>{stateLabel[item.state] ?? item.state}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </details>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </section>
+  </div>
+</Base>

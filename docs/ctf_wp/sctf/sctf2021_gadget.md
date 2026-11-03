@@ -1,5 +1,5 @@
 ---
-title: sctf2021_gadget
+title: SCTF 2021 gadget 出题与题解
 date: 2021-12-31 03:39:49
 permalink: /pages/a905fd/
 categories:

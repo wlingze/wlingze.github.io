@@ -1,0 +1,93 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import '../styles/links.css';
+import github from '../data/github.json';
+import { friends } from '../lib/content.mjs';
+import { email, mailto } from '../lib/contact.mjs';
+
+const mine = [
+  { name: 'GitHub', handle: 'wlingze', href: 'https://github.com/wlingze', icon: 'github', note: '代码、提交与公开仓库' },
+  { name: 'Twitter', handle: '@wlingze', href: 'https://x.com/wlingze', icon: 'x', note: '短消息与转发' },
+  { name: 'RSS', handle: 'rss.xml', href: '/rss.xml', icon: 'rss', note: '文章更新' },
+  { name: '站点源码', handle: 'wlingze/wlingze.github.io', href: 'https://github.com/wlingze/wlingze.github.io', icon: 'github', note: '本网站的 Markdown 与源码' },
+  ...(email ? [{ name: '邮箱', handle: email, href: mailto, icon: 'mail', note: '直接写信' }] : []),
+];
+
+const work = [
+  { name: 'Yaklang', handle: 'yaklang/yaklang', href: 'https://github.com/yaklang/yaklang', icon: 'github', note: 'SSA 与 SyntaxFlow 主仓库' },
+  { name: 'Yaklang 官网', handle: 'yaklang.io', href: 'https://yaklang.io/', icon: 'globe', note: '产品与文档入口' },
+  { name: 'SyntaxFlow 文档', handle: 'yaklang/ssa.to', href: 'https://github.com/yaklang/ssa.to', icon: 'github', note: '文档站点源码' },
+  { name: 'SyntaxFlow', handle: 'ssa.to', href: 'https://ssa.to/', icon: 'globe', note: 'SSA 与查询语言文档' },
+  { name: 'IRify', handle: 'yaklang.io/irify', href: 'https://yaklang.io/irify/', icon: 'globe', note: '代码审计平台' },
+  { name: 'eCapture', handle: 'gojue/ecapture', href: 'https://github.com/gojue/ecapture', icon: 'github', note: '贡献过 pclntab 解析修复' },
+  { name: 'eCapture 官网', handle: 'ecapture.cc', href: 'https://ecapture.cc/', icon: 'globe', note: 'eBPF TLS 抓包工具' },
+];
+
+const profile = github.profile;
+---
+<Base title="链接" description="令则的链接：GitHub、Twitter、Yaklang、SyntaxFlow、IRify、eCapture 与友链。">
+  <div class="wrap">
+    <header class="index-head">
+      <h1>链接</h1>
+      <p>我的账号、参与的项目与产品入口，以及一些朋友的站点。</p>
+    </header>
+
+    <section class="link-section" aria-labelledby="links-me">
+      <header class="link-section__head">
+        <h2 id="links-me">我</h2>
+        <p>{profile.followers} followers · {profile.publicRepos} public repos</p>
+      </header>
+      <ul class="link-list">
+        {mine.map((item) => (
+          <li>
+            <a href={item.href}>
+              <Icon name={item.icon} size={13} class="link-icon" />
+              <span class="link-name">{item.name}</span>
+              <span class="link-handle">{item.handle}</span>
+            </a>
+            <span class="link-note">{item.note}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="link-section" aria-labelledby="links-work">
+      <header class="link-section__head">
+        <h2 id="links-work">公司与项目</h2>
+        <p>代码与产品</p>
+      </header>
+      <ul class="link-list">
+        {work.map((item) => (
+          <li>
+            <a href={item.href} rel="noopener noreferrer">
+              <Icon name={item.icon} size={13} class="link-icon" />
+              <span class="link-name">{item.name}</span>
+              <span class="link-handle">{item.handle}</span>
+            </a>
+            <span class="link-note">{item.note}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="link-section" aria-labelledby="links-friends">
+      <header class="link-section__head">
+        <h2 id="links-friends">友链</h2>
+        <p>{friends.length} 位</p>
+      </header>
+      <div class="friend-grid">
+        {friends.map((friend) => (
+          friend.link
+            ? <a class="friend" href={friend.link} rel="noopener noreferrer">{friend.name}</a>
+            : <span class="friend">{friend.name}</span>
+        ))}
+      </div>
+      {email ? (
+        <p class="friend-note">想交换友链？发邮件到 <a href={mailto}>{email}</a>，附上站点地址和一句话介绍。</p>
+      ) : (
+        <p class="friend-note">想交换友链？在<a href="https://github.com/wlingze/wlingze.github.io/issues" rel="noopener noreferrer">站点仓库</a>开 issue。</p>
+      )}
+    </section>
+  </div>
+</Base>

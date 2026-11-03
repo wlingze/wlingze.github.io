@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import '../../styles/writing.css';
+import { articles, stamp, getTopics } from '../../lib/content.mjs';
+
+const years = new Map();
+for (const article of articles) {
+  const year = stamp(article.date).slice(0, 4);
+  if (!years.has(year)) years.set(year, []);
+  years.get(year).push(article);
+}
+const groups = [...years.entries()].sort((a, b) => b[0].localeCompare(a[0]));
+const categories = getTopics('categories').map((name) => ({ name, count: articles.filter((article) => article.categories.includes(name)).length })).sort((a, b) => b.count - a.count);
+const span = `${stamp(articles.at(-1)?.date).slice(0, 4)}—${stamp(articles[0]?.date).slice(0, 4)}`;
+const primary = categories.slice(0, 8);
+const rest = categories.slice(8);
+---
+<Base title="文章" description={`令则的技术文章索引：${articles.length} 篇，覆盖程序分析、SSA、SyntaxFlow、IRify、逆向与 CTF。`}>
+  <div class="wrap">
+    <header class="index-head">
+      <h1>文章</h1>
+      <p>{span}，共 {articles.length} 篇。从 CTF 与逆向笔记，到 YakSSA、SyntaxFlow 与 IRify 的设计记录。</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="按主题筛选">
+      <span class="filters__label">主题</span>
+      <button class="filter" type="button" data-filter="*" aria-pressed="true">全部 <span class="n">{articles.length}</span></button>
+      {primary.map((category) => (
+        <button class="filter" type="button" data-filter={category.name} aria-pressed="false">{category.name} <span class="n">{category.count}</span></button>
+      ))}
+      {rest.length > 0 && (
+        <details class="filters__more">
+          <summary>更多</summary>
+          <div class="filters__more-list">
+            {rest.map((category) => (
+              <button class="filter" type="button" data-filter={category.name} aria-pressed="false">{category.name} <span class="n">{category.count}</span></button>
+            ))}
+          </div>
+        </details>
+      )}
+      <div class="archive-search">
+        <label class="visually-hidden" for="archive-query">搜索文章</label>
+        <input id="archive-query" type="search" placeholder="搜索标题或正文…" autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+    <p class="archive-hint" aria-live="polite" data-archive-status>显示 {articles.length} 篇。</p>
+
+    <div data-archive>
+      {groups.map(([year, list]) => (
+        <section class="year-block" data-year={year} aria-labelledby={`year-${year}`}>
+          <header class="year-head">
+            <h2 id={`year-${year}`}>{year}</h2>
+            <span class="count" data-year-count>{list.length} 篇</span>
+          </header>
+          <ol class="post-list">
+            {list.map((article) => (
+              <li class="archive-row" data-cat={article.categories[0] ?? '笔记'} data-search={[article.title, ...article.categories, ...article.tags, article.excerpt].join(' ').toLowerCase()}>
+                <time class="archive-row__date" datetime={article.date}>{stamp(article.date)}</time>
+                <a class="archive-row__title" href={article.url}>{article.title}</a>
+                <span class="archive-row__cat">{article.categories[0] ?? '笔记'}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+      <p class="empty-state" data-archive-empty hidden>没有匹配的文章。清空搜索或换一个主题。</p>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const root = document.querySelector('[data-archive]');
+  const rows = [...root.querySelectorAll('.archive-row')];
+  const blocks = [...root.querySelectorAll('[data-year]')];
+  const filters = [...document.querySelectorAll('[data-filter]')];
+  const query = document.getElementById('archive-query');
+  const status = document.querySelector('[data-archive-status]');
+  const empty = document.querySelector('[data-archive-empty]');
+  let active = '*';
+
+  function apply() {
+    const term = query.value.trim().toLowerCase();
+    let visible = 0;
+    for (const row of rows) {
+      const matchCategory = active === '*' || row.dataset.cat === active;
+      const matchText = !term || row.dataset.search.includes(term);
+      const show = matchCategory && matchText;
+      row.hidden = !show;
+      if (show) visible += 1;
+    }
+    for (const block of blocks) {
+      const count = [...block.querySelectorAll('.archive-row')].filter((row) => !row.hidden).length;
+      block.hidden = count === 0;
+      const label = block.querySelector('[data-year-count]');
+      if (label) label.textContent = `${count} 篇`;
+    }
+    empty.hidden = visible !== 0;
+    status.textContent = term || active !== '*' ? `显示 ${visible} 篇。` : `显示 ${rows.length} 篇。`;
+  }
+
+  for (const filter of filters) {
+    filter.addEventListener('click', () => {
+      active = filter.dataset.filter;
+      for (const other of filters) other.setAttribute('aria-pressed', String(other === filter));
+      apply();
+    });
+  }
+  query.addEventListener('input', apply);
+</script>

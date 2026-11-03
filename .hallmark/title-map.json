@@ -1,0 +1,382 @@
+{
+  "updatedAt": "2026-10-30",
+  "note": "Frontmatter title only; body, dates, permalinks untouched.",
+  "changes": [
+    {
+      "file": "docs/_posts/01.博客升级.md",
+      "title": "博客 2.0：用 VuePress 重做个人站点"
+    },
+    {
+      "file": "docs/_posts/02.syclover.md",
+      "title": "syclover 与信息安全入门"
+    },
+    {
+      "file": "docs/_posts/03.2023近况.md",
+      "title": "2023 近况：从 RASP 到 Yaklang"
+    },
+    {
+      "file": "docs/friends.md",
+      "title": "友链"
+    },
+    {
+      "file": "docs/book/pwn/fmt.md",
+      "title": "格式化字符串漏洞原理与利用"
+    },
+    {
+      "file": "docs/book/pwn/shellcode.md",
+      "title": "Shellcode 与 seccomp 沙箱"
+    },
+    {
+      "file": "docs/book/pwn/stack.md",
+      "title": "栈溢出基础"
+    },
+    {
+      "file": "docs/book/pwn/相关环境.md",
+      "title": "Pwn 环境配置"
+    },
+    {
+      "file": "docs/book/reverse/03.golang_rev.md",
+      "title": "Go 程序逆向基础"
+    },
+    {
+      "file": "docs/book/reverse/vm和符号执行/01.符号执行.md",
+      "title": "符号执行入门"
+    },
+    {
+      "file": "docs/book/reverse/vm和符号执行/02.angr.md",
+      "title": "angr 使用笔记"
+    },
+    {
+      "file": "docs/book/reverse/vm和符号执行/03.vm.md",
+      "title": "虚拟机混淆与还原"
+    },
+    {
+      "file": "docs/book/reverse/vm和符号执行/04.miasm.md",
+      "title": "用 miasm 反汇编虚拟机保护"
+    },
+    {
+      "file": "docs/ctf_wp/Tigress/01.readme.md",
+      "title": "Tigress 虚拟机保护挑战：题目说明"
+    },
+    {
+      "file": "docs/ctf_wp/Tigress/02.challenge0.md",
+      "title": "Tigress Challenge 0 题解"
+    },
+    {
+      "file": "docs/ctf_wp/ciscn/ciscn_pwn_21.md",
+      "title": "CISCN 2021 Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/cybrics/cybrics2021_pwn.md",
+      "title": "CyBRICS 2021 Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/gadget/easystack_wp.md",
+      "title": "easystack：栈迁移题解"
+    },
+    {
+      "file": "docs/ctf_wp/googlectf/googlectf2021_compress.md",
+      "title": "Google CTF 2021 compress 题解"
+    },
+    {
+      "file": "docs/ctf_wp/hgame/01.week1.md",
+      "title": "HGame 第一周：逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/hgame/02.week2.md",
+      "title": "HGame 第二周：逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/hgame/03.week3.md",
+      "title": "HGame 第三周：逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/hgame/04.week4_secret.md",
+      "title": "HGame 第四周：secret 题解"
+    },
+    {
+      "file": "docs/ctf_wp/inctf/inctf2021_AncientHouse.md",
+      "title": "INCTF 2021 Ancient House 题解"
+    },
+    {
+      "file": "docs/ctf_wp/inctf/inctf2021_babyglob.md",
+      "title": "INCTF 2021 babyglob 题解"
+    },
+    {
+      "file": "docs/ctf_wp/kernel/kernel tty_struct.md",
+      "title": "Linux 内核漏洞：tty_struct 利用"
+    },
+    {
+      "file": "docs/ctf_wp/kernel/kernel 源码调试.md",
+      "title": "Linux 内核源码调试"
+    },
+    {
+      "file": "docs/ctf_wp/kernel/kernel_uaf.md",
+      "title": "Linux 内核 UAF 漏洞利用"
+    },
+    {
+      "file": "docs/ctf_wp/mrctf/01.mrctf2020_re.md",
+      "title": "MRCTF 2020 逆向与 Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/qwb/qwb2018_core.md",
+      "title": "强网杯 2018 core 题解"
+    },
+    {
+      "file": "docs/ctf_wp/qwb/qwb2021_shellcode.md",
+      "title": "强网杯 2021 shellcode 题解"
+    },
+    {
+      "file": "docs/ctf_wp/qwb/qwb2021_vmnote.md",
+      "title": "强网杯 2021 vmnote 题解"
+    },
+    {
+      "file": "docs/ctf_wp/redpwn/redpwn2021_pwn.md",
+      "title": "redpwnCTF 2021 Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/rwctf/rwctf2022_QLaaS.md",
+      "title": "Real World CTF 2022 QLaaS 题解"
+    },
+    {
+      "file": "docs/ctf_wp/rwctf/rwctf2022体验赛.md",
+      "title": "Real World CTF 2022 体验赛：debugger 与 docker"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_ChristmasBash.md",
+      "title": "SCTF 2021 Christmas Bash 出题与题解"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_ChristmasSong.md",
+      "title": "SCTF 2021 Christmas Song 出题与题解"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_ChristmasWishes.md",
+      "title": "SCTF 2021 Christmas Wishes 出题与题解"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_dataleak.md",
+      "title": "SCTF 2021 data leak 出题与题解"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_gadget.md",
+      "title": "SCTF 2021 gadget 出题与题解"
+    },
+    {
+      "file": "docs/ctf_wp/sctf/sctf2021_pwn.md",
+      "title": "SCTF 2021 Pwn 出题思路"
+    },
+    {
+      "file": "docs/ctf_wp/xctf/susctf2022_mujs.md",
+      "title": "SUSCTF 2022 mujs 题解"
+    },
+    {
+      "file": "docs/ctf_wp/xctf/xctf2020_musl.md",
+      "title": "XCTF 2020 musl 题解"
+    },
+    {
+      "file": "docs/ctf_wp/安洵杯/01.crackme.md",
+      "title": "安洵杯 2019 crackme 题解"
+    },
+    {
+      "file": "docs/ctf_wp/安洵杯/02.Easy_Encryption.md",
+      "title": "安洵杯 2019 Easy Encryption 题解"
+    },
+    {
+      "file": "docs/ctf_wp/安洵杯/03.game.md",
+      "title": "安洵杯 2019 game 题解"
+    },
+    {
+      "file": "docs/ctf_wp/攻防世界/01.新手区re_wp.md",
+      "title": "攻防世界新手区：逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/攻防世界/02.新手区pwn.md",
+      "title": "攻防世界新手区：Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/攻防世界/03.re_asong.md",
+      "title": "攻防世界 asong 题解"
+    },
+    {
+      "file": "docs/ctf_wp/攻防世界/04.re_easyre-150.md",
+      "title": "UPX 壳分析与 easyre-150 题解"
+    },
+    {
+      "file": "docs/ctf_wp/攻防世界/05.动调脚本化爆破.md",
+      "title": "从 reverse-box 到脚本化动调爆破"
+    },
+    {
+      "file": "docs/ctf_wp/极客大挑战/01.geek_10th_re.md",
+      "title": "极客大挑战第十届：逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/极客大挑战/02.geek_10th_apk.md",
+      "title": "极客大挑战第十届：Android 题解"
+    },
+    {
+      "file": "docs/ctf_wp/虎符ctf/01.vm题目.md",
+      "title": "虎符 CTF 虚拟机逆向题解"
+    },
+    {
+      "file": "docs/ctf_wp/虎符ctf/虎符2021_pwn.md",
+      "title": "虎符 CTF 2021 Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/零散的题目/01.syc二面19.md",
+      "title": "syclover 2019 二面题解"
+    },
+    {
+      "file": "docs/ctf_wp/零散的题目/02.虚拟机类题目1.md",
+      "title": "虚拟机类逆向题选讲"
+    },
+    {
+      "file": "docs/ctf_wp/零散的题目/04.bugku_pwn.md",
+      "title": "Bugku Pwn 题解"
+    },
+    {
+      "file": "docs/ctf_wp/零散的题目/05.格式化字符串.md",
+      "title": "格式化字符串题解：Jarvis OJ fm"
+    },
+    {
+      "file": "docs/labbb/compile/LocalOptimization.md",
+      "title": "局部优化：理论与 LLVM 实现"
+    },
+    {
+      "file": "docs/labbb/compile/lexical analysis.md",
+      "title": "词法分析：原理与实现"
+    },
+    {
+      "file": "docs/labbb/csapp/MallocLab.md",
+      "title": "CS:APP MallocLab：实现动态内存分配器"
+    },
+    {
+      "file": "docs/labbb/fuzz/AFL.md",
+      "title": "AFL：覆盖率导向的模糊测试"
+    },
+    {
+      "file": "docs/labbb/fuzz/libfuzzer source code analysis.md",
+      "title": "libFuzzer 源码分析"
+    },
+    {
+      "file": "docs/labbb/linux_os/lab1_boot.md",
+      "title": "操作系统实验 1：系统启动"
+    },
+    {
+      "file": "docs/labbb/linux_os/lab2_systemcall.md",
+      "title": "操作系统实验 2：系统调用"
+    },
+    {
+      "file": "docs/labbb/linux_os/source1_boot.md",
+      "title": "Linux 内核源码分析 1：启动"
+    },
+    {
+      "file": "docs/labbb/linux_os/source2_init.md",
+      "title": "Linux 内核源码分析 2：初始化"
+    },
+    {
+      "file": "docs/labbb/linux_os/source3_kernel1.md",
+      "title": "Linux 内核源码分析 3：内核启动"
+    },
+    {
+      "file": "docs/labbb/memlab/memlab.md",
+      "title": "MemLab：内存取证实作"
+    },
+    {
+      "file": "docs/labbb/stl/The_use_of_try-catch_in_stl.md",
+      "title": "STL 中的 try-catch 使用"
+    },
+    {
+      "file": "docs/labbb/stl/iterator_and_traits.md",
+      "title": "STL 迭代器与 traits 技法"
+    },
+    {
+      "file": "docs/labbb/stl/memory allocator traits.md",
+      "title": "STL 内存分配器 traits"
+    },
+    {
+      "file": "docs/labbb/stl/memory_allocator.md",
+      "title": "STL 内存分配器实现"
+    },
+    {
+      "file": "docs/labbb/stl/vector implementation.md",
+      "title": "STL vector 的实现"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab0.md",
+      "title": "uCore 实验 0：环境搭建"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab1.md",
+      "title": "uCore 实验 1：启动与中断"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab2.md",
+      "title": "uCore 实验 2：物理内存管理"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab3.md",
+      "title": "uCore 实验 3：虚拟内存管理"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab4.md",
+      "title": "uCore 实验 4：内核线程"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab5.md",
+      "title": "uCore 实验 5：用户进程"
+    },
+    {
+      "file": "docs/labbb/uCore/ucore_lab6.md",
+      "title": "uCore 实验 6：调度器"
+    },
+    {
+      "file": "docs/notes/CppPrimePlus/CPrimerPlus.md",
+      "title": "C Primer Plus 读书笔记"
+    },
+    {
+      "file": "docs/notes/CppPrimePlus/CppPrimePlus.md",
+      "title": "C++ Primer Plus 读书笔记"
+    },
+    {
+      "file": "docs/notes/csapp/Q1.md",
+      "title": "程序是如何加载进内存的"
+    },
+    {
+      "file": "docs/realworld/pdf/pdf format.md",
+      "title": "PDF 文件格式解析"
+    },
+    {
+      "file": "docs/realworld/pdf/xpdf afl fuzz.md",
+      "title": "用 AFL 模糊测试 xpdf"
+    },
+    {
+      "file": "docs/ssa/SSA简述.md",
+      "title": "SSA 中间表示简介"
+    },
+    {
+      "file": "docs/ssa/探索程序分析：以静态单赋值(SSA)格式为基础的YakSSA.md",
+      "title": "探索程序分析：以 SSA 为基础的 YakSSA"
+    },
+    {
+      "file": "docs/tools/01.ida.md",
+      "title": "IDA 使用笔记"
+    },
+    {
+      "file": "docs/tools/02.ida_python.md",
+      "title": "IDA Python 脚本笔记"
+    },
+    {
+      "file": "docs/tools/codeql.md",
+      "title": "CodeQL 入门"
+    },
+    {
+      "file": "docs/tools/gdb.md",
+      "title": "GDB 调试笔记"
+    },
+    {
+      "file": "docs/tools/ida_debug.md",
+      "title": "IDA 动态调试技巧"
+    }
+  ]
+}

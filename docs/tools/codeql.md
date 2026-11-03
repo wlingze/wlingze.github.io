@@ -1,5 +1,5 @@
 ---
-title: codeql
+title: CodeQL 入门
 date: 2021-03-24 16:47:16
 permalink: /pages/1948eb/
 categories:

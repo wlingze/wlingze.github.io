@@ -1,13 +1,9 @@
 ---
-title: friends
+title: 友链
 date: 2020-07-11 19:22:00
 sidebar: false
 article: false
 ---
-
-# 友链
-
-:wink: :wink: :wink: :wink: :beers:
 
 ::: cardList
 
@@ -77,16 +73,8 @@ article: false
   avatar: https://focu5.oss-cn-beijing.aliyuncs.com/img/20200714224051.jpg
 ```
 
-## :::
-
-::: tip tip
-加友链直接联系我就好~ :beer:
 :::
-可以备注 需要的格式：
 
-```yaml
-- name: id
-  link: 链接
-  desc: 介绍 (可选)
-  avatar: 头像 (可选)
-```
+::: tip
+加友链直接联系我就好。
+:::

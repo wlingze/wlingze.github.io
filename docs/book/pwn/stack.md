@@ -1,5 +1,5 @@
 ---
-title: 栈溢出
+title: 栈溢出基础
 permalink: /book/pwn/stack/
 categories: 
   - 知识库

@@ -1,0 +1,51 @@
+---
+import '@fontsource/hanken-grotesk/400.css';
+import '@fontsource/hanken-grotesk/500.css';
+import '@fontsource/newsreader/400.css';
+import '@fontsource/newsreader/500.css';
+import '@fontsource/newsreader/400-italic.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '../styles/site.css';
+import Masthead from '../components/Masthead.astro';
+import Colophon from '../components/Colophon.astro';
+import SearchDialog from '../components/SearchDialog.astro';
+// Inlined as a classic script in development only; it never reaches the build.
+import devCommentsSource from '../lib/dev-comments.js?raw';
+
+const { title, description = '令则（Lingze）的个人站点：程序分析、终端应用与技术写作。', ogType = 'website' } = Astro.props;
+const fullTitle = !title || title === '令则' ? '令则 · 程序分析与终端应用' : `${title} · 令则`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <link rel="alternate" type="application/rss+xml" title="令则 · 文章" href="/rss.xml" />
+    <meta name="theme-color" content="#f8f4eb" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="令则" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <style is:global>
+    html, body { overflow-x: clip; }
+  </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <div class="site-shell">
+      <Masthead />
+      <main id="main" class="site-main" tabindex="-1"><slot /></main>
+      <Colophon />
+    </div>
+    <SearchDialog />
+    {import.meta.env.DEV && <script is:inline set:html={devCommentsSource} />}
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* Hallmark · shape: index page, year register · genre: engineering notebook · theme: almanac · job: read
+ * hero: a plain title over one rule · nav: quiet masthead over one hairline · footer: single colophon line
+ * imagery: none · signature: text filters with counts, years as running heads
+ * axes: one column, hairlines · serif titles, sans labels, mono dates · no pills or cards · no imagery
+ * contrast: pass · v2.1.0 */
+@import url("./tokens.css");
+@import url("./base.css");
+
+.filters { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3xs) var(--space-md); padding: var(--space-sm) 0; border-top: var(--rule-hair) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.filters__label { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-muted); margin-right: var(--space-2xs); }
+.filter { white-space: nowrap; border: 0; background: none; padding: 0; font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-muted); line-height: 1.9; }
+.filter:hover { color: var(--color-ink); }
+.filter[aria-pressed="true"] { color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 4px; }
+.filter .n { margin-left: var(--space-3xs); font-family: var(--font-outlier); font-size: 0.625rem; color: var(--color-muted); }
+.filter[aria-pressed="true"] .n { color: var(--color-accent); }
+
+.filters__more { display: contents; }
+.filters__more summary { list-style: none; cursor: pointer; font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-ink-2); border-bottom: 1px solid var(--color-rule-2); }
+.filters__more summary::-webkit-details-marker { display: none; }
+.filters__more summary::after { content: " +"; font-family: var(--font-outlier); color: var(--color-muted); }
+.filters__more[open] summary::after { content: " −"; }
+.filters__more-list { display: contents; }
+
+.archive-search { display: flex; align-items: center; gap: var(--space-xs); margin-left: auto; }
+.archive-search input { width: min(15rem, 42vw); border: 0; border-bottom: var(--rule-hair) solid var(--color-rule-2); background: transparent; padding: var(--space-2xs) 0; font-family: var(--font-body); font-size: 0.875rem; color: var(--color-ink); }
+.archive-search input::placeholder { color: var(--color-muted); opacity: 1; }
+.archive-search input:focus { outline: none; border-bottom-color: var(--color-accent); }
+.archive-hint { font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-muted); padding: var(--space-sm) 0 0; }
+@media (max-width: 48rem) {
+  .archive-search { margin-left: 0; width: 100%; margin-top: var(--space-2xs); padding-top: var(--space-xs); border-top: var(--rule-hair) solid var(--color-rule); }
+  .archive-search input { width: 100%; }
+}
+
+.year-block { padding-top: var(--space-xl); }
+.year-head { display: flex; align-items: baseline; gap: var(--space-sm); padding-bottom: var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule-2); }
+.year-head h2 { font-family: var(--font-outlier); font-size: 0.75rem; font-weight: 400; letter-spacing: 0.06em; color: var(--color-ink); }
+.year-head .count { margin-left: auto; font-family: var(--font-ui); font-size: 0.625rem; color: var(--color-muted); }
+.archive-row { display: grid; grid-template-columns: 5.25rem minmax(0, 1fr) auto; gap: var(--space-md); align-items: baseline; padding: var(--space-xs) 0; border-bottom: var(--rule-hair) solid var(--color-rule); }
+.archive-row__date { font-family: var(--font-outlier); font-size: 0.6875rem; color: var(--color-muted); }
+.archive-row__title { font-size: 1rem; line-height: 1.45; text-decoration: none; }
+.archive-row__title:hover { color: var(--color-accent-2); }
+.archive-row__cat { font-family: var(--font-ui); font-size: 0.6875rem; color: var(--color-muted); text-align: right; white-space: nowrap; }
+@media (max-width: 44rem) {
+  .archive-row { grid-template-columns: minmax(0, 1fr) auto; gap: 1px var(--space-sm); }
+  .archive-row__date { grid-column: 1; }
+  .archive-row__cat { grid-column: 2; grid-row: 1; }
+  .archive-row__title { grid-column: 1 / -1; grid-row: 2; }
+}
+.empty-state { padding: var(--space-xl) 0; font-family: var(--font-ui); font-size: var(--text-sm); color: var(--color-muted); }

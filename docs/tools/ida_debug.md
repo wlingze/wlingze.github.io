@@ -1,5 +1,5 @@
 ---
-title: ida_debug
+title: IDA 动态调试技巧
 date: 2021-04-05 20:21:12
 permalink: /pages/2206d6/
 categories:

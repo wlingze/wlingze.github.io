@@ -1,5 +1,5 @@
 ---
-title: ucore_lab3
+title: uCore 实验 3：虚拟内存管理
 date: 2021-08-04 15:36:03
 permalink: /pages/082752/
 categories:

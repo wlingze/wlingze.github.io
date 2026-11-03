@@ -1,0 +1,4111 @@
+{
+  "account": "wlingze",
+  "fetchedAt": "2026-11-03T07:13:46.935Z",
+  "profile": {
+    "login": "wlingze",
+    "name": "wang lingze",
+    "twitter": "wlingze",
+    "blog": "https://wlingze.github.io/",
+    "followers": 97,
+    "publicRepos": 35
+  },
+  "contributions": {
+    "from": "2025-11-03",
+    "to": "2026-11-03",
+    "total": 2920,
+    "days": [
+      {
+        "date": "2025-11-03",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-04",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-05",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2025-11-06",
+        "count": 18,
+        "level": 1
+      },
+      {
+        "date": "2025-11-07",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2025-11-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-10",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2025-11-11",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-12",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-13",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-11-14",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-17",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2025-11-18",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-20",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-11-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-24",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2025-11-25",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2025-11-26",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-11-27",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2025-11-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-11-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-01",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-12-02",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2025-12-03",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2025-12-04",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-08",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2025-12-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-23",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-12-24",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2025-12-25",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2025-12-26",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2025-12-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2025-12-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-06",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-01-07",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-08",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-09",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-01-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-12",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-01-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-14",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-01-15",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-01-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-18",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-19",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-01-20",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-21",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-01-22",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-01-23",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-01-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-01-26",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-01-27",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-01-28",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-01-29",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-01-30",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-01-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-02",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-03",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-02-04",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-02-05",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-02-06",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-02-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-09",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-02-10",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-02-11",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-02-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-14",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-02-15",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-17",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-02-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-24",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-02-25",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-02-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-02-27",
+        "count": 15,
+        "level": 1
+      },
+      {
+        "date": "2026-02-28",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-03-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-02",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-03-03",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-03-04",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-03-05",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-03-06",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-03-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-09",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-03-10",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-03-11",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-03-12",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-03-13",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-03-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-16",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-03-17",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-03-18",
+        "count": 12,
+        "level": 1
+      },
+      {
+        "date": "2026-03-19",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-03-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-23",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-03-24",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-03-25",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-03-26",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-03-27",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-03-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-03-30",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-03-31",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-04-01",
+        "count": 19,
+        "level": 1
+      },
+      {
+        "date": "2026-04-02",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-04-03",
+        "count": 10,
+        "level": 1
+      },
+      {
+        "date": "2026-04-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-07",
+        "count": 14,
+        "level": 1
+      },
+      {
+        "date": "2026-04-08",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-04-09",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-04-10",
+        "count": 10,
+        "level": 1
+      },
+      {
+        "date": "2026-04-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-13",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-04-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-15",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-04-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-21",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-22",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-23",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-04-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-27",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-04-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-05-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-08",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-10",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-13",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-05-14",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-17",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-18",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-05-19",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-05-20",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-05-21",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-05-22",
+        "count": 18,
+        "level": 1
+      },
+      {
+        "date": "2026-05-23",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-24",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-25",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-05-26",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-05-27",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-05-28",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-05-29",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-05-30",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-01",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-06-02",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-03",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-04",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-06-05",
+        "count": 12,
+        "level": 1
+      },
+      {
+        "date": "2026-06-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-06-09",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-06-10",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-06-11",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-06-12",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-06-13",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-14",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-15",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-06-16",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-06-17",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-06-18",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-06-19",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-20",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-21",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-22",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-06-23",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-06-24",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-06-25",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-06-26",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-06-27",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-28",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-29",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-06-30",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-07-01",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-07-02",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-07-03",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-07-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-05",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-07-06",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-07-07",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-07-08",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-07-09",
+        "count": 10,
+        "level": 1
+      },
+      {
+        "date": "2026-07-10",
+        "count": 9,
+        "level": 1
+      },
+      {
+        "date": "2026-07-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-13",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-07-14",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-07-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-16",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-17",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-07-18",
+        "count": 33,
+        "level": 2
+      },
+      {
+        "date": "2026-07-19",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-07-20",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-07-21",
+        "count": 27,
+        "level": 2
+      },
+      {
+        "date": "2026-07-22",
+        "count": 29,
+        "level": 2
+      },
+      {
+        "date": "2026-07-23",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-07-24",
+        "count": 34,
+        "level": 2
+      },
+      {
+        "date": "2026-07-25",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-07-26",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-07-27",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-07-28",
+        "count": 23,
+        "level": 2
+      },
+      {
+        "date": "2026-07-29",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-07-30",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-07-31",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-08-01",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-08-02",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-08-03",
+        "count": 44,
+        "level": 3
+      },
+      {
+        "date": "2026-08-04",
+        "count": 38,
+        "level": 2
+      },
+      {
+        "date": "2026-08-05",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-08-06",
+        "count": 22,
+        "level": 2
+      },
+      {
+        "date": "2026-08-07",
+        "count": 17,
+        "level": 1
+      },
+      {
+        "date": "2026-08-08",
+        "count": 4,
+        "level": 1
+      },
+      {
+        "date": "2026-08-09",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-10",
+        "count": 10,
+        "level": 1
+      },
+      {
+        "date": "2026-08-11",
+        "count": 35,
+        "level": 2
+      },
+      {
+        "date": "2026-08-12",
+        "count": 44,
+        "level": 3
+      },
+      {
+        "date": "2026-08-13",
+        "count": 63,
+        "level": 4
+      },
+      {
+        "date": "2026-08-14",
+        "count": 64,
+        "level": 4
+      },
+      {
+        "date": "2026-08-15",
+        "count": 42,
+        "level": 3
+      },
+      {
+        "date": "2026-08-16",
+        "count": 17,
+        "level": 1
+      },
+      {
+        "date": "2026-08-17",
+        "count": 67,
+        "level": 4
+      },
+      {
+        "date": "2026-08-18",
+        "count": 49,
+        "level": 3
+      },
+      {
+        "date": "2026-08-19",
+        "count": 19,
+        "level": 1
+      },
+      {
+        "date": "2026-08-20",
+        "count": 52,
+        "level": 3
+      },
+      {
+        "date": "2026-08-21",
+        "count": 25,
+        "level": 2
+      },
+      {
+        "date": "2026-08-22",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-08-23",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-08-24",
+        "count": 15,
+        "level": 1
+      },
+      {
+        "date": "2026-08-25",
+        "count": 49,
+        "level": 3
+      },
+      {
+        "date": "2026-08-26",
+        "count": 57,
+        "level": 3
+      },
+      {
+        "date": "2026-08-27",
+        "count": 25,
+        "level": 2
+      },
+      {
+        "date": "2026-08-28",
+        "count": 49,
+        "level": 3
+      },
+      {
+        "date": "2026-08-29",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-30",
+        "count": 51,
+        "level": 3
+      },
+      {
+        "date": "2026-08-31",
+        "count": 23,
+        "level": 2
+      },
+      {
+        "date": "2026-09-01",
+        "count": 12,
+        "level": 1
+      },
+      {
+        "date": "2026-09-02",
+        "count": 20,
+        "level": 1
+      },
+      {
+        "date": "2026-09-03",
+        "count": 43,
+        "level": 3
+      },
+      {
+        "date": "2026-09-04",
+        "count": 26,
+        "level": 2
+      },
+      {
+        "date": "2026-09-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-07",
+        "count": 33,
+        "level": 2
+      },
+      {
+        "date": "2026-09-08",
+        "count": 63,
+        "level": 4
+      },
+      {
+        "date": "2026-09-09",
+        "count": 62,
+        "level": 4
+      },
+      {
+        "date": "2026-09-10",
+        "count": 66,
+        "level": 4
+      },
+      {
+        "date": "2026-09-11",
+        "count": 81,
+        "level": 4
+      },
+      {
+        "date": "2026-09-12",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-13",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-14",
+        "count": 19,
+        "level": 1
+      },
+      {
+        "date": "2026-09-15",
+        "count": 14,
+        "level": 1
+      },
+      {
+        "date": "2026-09-16",
+        "count": 22,
+        "level": 2
+      },
+      {
+        "date": "2026-09-17",
+        "count": 25,
+        "level": 2
+      },
+      {
+        "date": "2026-09-18",
+        "count": 15,
+        "level": 1
+      },
+      {
+        "date": "2026-09-19",
+        "count": 14,
+        "level": 1
+      },
+      {
+        "date": "2026-09-20",
+        "count": 63,
+        "level": 4
+      },
+      {
+        "date": "2026-09-21",
+        "count": 40,
+        "level": 2
+      },
+      {
+        "date": "2026-09-22",
+        "count": 40,
+        "level": 2
+      },
+      {
+        "date": "2026-09-23",
+        "count": 32,
+        "level": 2
+      },
+      {
+        "date": "2026-09-24",
+        "count": 23,
+        "level": 2
+      },
+      {
+        "date": "2026-09-25",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-26",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-09-28",
+        "count": 39,
+        "level": 2
+      },
+      {
+        "date": "2026-09-29",
+        "count": 28,
+        "level": 2
+      },
+      {
+        "date": "2026-09-30",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-10-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-02",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-03",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-04",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-05",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-06",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-07",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-08",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-10-09",
+        "count": 20,
+        "level": 1
+      },
+      {
+        "date": "2026-10-10",
+        "count": 24,
+        "level": 2
+      },
+      {
+        "date": "2026-10-11",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-12",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-10-13",
+        "count": 10,
+        "level": 1
+      },
+      {
+        "date": "2026-10-14",
+        "count": 12,
+        "level": 1
+      },
+      {
+        "date": "2026-10-15",
+        "count": 16,
+        "level": 1
+      },
+      {
+        "date": "2026-10-16",
+        "count": 6,
+        "level": 1
+      },
+      {
+        "date": "2026-10-17",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-10-18",
+        "count": 1,
+        "level": 1
+      },
+      {
+        "date": "2026-10-19",
+        "count": 16,
+        "level": 1
+      },
+      {
+        "date": "2026-10-20",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-10-21",
+        "count": 5,
+        "level": 1
+      },
+      {
+        "date": "2026-10-22",
+        "count": 35,
+        "level": 2
+      },
+      {
+        "date": "2026-10-23",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-10-24",
+        "count": 18,
+        "level": 1
+      },
+      {
+        "date": "2026-10-25",
+        "count": 3,
+        "level": 1
+      },
+      {
+        "date": "2026-10-26",
+        "count": 11,
+        "level": 1
+      },
+      {
+        "date": "2026-10-27",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-28",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-10-29",
+        "count": 19,
+        "level": 1
+      },
+      {
+        "date": "2026-10-30",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-10-31",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-11-01",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-11-02",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-11-03",
+        "count": 0,
+        "level": 0
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "muxterm",
+      "title": "Muxterm",
+      "repository": "wlingze/muxterm",
+      "group": "personal",
+      "role": "个人项目",
+      "description": "把本地、SSH 与 tmux 工作放进同一个原生终端。",
+      "detail": "跨平台原生终端：Rust Core 配合 GTK4、SwiftUI、TUI 与 CLI 前端，把本地 shell、SSH 会话和 tmux 工作区收进同一个窗口。",
+      "site": null,
+      "siteLabel": null,
+      "url": "https://github.com/wlingze/muxterm",
+      "updatedAt": "2026-10-30T08:32:49Z",
+      "language": "Rust",
+      "stars": 1,
+      "archived": false
+    },
+    {
+      "id": "yaklang",
+      "title": "Yaklang / YakSSA",
+      "repository": "yaklang/yaklang",
+      "group": "work",
+      "role": "参与开发",
+      "description": "统一 SSA 中间表示、跨过程分析与 SyntaxFlow 代码审计引擎。",
+      "detail": "参与 YakSSA 的 SSA 前端、跨过程分析与 SyntaxFlow 规则引擎；近期集中在扫描性能、风险分级与 SSA2LLVM 原生编译。",
+      "site": "https://yaklang.io/",
+      "siteLabel": "yaklang.io",
+      "url": "https://github.com/yaklang/yaklang",
+      "updatedAt": "2026-11-03T07:06:10Z",
+      "language": "Go",
+      "stars": 649,
+      "archived": false
+    },
+    {
+      "id": "ssa.to",
+      "title": "SyntaxFlow 文档",
+      "repository": "yaklang/ssa.to",
+      "group": "work",
+      "role": "参与维护",
+      "description": "记录 SSA、SyntaxFlow 查询语言与审计流程的公开文档。",
+      "detail": "整理程序分析引擎的设计说明、SyntaxFlow 语法与数据流查询示例，作为公开文档站点发布。",
+      "site": "https://ssa.to/",
+      "siteLabel": "ssa.to",
+      "url": "https://github.com/yaklang/ssa.to",
+      "updatedAt": "2026-10-15T10:12:12Z",
+      "language": "JavaScript",
+      "stars": 69,
+      "archived": false
+    },
+    {
+      "id": "ecapture",
+      "title": "eCapture",
+      "repository": "gojue/ecapture",
+      "group": "contribution",
+      "role": "贡献代码",
+      "description": "eBPF 驱动的 TLS 明文抓取工具。",
+      "detail": "为 eCapture 提交 pclntab 解析修复，解决 Go 程序符号地址定位问题（PR #516，已合并）。",
+      "site": "https://ecapture.cc/",
+      "siteLabel": "ecapture.cc",
+      "url": "https://github.com/gojue/ecapture",
+      "updatedAt": "2026-10-31T15:58:04Z",
+      "language": "C",
+      "stars": 15527,
+      "archived": false
+    },
+    {
+      "id": "icecream-lua",
+      "title": "icecream-lua",
+      "repository": "wlingze/icecream-lua",
+      "group": "personal",
+      "role": "个人仓库",
+      "description": "给 Lua 调试输出补上表达式与上下文信息。",
+      "detail": "受 icecream 启发的 Lua 调试输出工具，打印表达式本身、文件名与行号，减少手写 print 的噪音。",
+      "site": null,
+      "siteLabel": null,
+      "url": "https://github.com/wlingze/icecream-lua",
+      "updatedAt": "2025-02-06T06:14:21Z",
+      "language": "Lua",
+      "stars": 25,
+      "archived": false
+    },
+    {
+      "id": "golang_rev",
+      "title": "golang_rev",
+      "repository": "wlingze/golang_rev",
+      "group": "personal",
+      "role": "个人项目",
+      "description": "IDA 插件：恢复去符号 Go 二进制里的函数名与字符串。",
+      "detail": "解析 .gopclntab 恢复函数名并跳到 main.main，支持快速设置字符串与指针重命名，用于 Go 逆向时的符号恢复。",
+      "site": null,
+      "siteLabel": null,
+      "url": "https://github.com/wlingze/golang_rev",
+      "updatedAt": "2020-12-16T11:40:56Z",
+      "language": "Python",
+      "stars": 19,
+      "archived": false
+    },
+    {
+      "id": "IdaWorkspace",
+      "title": "IdaWorkspace",
+      "repository": "wlingze/IdaWorkspace",
+      "group": "personal",
+      "role": "早期工具",
+      "description": "辅助逆向分析的 IDA 结构体构建插件。",
+      "detail": "在 IDA 中批量构建、导入与整理结构体定义的辅助插件，用于逆向分析时的类型恢复。",
+      "site": null,
+      "siteLabel": null,
+      "url": "https://github.com/wlingze/IdaWorkspace",
+      "updatedAt": "2022-08-06T11:46:14Z",
+      "language": "Python",
+      "stars": 5,
+      "archived": false
+    },
+    {
+      "id": "TinySTL",
+      "title": "TinySTL",
+      "repository": "wlingze/TinySTL",
+      "group": "personal",
+      "role": "学习项目",
+      "description": "用 C++11 学习和实现 STL 容器与基础组件。",
+      "detail": "按 STL 的组织方式实现 vector、list、allocator、iterator 与 traits，用于理解标准库的设计取舍。",
+      "site": null,
+      "siteLabel": null,
+      "url": "https://github.com/wlingze/TinySTL",
+      "updatedAt": "2023-10-20T03:20:31Z",
+      "language": "C++",
+      "stars": 0,
+      "archived": false
+    },
+    {
+      "id": "irify",
+      "title": "IRify",
+      "group": "work",
+      "role": "参与开发",
+      "description": "Yaklang 的代码审计平台。",
+      "detail": "把 SyntaxFlow 规则、检测模式与误报分级做成可用的审计产品；参与规则覆盖、扫描性能与结果解释。",
+      "site": "https://yaklang.io/irify/",
+      "siteLabel": "yaklang.io/irify",
+      "url": null,
+      "repository": null,
+      "language": null,
+      "updatedAt": null,
+      "stars": null
+    }
+  ],
+  "activity": [
+    {
+      "title": "fix(decompiler): recover Coremail stubs and register the rounds",
+      "url": "https://github.com/yaklang/javajive/pull/15",
+      "repository": "yaklang/javajive",
+      "createdAt": "2026-11-02T08:27:02Z",
+      "updatedAt": "2026-11-03T02:53:23Z",
+      "mergedAt": "2026-11-03T02:53:23Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(macos): composer drafts, agent activity, and window stability",
+      "url": "https://github.com/wlingze/muxterm/pull/32",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-10-29T08:00:59Z",
+      "updatedAt": "2026-10-29T14:51:45Z",
+      "mergedAt": "2026-10-29T14:51:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(syntaxflow): share one source pre-scan across rules",
+      "url": "https://github.com/yaklang/yaklang/pull/5348",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-22T10:35:11Z",
+      "updatedAt": "2026-10-23T03:20:06Z",
+      "mergedAt": "2026-10-23T03:20:03Z",
+      "state": "merged"
+    },
+    {
+      "title": "enhance(syntaxflow): 校正无数据流证明规则的严重度等级",
+      "url": "https://github.com/yaklang/yaklang/pull/5347",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-22T09:16:56Z",
+      "updatedAt": "2026-10-22T10:07:27Z",
+      "mergedAt": "2026-10-22T10:07:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "Enhance/perf/create in batches",
+      "url": "https://github.com/yaklang/gorm/pull/3",
+      "repository": "yaklang/gorm",
+      "createdAt": "2026-10-22T08:15:41Z",
+      "updatedAt": "2026-10-22T08:17:45Z",
+      "mergedAt": "2026-10-22T08:17:45Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add CreateInBatches and OnConflict upsert helpers",
+      "url": "https://github.com/yaklang/gorm/pull/1",
+      "repository": "yaklang/gorm",
+      "createdAt": "2026-07-22T09:08:41Z",
+      "updatedAt": "2026-10-22T03:00:52Z",
+      "mergedAt": "2026-07-22T09:23:09Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add CreateInBatches and OnConflict upsert",
+      "url": "https://github.com/yaklang/gorm/pull/2",
+      "repository": "yaklang/gorm",
+      "createdAt": "2026-07-23T09:41:55Z",
+      "updatedAt": "2026-10-22T03:00:51Z",
+      "mergedAt": "2026-07-23T09:45:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(ssa): compile units concurrently without sharing another worker's builder",
+      "url": "https://github.com/yaklang/yaklang/pull/5323",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-18T12:44:35Z",
+      "updatedAt": "2026-10-22T02:34:03Z",
+      "mergedAt": "2026-10-22T02:34:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(go2ssa): compile corpus fixtures without production excludes",
+      "url": "https://github.com/yaklang/yaklang/pull/5330",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-19T15:49:07Z",
+      "updatedAt": "2026-10-20T03:00:41Z",
+      "mergedAt": "2026-10-20T03:00:38Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa2llvm): stabilize AOT mustpass and runtime dispatch",
+      "url": "https://github.com/yaklang/yaklang/pull/5304",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-15T08:04:38Z",
+      "updatedAt": "2026-10-19T08:51:14Z",
+      "mergedAt": null,
+      "state": "open"
+    },
+    {
+      "title": "feat(macos): polish windows, settings, and remote attach",
+      "url": "https://github.com/wlingze/muxterm/pull/31",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-10-19T05:39:07Z",
+      "updatedAt": "2026-10-19T08:21:09Z",
+      "mergedAt": "2026-10-19T08:21:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/syntaxflow/support risk cover by next step",
+      "url": "https://github.com/yaklang/yaklang/pull/5261",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-09T07:21:00Z",
+      "updatedAt": "2026-10-16T02:38:08Z",
+      "mergedAt": "2026-10-16T02:38:05Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: prevent cancelled workflows from queueing tail jobs and add missing PR concurrency controls",
+      "url": "https://github.com/yaklang/yaklang/pull/5308",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-15T09:30:50Z",
+      "updatedAt": "2026-10-15T15:34:04Z",
+      "mergedAt": "2026-10-15T15:34:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "docs: refresh SyntaxFlow docs and the academic site",
+      "url": "https://github.com/yaklang/ssa.to/pull/26",
+      "repository": "yaklang/ssa.to",
+      "createdAt": "2026-10-15T09:40:20Z",
+      "updatedAt": "2026-10-15T10:16:22Z",
+      "mergedAt": null,
+      "state": "open"
+    },
+    {
+      "title": "fix(ssa): close frontend IR gaps in capture, loops, and constants",
+      "url": "https://github.com/yaklang/yaklang/pull/5283",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-12T03:35:21Z",
+      "updatedAt": "2026-10-13T06:19:21Z",
+      "mergedAt": "2026-10-13T06:19:19Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add SSH port controls and stabilize terminal runtimes",
+      "url": "https://github.com/wlingze/muxterm/pull/30",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-29T08:38:41Z",
+      "updatedAt": "2026-10-13T03:12:17Z",
+      "mergedAt": "2026-10-13T03:12:15Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(go2ssa): 正确解析多层嵌入字段及指针别名",
+      "url": "https://github.com/yaklang/yaklang/pull/5270",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-10T03:37:11Z",
+      "updatedAt": "2026-10-10T07:41:53Z",
+      "mergedAt": "2026-10-10T07:41:51Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): 多语言 SSA 成员/指针副作用修复与 yakgrpc 补全缓存并发修复",
+      "url": "https://github.com/yaklang/yaklang/pull/5218",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-29T14:57:52Z",
+      "updatedAt": "2026-10-09T07:36:50Z",
+      "mergedAt": "2026-10-09T07:36:47Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(syntaxflow): cut high-frequency builtin source-rule false positives",
+      "url": "https://github.com/yaklang/yaklang/pull/5212",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-29T02:57:15Z",
+      "updatedAt": "2026-09-29T09:10:54Z",
+      "mergedAt": "2026-09-29T09:10:52Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): add builtin rules for missing checks",
+      "url": "https://github.com/yaklang/yaklang/pull/5208",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-28T07:05:14Z",
+      "updatedAt": "2026-09-28T08:01:12Z",
+      "mergedAt": "2026-09-28T08:01:09Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): cover Semgrep and Fortify gaps and keep the later scan mode",
+      "url": "https://github.com/yaklang/yaklang/pull/5173",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-22T10:16:08Z",
+      "updatedAt": "2026-09-28T07:05:40Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "enhance(ssa): large-project compile and scan fixes",
+      "url": "https://github.com/yaklang/yaklang/pull/5172",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-22T09:56:15Z",
+      "updatedAt": "2026-09-28T03:11:45Z",
+      "mergedAt": "2026-09-28T03:11:43Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(scannode): Legion SSA IR 清理与 Protobuf 节点消息",
+      "url": "https://github.com/yaklang/yaklang/pull/5187",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-23T09:46:41Z",
+      "updatedAt": "2026-09-24T09:41:08Z",
+      "mergedAt": "2026-09-24T09:41:05Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(syntaxflow): 源码检测独立于 SSA 编译并修复并行结果记录",
+      "url": "https://github.com/yaklang/yaklang/pull/5199",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-24T07:58:54Z",
+      "updatedAt": "2026-09-24T09:40:47Z",
+      "mergedAt": "2026-09-24T09:40:45Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci(diff-code-check): publish findings to code scanning via SARIF",
+      "url": "https://github.com/yaklang/yaklang/pull/5193",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-24T02:46:54Z",
+      "updatedAt": "2026-09-24T06:35:10Z",
+      "mergedAt": "2026-09-24T06:35:09Z",
+      "state": "merged"
+    },
+    {
+      "title": "test: verify external fork PR code-analysis detection",
+      "url": "https://github.com/yaklang/yaklang/pull/5133",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-18T06:17:36Z",
+      "updatedAt": "2026-09-24T02:46:29Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "test(ci): verify fork-PR diff scanning via SARIF code scanning",
+      "url": "https://github.com/yaklang/yaklang/pull/5188",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-23T10:06:49Z",
+      "updatedAt": "2026-09-24T02:46:25Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(runtime): stabilize Herdr rendering and finish pane layout across frontends",
+      "url": "https://github.com/wlingze/muxterm/pull/28",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-23T05:42:45Z",
+      "updatedAt": "2026-09-23T09:12:58Z",
+      "mergedAt": "2026-09-23T09:12:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(update): release CI and one-click client updates",
+      "url": "https://github.com/wlingze/muxterm/pull/29",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-23T05:49:01Z",
+      "updatedAt": "2026-09-23T06:37:27Z",
+      "mergedAt": "2026-09-23T06:37:25Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(sarif): make alert identity stable (category, ruleId) and render rule markdown",
+      "url": "https://github.com/yaklang/yaklang/pull/5164",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-22T04:45:19Z",
+      "updatedAt": "2026-09-22T10:00:52Z",
+      "mergedAt": "2026-09-22T10:00:52Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(ssaapi): reproducible, bounded object/member dataflow on large projects",
+      "url": "https://github.com/yaklang/yaklang/pull/5086",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-16T03:25:25Z",
+      "updatedAt": "2026-09-22T09:27:58Z",
+      "mergedAt": "2026-09-22T09:27:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci(syntax-g4): normalize the corpus test trigger and driver names",
+      "url": "https://github.com/yaklang/yaklang/pull/5166",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-22T06:47:36Z",
+      "updatedAt": "2026-09-22T09:17:16Z",
+      "mergedAt": "2026-09-22T09:17:16Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(sarif): emit GitHub-uploadable code scanning results",
+      "url": "https://github.com/yaklang/yaklang/pull/5156",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-21T08:48:19Z",
+      "updatedAt": "2026-09-22T03:53:56Z",
+      "mergedAt": "2026-09-22T03:53:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(branding): add official Muxterm logo",
+      "url": "https://github.com/wlingze/muxterm/pull/27",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-21T07:42:50Z",
+      "updatedAt": "2026-09-21T08:06:06Z",
+      "mergedAt": "2026-09-21T08:06:04Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(decompiler): split incompatible parameter reference slot reuse",
+      "url": "https://github.com/yaklang/javajive/pull/10",
+      "repository": "yaklang/javajive",
+      "createdAt": "2026-09-20T06:53:23Z",
+      "updatedAt": "2026-09-20T16:05:09Z",
+      "mergedAt": "2026-09-20T16:05:09Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(frontend): unify workspace navigation and stabilize terminal rendering",
+      "url": "https://github.com/wlingze/muxterm/pull/26",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-20T08:14:58Z",
+      "updatedAt": "2026-09-20T13:32:40Z",
+      "mergedAt": "2026-09-20T13:32:38Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ci): pick any alpha/beta yak build in diff-code-check",
+      "url": "https://github.com/yaklang/yaklang/pull/5143",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-20T05:12:46Z",
+      "updatedAt": "2026-09-20T06:58:23Z",
+      "mergedAt": "2026-09-20T06:58:21Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(syntaxflow): keep ScanProject stages monotonic and split inspect/analyze",
+      "url": "https://github.com/yaklang/yaklang/pull/5136",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-18T09:10:08Z",
+      "updatedAt": "2026-09-20T06:22:38Z",
+      "mergedAt": "2026-09-20T06:22:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/field/sensetive",
+      "url": "https://github.com/yaklang/yaklang/pull/4589",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-11T07:37:02Z",
+      "updatedAt": "2026-09-20T03:06:14Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(ssa): keep zip/jar code sources out of live directory walking",
+      "url": "https://github.com/yaklang/yaklang/pull/5139",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-19T07:50:42Z",
+      "updatedAt": "2026-09-20T03:01:21Z",
+      "mergedAt": "2026-09-20T03:01:19Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor: collapse Muxterm to one crate and close Core/frontend boundaries",
+      "url": "https://github.com/wlingze/muxterm/pull/25",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-16T06:44:10Z",
+      "updatedAt": "2026-09-17T17:31:05Z",
+      "mergedAt": "2026-09-17T17:31:03Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): product scan stages, skipped stages, and compile scale",
+      "url": "https://github.com/yaklang/yaklang/pull/5123",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-17T07:00:57Z",
+      "updatedAt": "2026-09-17T08:18:55Z",
+      "mergedAt": "2026-09-17T08:18:53Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci(essential-tests): 降低假失败率、缩短关键路径并加固收尾环节",
+      "url": "https://github.com/yaklang/yaklang/pull/5090",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-16T06:38:23Z",
+      "updatedAt": "2026-09-16T07:32:38Z",
+      "mergedAt": "2026-09-16T07:32:36Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): unify ScanProject entry and add mode-aware source/struct rules",
+      "url": "https://github.com/yaklang/yaklang/pull/5076",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-14T07:18:59Z",
+      "updatedAt": "2026-09-15T04:57:03Z",
+      "mergedAt": "2026-09-15T04:57:02Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ci): chmod downloaded yak binary before probing",
+      "url": "https://github.com/yaklang/yaklang/pull/5075",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-14T07:06:17Z",
+      "updatedAt": "2026-09-14T07:37:36Z",
+      "mergedAt": "2026-09-14T07:37:33Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(ssa): compile-unit LazyBuild and struct-mode SyntaxFlow scan",
+      "url": "https://github.com/yaklang/yaklang/pull/5048",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-10T09:41:20Z",
+      "updatedAt": "2026-09-12T15:02:09Z",
+      "mergedAt": "2026-09-12T15:02:06Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): source-scan git workdir cleanup and attempt_lease_expired",
+      "url": "https://github.com/yaklang/yaklang/pull/5059",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-11T08:33:23Z",
+      "updatedAt": "2026-09-11T09:39:52Z",
+      "mergedAt": "2026-09-11T09:39:49Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(cli): skip database init for help commands and harden binary probe",
+      "url": "https://github.com/yaklang/yaklang/pull/5054",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-11T03:47:17Z",
+      "updatedAt": "2026-09-11T06:16:56Z",
+      "mergedAt": "2026-09-11T06:16:54Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci(essential-tests): cache sharing, suite parallelism, G4 split, commit-status markers",
+      "url": "https://github.com/yaklang/yaklang/pull/5047",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-10T06:41:35Z",
+      "updatedAt": "2026-09-11T03:10:52Z",
+      "mergedAt": "2026-09-11T03:10:51Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): add C#/.NET builtin security rules",
+      "url": "https://github.com/yaklang/yaklang/pull/5041",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-08T09:30:05Z",
+      "updatedAt": "2026-09-09T04:07:09Z",
+      "mergedAt": "2026-09-09T04:07:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci(essential-tests): share Go caches, run single-consumer suites with go test, split AI Aid",
+      "url": "https://github.com/yaklang/yaklang/pull/5026",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-07T06:34:53Z",
+      "updatedAt": "2026-09-09T03:52:50Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "enhance(syntaxflow): add golang cms builtin rule coverage",
+      "url": "https://github.com/yaklang/yaklang/pull/5028",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-07T07:17:14Z",
+      "updatedAt": "2026-09-09T02:54:34Z",
+      "mergedAt": "2026-09-09T02:54:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): add spring cve generic rules and regression tests",
+      "url": "https://github.com/yaklang/yaklang/pull/5029",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-07T07:33:45Z",
+      "updatedAt": "2026-09-08T09:42:23Z",
+      "mergedAt": "2026-09-08T09:42:21Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(cli/ci): add verify-builtin-risk command and prefer published yak in embed/verify CI",
+      "url": "https://github.com/yaklang/yaklang/pull/5040",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-08T07:14:24Z",
+      "updatedAt": "2026-09-08T08:24:29Z",
+      "mergedAt": "2026-09-08T08:24:26Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(herdr): runtime workspace identity and unified settings UI",
+      "url": "https://github.com/wlingze/muxterm/pull/24",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-07T07:25:35Z",
+      "updatedAt": "2026-09-08T07:51:43Z",
+      "mergedAt": "2026-09-08T07:51:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): migrate more source rules and enrich descriptions",
+      "url": "https://github.com/yaklang/yaklang/pull/5035",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-07T08:53:14Z",
+      "updatedAt": "2026-09-08T05:35:13Z",
+      "mergedAt": "2026-09-08T05:35:11Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(macos): support Herdr runtime and unified workspace UI",
+      "url": "https://github.com/wlingze/muxterm/pull/23",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-09-07T03:42:29Z",
+      "updatedAt": "2026-09-07T07:25:46Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "feat(cli/ci): generate embed FS hashes and rule versions from the checkout",
+      "url": "https://github.com/yaklang/yaklang/pull/5002",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T03:57:27Z",
+      "updatedAt": "2026-09-07T03:48:36Z",
+      "mergedAt": "2026-09-07T03:48:34Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa,python): repair ANTLR static-state races and scan compile-unit imports textually",
+      "url": "https://github.com/yaklang/yaklang/pull/5017",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-04T07:00:40Z",
+      "updatedAt": "2026-09-04T07:47:26Z",
+      "mergedAt": "2026-09-04T07:47:23Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix: remove duplicate sync import and stale module checksum",
+      "url": "https://github.com/yaklang/yaklang/pull/5018",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-04T07:04:26Z",
+      "updatedAt": "2026-09-04T07:10:14Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(windows): reduce Defender-sensitive default behavior",
+      "url": "https://github.com/yaklang/yaklang/pull/5001",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T03:53:17Z",
+      "updatedAt": "2026-09-04T06:44:14Z",
+      "mergedAt": "2026-09-04T06:44:11Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix: 热加载管理 修复 重命名会把Tags 置空的bug",
+      "url": "https://github.com/yaklang/yaklang/pull/5007",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T08:35:46Z",
+      "updatedAt": "2026-09-03T09:16:51Z",
+      "mergedAt": "2026-09-03T09:16:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(fuzztag): add jpg:jfif/jpg:exif and tiff:mm/tiff:ii variant tags",
+      "url": "https://github.com/yaklang/yaklang/pull/5006",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T07:33:55Z",
+      "updatedAt": "2026-09-03T08:54:34Z",
+      "mergedAt": "2026-09-03T08:54:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(codec): add CFB/OFB modes to AES symmetric encrypt/decrypt",
+      "url": "https://github.com/yaklang/yaklang/pull/4999",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-02T09:48:50Z",
+      "updatedAt": "2026-09-03T08:12:14Z",
+      "mergedAt": "2026-09-03T08:12:11Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(startup): defer SSA stats callbacks and license init to actual use",
+      "url": "https://github.com/yaklang/yaklang/pull/5005",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T06:43:01Z",
+      "updatedAt": "2026-09-03T07:27:44Z",
+      "mergedAt": "2026-09-03T07:27:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: use prebuilt yak binary, split hash generation, skip stale bot commits",
+      "url": "https://github.com/yaklang/yaklang/pull/5003",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-03T03:58:10Z",
+      "updatedAt": "2026-09-03T03:58:30Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(ssa): cap dataflow path enumeration to prevent scan hang",
+      "url": "https://github.com/yaklang/yaklang/pull/4992",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-01T15:29:26Z",
+      "updatedAt": "2026-09-02T02:41:51Z",
+      "mergedAt": "2026-09-02T02:41:49Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): stabilize source precheck and scan node artifact flow",
+      "url": "https://github.com/yaklang/yaklang/pull/4985",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-09-01T03:57:39Z",
+      "updatedAt": "2026-09-01T09:11:48Z",
+      "mergedAt": "2026-09-01T09:11:46Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(lowhttp): enforce advertised h2 max frame size",
+      "url": "https://github.com/yaklang/yaklang/pull/4978",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-31T09:57:01Z",
+      "updatedAt": "2026-09-01T02:40:20Z",
+      "mergedAt": "2026-09-01T02:40:18Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): context-aware regex for semgrep rule compatibility",
+      "url": "https://github.com/yaklang/yaklang/pull/4963",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-28T03:06:51Z",
+      "updatedAt": "2026-08-30T12:46:57Z",
+      "mergedAt": "2026-08-30T12:46:55Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(linux): stabilize tmux and Herdr rendering",
+      "url": "https://github.com/wlingze/muxterm/pull/22",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-27T03:31:23Z",
+      "updatedAt": "2026-08-30T12:19:32Z",
+      "mergedAt": "2026-08-30T12:19:30Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): source-mode risks carry full file context and scan-mode marker",
+      "url": "https://github.com/yaklang/yaklang/pull/4964",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-28T05:03:56Z",
+      "updatedAt": "2026-08-28T08:16:13Z",
+      "mergedAt": "2026-08-28T08:16:10Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(scannode): bound live debug query cost on long runs",
+      "url": "https://github.com/yaklang/yaklang/pull/4967",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-28T07:40:21Z",
+      "updatedAt": "2026-08-28T08:15:24Z",
+      "mergedAt": "2026-08-28T08:15:22Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(webfuzz): 下载 Body 按 HiddenIndex 定位 HTTPFlow",
+      "url": "https://github.com/yaklang/yakit/pull/4188",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-08-26T09:53:22Z",
+      "updatedAt": "2026-08-28T02:44:19Z",
+      "mergedAt": "2026-08-28T02:40:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(webfuzzer): identify HTTPFlow body download by HiddenIndex",
+      "url": "https://github.com/yaklang/yaklang/pull/4956",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-26T09:53:19Z",
+      "updatedAt": "2026-08-27T03:29:33Z",
+      "mergedAt": "2026-08-27T03:29:31Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(mitm): 规则未命中时不再误打 [规则修改] 标记",
+      "url": "https://github.com/yaklang/yaklang/pull/4955",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-26T09:07:28Z",
+      "updatedAt": "2026-08-27T03:08:48Z",
+      "mergedAt": "2026-08-27T03:08:47Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): code scan hang / progress / debug for Legion",
+      "url": "https://github.com/yaklang/yaklang/pull/4958",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-26T20:11:01Z",
+      "updatedAt": "2026-08-27T02:42:41Z",
+      "mergedAt": "2026-08-27T02:42:39Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(syntaxflow): extend sfpattern for source-mode scanning",
+      "url": "https://github.com/yaklang/yaklang/pull/4957",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-26T18:00:22Z",
+      "updatedAt": "2026-08-27T02:42:05Z",
+      "mergedAt": "2026-08-27T02:42:02Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(macos): stabilize tmux Surface rendering and control flow",
+      "url": "https://github.com/wlingze/muxterm/pull/21",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-26T08:23:39Z",
+      "updatedAt": "2026-08-26T12:51:43Z",
+      "mergedAt": "2026-08-26T12:51:41Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(cve): send download progress without repeating status logs",
+      "url": "https://github.com/yaklang/yaklang/pull/4953",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-26T08:54:23Z",
+      "updatedAt": "2026-08-26T09:49:26Z",
+      "mergedAt": "2026-08-26T09:49:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(runtime): add Herdr runtime support with Catalog facade",
+      "url": "https://github.com/wlingze/muxterm/pull/20",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-21T04:12:55Z",
+      "updatedAt": "2026-08-25T16:45:31Z",
+      "mergedAt": "2026-08-25T16:45:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix: 审计项目重编译时页面崩溃问题 ",
+      "url": "https://github.com/yaklang/yakit/pull/4167",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-08-21T07:56:47Z",
+      "updatedAt": "2026-08-21T08:46:58Z",
+      "mergedAt": "2026-08-21T08:46:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(scannode): verify rule snapshot hash against raw wire items",
+      "url": "https://github.com/yaklang/yaklang/pull/4932",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-21T07:32:53Z",
+      "updatedAt": "2026-08-21T08:07:00Z",
+      "mergedAt": "2026-08-21T08:06:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(dogfood): Linux/macOS dogfooding with QuickConnect attach UI",
+      "url": "https://github.com/wlingze/muxterm/pull/19",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-20T09:18:51Z",
+      "updatedAt": "2026-08-20T11:51:40Z",
+      "mergedAt": "2026-08-20T10:50:59Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): guard debug setup panics and foreach nil iterable",
+      "url": "https://github.com/yaklang/yaklang/pull/4910",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-14T10:09:09Z",
+      "updatedAt": "2026-08-19T03:29:50Z",
+      "mergedAt": "2026-08-19T03:29:47Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssaapi): implement getObjectType native call and guard per-rule panics",
+      "url": "https://github.com/yaklang/yaklang/pull/4909",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-14T08:44:31Z",
+      "updatedAt": "2026-08-14T10:09:00Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(ssadb): silently dedup duplicate ir_codes/ir_offsets before creating unique index",
+      "url": "https://github.com/yaklang/yaklang/pull/4906",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-14T07:39:26Z",
+      "updatedAt": "2026-08-14T09:00:13Z",
+      "mergedAt": "2026-08-14T09:00:11Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(ssa2llvm): link-time yaklib pruning with prebuilt core/net/staticanalyze runtime tiers",
+      "url": "https://github.com/yaklang/yaklang/pull/4902",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-14T05:58:57Z",
+      "updatedAt": "2026-08-14T08:13:08Z",
+      "mergedAt": "2026-08-14T08:13:06Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(ssa): reduce large-project scan cost and harden async persistence",
+      "url": "https://github.com/yaklang/yaklang/pull/4892",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-13T04:14:39Z",
+      "updatedAt": "2026-08-14T04:05:58Z",
+      "mergedAt": "2026-08-14T04:05:55Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(scannode): handle ssa.git.ls_remote with yakgit",
+      "url": "https://github.com/yaklang/yaklang/pull/4889",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-12T10:01:50Z",
+      "updatedAt": "2026-08-13T09:00:21Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "feat(scannode): support Legion scan debug pprof collection and analysis",
+      "url": "https://github.com/yaklang/yaklang/pull/4875",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-10T08:53:20Z",
+      "updatedAt": "2026-08-11T07:03:44Z",
+      "mergedAt": "2026-08-11T07:03:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(tui): rebuild modern TUI with ratatui and standardize build outputs",
+      "url": "https://github.com/wlingze/muxterm/pull/16",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-05T09:52:36Z",
+      "updatedAt": "2026-08-10T06:34:00Z",
+      "mergedAt": "2026-08-10T06:33:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(macos): command palette, detach, debug logging, and terminal query/resize fixes",
+      "url": "https://github.com/wlingze/muxterm/pull/18",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-08T05:23:03Z",
+      "updatedAt": "2026-08-08T05:30:55Z",
+      "mergedAt": "2026-08-08T05:30:53Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(tui,linux): forward terminal query replies and sync resize",
+      "url": "https://github.com/wlingze/muxterm/pull/17",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-08T05:14:04Z",
+      "updatedAt": "2026-08-08T05:20:54Z",
+      "mergedAt": "2026-08-08T05:20:53Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/compile instruction stability",
+      "url": "https://github.com/yaklang/yaklang/pull/4860",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-06T07:10:59Z",
+      "updatedAt": "2026-08-07T03:00:36Z",
+      "mergedAt": "2026-08-07T03:00:33Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support pprof",
+      "url": "https://github.com/yaklang/yaklang/pull/4852",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-08-04T07:34:09Z",
+      "updatedAt": "2026-08-04T08:11:39Z",
+      "mergedAt": "2026-08-04T08:11:37Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(macos): 签名/PATH/去重 + CI 改 DMG + CLI-TUI-GUI 子命令",
+      "url": "https://github.com/wlingze/muxterm/pull/14",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-03T06:37:17Z",
+      "updatedAt": "2026-08-04T06:23:34Z",
+      "mergedAt": "2026-08-04T06:23:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "test/feat: 流式输出测试基建 + 修复 SSH transport 多个 bug",
+      "url": "https://github.com/wlingze/muxterm/pull/15",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-03T10:18:31Z",
+      "updatedAt": "2026-08-03T16:32:41Z",
+      "mergedAt": "2026-08-03T16:32:40Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/multi member relations",
+      "url": "https://github.com/yaklang/yaklang/pull/4793",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-21T08:19:32Z",
+      "updatedAt": "2026-08-03T03:47:14Z",
+      "mergedAt": "2026-08-03T03:47:12Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: run validation only on pull requests",
+      "url": "https://github.com/wlingze/muxterm/pull/13",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-01T15:51:00Z",
+      "updatedAt": "2026-08-01T17:17:28Z",
+      "mergedAt": "2026-08-01T17:17:26Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: unified release workflow for macOS and Linux artifacts",
+      "url": "https://github.com/wlingze/muxterm/pull/12",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-08-01T09:52:11Z",
+      "updatedAt": "2026-08-01T15:17:15Z",
+      "mergedAt": "2026-08-01T15:17:13Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add SSH shell and tmux runtime paths",
+      "url": "https://github.com/wlingze/muxterm/pull/11",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-29T03:10:29Z",
+      "updatedAt": "2026-08-01T08:27:55Z",
+      "mergedAt": "2026-08-01T08:27:53Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(httpflow): always include builtin tags in HTTPFlowsFieldGroup",
+      "url": "https://github.com/yaklang/yaklang/pull/4812",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-24T08:48:22Z",
+      "updatedAt": "2026-07-31T06:26:33Z",
+      "mergedAt": "2026-07-31T06:26:31Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/clear code yaklib",
+      "url": "https://github.com/yaklang/yaklang/pull/4829",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-30T06:42:26Z",
+      "updatedAt": "2026-07-31T03:58:01Z",
+      "mergedAt": "2026-07-31T03:57:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(yakgrpc): upgrade mockey for Go 1.26 and fix printf ellipsis",
+      "url": "https://github.com/yaklang/yaklang/pull/4819",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-28T09:08:04Z",
+      "updatedAt": "2026-07-29T01:17:02Z",
+      "mergedAt": "2026-07-29T01:17:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(macos): flatten UI chrome and harden hang/memory lifecycle",
+      "url": "https://github.com/wlingze/muxterm/pull/10",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-28T03:11:12Z",
+      "updatedAt": "2026-07-28T03:32:44Z",
+      "mergedAt": "2026-07-28T03:32:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(linux): GTK 前端集成测试 — 2tab3pane + Ctrl+D + 键盘模拟 + CI",
+      "url": "https://github.com/wlingze/muxterm/pull/8",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-24T10:32:30Z",
+      "updatedAt": "2026-07-27T03:56:14Z",
+      "mergedAt": "2026-07-27T03:56:12Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(macos): macOS 原生客户端、分屏修复与 XCUITest",
+      "url": "https://github.com/wlingze/muxterm/pull/9",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-24T15:12:19Z",
+      "updatedAt": "2026-07-24T19:42:30Z",
+      "mergedAt": "2026-07-24T19:42:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: 全平台架构 — C ABI 导出 + TUI/GTK4 走 FFI + 三平台技术调研",
+      "url": "https://github.com/wlingze/muxterm/pull/7",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-24T05:03:23Z",
+      "updatedAt": "2026-07-24T06:17:52Z",
+      "mergedAt": "2026-07-24T06:17:50Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: TmuxBackend 完整支持 — daemon 架构 + attach/detach + 四种模式",
+      "url": "https://github.com/wlingze/muxterm/pull/6",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-23T11:41:22Z",
+      "updatedAt": "2026-07-24T03:32:03Z",
+      "mergedAt": "2026-07-24T03:32:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "enhance(db): gorm CreateInBatches + SQLite performance optimizations",
+      "url": "https://github.com/yaklang/yaklang/pull/4805",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-22T09:13:27Z",
+      "updatedAt": "2026-07-23T10:59:48Z",
+      "mergedAt": "2026-07-23T10:59:46Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix: CLI/TUI bug 修复 + daemon session 架构",
+      "url": "https://github.com/wlingze/muxterm/pull/5",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-22T09:55:51Z",
+      "updatedAt": "2026-07-22T10:08:50Z",
+      "mergedAt": "2026-07-22T10:08:47Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(db): migrate from jinzhu/gorm to yaklang/gorm",
+      "url": "https://github.com/yaklang/yaklang/pull/4795",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-21T09:27:29Z",
+      "updatedAt": "2026-07-22T08:23:07Z",
+      "mergedAt": "2026-07-22T08:23:04Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: CLI 命令集 + Tab 层级重构",
+      "url": "https://github.com/wlingze/muxterm/pull/4",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-21T17:44:50Z",
+      "updatedAt": "2026-07-22T03:00:19Z",
+      "mergedAt": "2026-07-22T03:00:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: 三层架构重构 (Backend → TerminalModel → Platform)",
+      "url": "https://github.com/wlingze/muxterm/pull/3",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-21T15:23:35Z",
+      "updatedAt": "2026-07-21T15:31:35Z",
+      "mergedAt": "2026-07-21T15:31:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add -L/--socket for isolated tmux server",
+      "url": "https://github.com/wlingze/muxterm/pull/2",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-21T08:49:03Z",
+      "updatedAt": "2026-07-21T15:28:49Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "docs: add Chinese README",
+      "url": "https://github.com/wlingze/muxterm/pull/1",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-07-21T08:39:46Z",
+      "updatedAt": "2026-07-21T08:43:20Z",
+      "mergedAt": "2026-07-21T08:43:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(antlr): fix doc generation after antlr dependency migration",
+      "url": "https://github.com/yaklang/yaklang/pull/4788",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-20T08:24:15Z",
+      "updatedAt": "2026-07-20T08:55:28Z",
+      "mergedAt": "2026-07-20T08:55:26Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(antlr): upgrade ANTLR runtime from 4.11.1 to 4.13.2",
+      "url": "https://github.com/yaklang/yaklang/pull/4659",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-26T06:42:32Z",
+      "updatedAt": "2026-07-20T08:13:58Z",
+      "mergedAt": "2026-07-20T08:13:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(ssaapi/diagnostics): 大型项目扫描优化 part1",
+      "url": "https://github.com/yaklang/yaklang/pull/4749",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-13T08:22:39Z",
+      "updatedAt": "2026-07-14T06:36:19Z",
+      "mergedAt": "2026-07-14T06:36:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(irify): export full report content when downloading Word",
+      "url": "https://github.com/yaklang/yakit/pull/3956",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-07-06T07:49:54Z",
+      "updatedAt": "2026-07-14T02:35:30Z",
+      "mergedAt": "2026-07-14T02:35:30Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/coreplugin/score based language detect",
+      "url": "https://github.com/yaklang/yaklang/pull/4735",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-10T09:19:38Z",
+      "updatedAt": "2026-07-13T07:57:50Z",
+      "mergedAt": "2026-07-13T07:57:49Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(aispec): add Responses subset types and Chat↔Responses converts",
+      "url": "https://github.com/yaklang/yaklang/pull/4730",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-10T03:17:35Z",
+      "updatedAt": "2026-07-10T03:52:49Z",
+      "mergedAt": "2026-07-10T03:52:47Z",
+      "state": "merged"
+    },
+    {
+      "title": "Large-project SyntaxFlow scan: memory + hang fixes (incl. SSA compile-unit refactor)",
+      "url": "https://github.com/yaklang/yaklang/pull/4712",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-06T16:33:33Z",
+      "updatedAt": "2026-07-10T02:53:16Z",
+      "mergedAt": "2026-07-10T02:53:15Z",
+      "state": "merged"
+    },
+    {
+      "title": "SSA compile-unit step refactor: stream compile by units, step-mode default",
+      "url": "https://github.com/yaklang/yaklang/pull/4666",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-28T10:30:10Z",
+      "updatedAt": "2026-07-08T03:14:34Z",
+      "mergedAt": "2026-07-08T03:14:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feat/irify ai skill audit",
+      "url": "https://github.com/yaklang/yakit/pull/3936",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-07-02T06:45:28Z",
+      "updatedAt": "2026-07-03T06:43:04Z",
+      "mergedAt": "2026-07-03T06:43:04Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(reactloop): unify audit workspace attachments for skill audit and code audit ",
+      "url": "https://github.com/yaklang/yaklang/pull/4700",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-07-02T07:58:32Z",
+      "updatedAt": "2026-07-02T09:54:37Z",
+      "mergedAt": "2026-07-02T09:54:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/yakdoc skip test files",
+      "url": "https://github.com/yaklang/yaklang/pull/4677",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-30T04:03:05Z",
+      "updatedAt": "2026-06-30T06:44:58Z",
+      "mergedAt": "2026-06-30T06:44:57Z",
+      "state": "merged"
+    },
+    {
+      "title": "enhance(ssa): 用 LazyBuild / DeferredBuild 替代二次 AST 遍历，降低编译期内存占用",
+      "url": "https://github.com/yaklang/yaklang/pull/4607",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-16T09:29:35Z",
+      "updatedAt": "2026-06-25T08:07:52Z",
+      "mergedAt": "2026-06-25T08:07:50Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(syntaxflow): validate and repair builtin rule markdown formatting",
+      "url": "https://github.com/yaklang/yaklang/pull/4634",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-23T07:34:31Z",
+      "updatedAt": "2026-06-23T08:16:12Z",
+      "mergedAt": "2026-06-23T08:16:10Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/multi member relations",
+      "url": "https://github.com/yaklang/yaklang/pull/4605",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-15T09:12:36Z",
+      "updatedAt": "2026-06-23T06:37:10Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "refactor(yak): extract yakscript package and delegate ssa_compile/yakgrpc execution",
+      "url": "https://github.com/yaklang/yaklang/pull/4630",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-22T08:24:31Z",
+      "updatedAt": "2026-06-23T02:53:59Z",
+      "mergedAt": "2026-06-23T02:53:57Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/shrink libyak size",
+      "url": "https://github.com/yaklang/yaklang/pull/4604",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-15T08:54:25Z",
+      "updatedAt": "2026-06-15T09:19:43Z",
+      "mergedAt": "2026-06-15T09:19:41Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): flush dbcache close during large project compile",
+      "url": "https://github.com/yaklang/yaklang/pull/4597",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-12T08:28:20Z",
+      "updatedAt": "2026-06-12T09:51:57Z",
+      "mergedAt": "2026-06-12T09:51:55Z",
+      "state": "merged"
+    },
+    {
+      "title": "Enhance/irify/interaction optimization 0514",
+      "url": "https://github.com/yaklang/yakit/pull/3731",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-05-18T04:11:11Z",
+      "updatedAt": "2026-06-12T08:44:24Z",
+      "mergedAt": "2026-06-12T08:13:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(httpflow): expose builtin tag metadata in HTTPFlowsFieldGroup",
+      "url": "https://github.com/yaklang/yaklang/pull/4581",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-10T08:53:11Z",
+      "updatedAt": "2026-06-11T07:38:59Z",
+      "mergedAt": "2026-06-11T07:38:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support lazybuilder timelog",
+      "url": "https://github.com/yaklang/yaklang/pull/4563",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-05T08:40:30Z",
+      "updatedAt": "2026-06-11T02:59:03Z",
+      "mergedAt": "2026-06-11T02:59:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/irify/ai code audit page",
+      "url": "https://github.com/yaklang/yakit/pull/3656",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-04-27T08:19:51Z",
+      "updatedAt": "2026-06-08T07:40:01Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "Feature/ssa2llvm/support yakplugin type",
+      "url": "https://github.com/yaklang/yaklang/pull/4561",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-06-05T06:23:56Z",
+      "updatedAt": "2026-06-05T06:58:01Z",
+      "mergedAt": "2026-06-05T06:57:59Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(http-package): support copy URL with and without query in Web Fuzzer",
+      "url": "https://github.com/yaklang/yakit/pull/3812",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-05-28T08:34:20Z",
+      "updatedAt": "2026-05-29T09:24:13Z",
+      "mergedAt": "2026-05-29T09:24:12Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(history): show wire response for auto-fix flows in webfuzzer and history",
+      "url": "https://github.com/yaklang/yakit/pull/3809",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-05-28T04:07:19Z",
+      "updatedAt": "2026-05-29T08:27:00Z",
+      "mergedAt": "2026-05-29T08:26:59Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(consts): log sqlite large-db tune at most once per db path",
+      "url": "https://github.com/yaklang/yaklang/pull/4522",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-29T07:03:07Z",
+      "updatedAt": "2026-05-29T07:40:57Z",
+      "mergedAt": "2026-05-29T07:40:54Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/reactloops/repport generating mark report path",
+      "url": "https://github.com/yaklang/yaklang/pull/4517",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-29T02:52:15Z",
+      "updatedAt": "2026-05-29T03:09:25Z",
+      "mergedAt": "2026-05-29T03:09:23Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(yakgrpc): persist wire HTTP response for History bare view",
+      "url": "https://github.com/yaklang/yaklang/pull/4512",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-28T04:06:08Z",
+      "updatedAt": "2026-05-29T02:49:57Z",
+      "mergedAt": "2026-05-29T02:49:54Z",
+      "state": "merged"
+    },
+    {
+      "title": "Ci/linux manylinux2014 glibc217",
+      "url": "https://github.com/yaklang/yaklang/pull/4513",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-28T06:29:40Z",
+      "updatedAt": "2026-05-29T02:49:31Z",
+      "mergedAt": "2026-05-29T02:49:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(grpc): add UrlWithoutQuery to ExtractUrl response",
+      "url": "https://github.com/yaklang/yaklang/pull/4515",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-28T08:31:47Z",
+      "updatedAt": "2026-05-29T02:45:04Z",
+      "mergedAt": "2026-05-29T02:45:02Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/support coreplugin",
+      "url": "https://github.com/yaklang/yaklang/pull/4514",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-28T08:07:51Z",
+      "updatedAt": "2026-05-28T08:49:01Z",
+      "mergedAt": "2026-05-28T08:48:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(yak2ssa): skip unhandled-error when multi-value call is only return ",
+      "url": "https://github.com/yaklang/yaklang/pull/4501",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-26T07:05:44Z",
+      "updatedAt": "2026-05-26T07:34:39Z",
+      "mergedAt": "2026-05-26T07:34:37Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(java2ssa): avoid infinite loop in JSP javascript href preprocess",
+      "url": "https://github.com/yaklang/yaklang/pull/4494",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-25T03:43:20Z",
+      "updatedAt": "2026-05-25T06:17:30Z",
+      "mergedAt": "2026-05-25T06:17:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(netx): retry GMTLS dial with ECC, ECDHE, then all cipher suites",
+      "url": "https://github.com/yaklang/yaklang/pull/4481",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-21T07:26:37Z",
+      "updatedAt": "2026-05-22T07:30:58Z",
+      "mergedAt": "2026-05-22T07:30:55Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(yakit): split SyntaxFlow rule search into name and full-text fuzzy",
+      "url": "https://github.com/yaklang/yaklang/pull/4480",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-21T03:56:04Z",
+      "updatedAt": "2026-05-21T09:50:08Z",
+      "mergedAt": "2026-05-21T09:50:05Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(project): reject duplicate names on UpdateProject",
+      "url": "https://github.com/yaklang/yaklang/pull/4479",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-21T03:28:39Z",
+      "updatedAt": "2026-05-21T08:20:19Z",
+      "mergedAt": "2026-05-21T08:20:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fixup/lowhttp/cookiejar session tests",
+      "url": "https://github.com/yaklang/yaklang/pull/4471",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-20T08:10:52Z",
+      "updatedAt": "2026-05-21T03:51:40Z",
+      "mergedAt": "2026-05-21T03:51:38Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(sqlite): vacuum-sqlite default WAL checkpoint and safe cleanup",
+      "url": "https://github.com/yaklang/yaklang/pull/4473",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-20T08:44:20Z",
+      "updatedAt": "2026-05-21T03:28:29Z",
+      "mergedAt": "2026-05-21T03:28:27Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(vacuum-sqlite): default wal-checkpoint true avoid large wal file.",
+      "url": "https://github.com/yaklang/yaklang/pull/4469",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-20T06:21:29Z",
+      "updatedAt": "2026-05-20T08:10:03Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "fix(lowtun): use per-GOOS TUNLinkOffset for gVisor TUN link layer",
+      "url": "https://github.com/yaklang/yaklang/pull/4464",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-19T07:33:39Z",
+      "updatedAt": "2026-05-19T07:54:40Z",
+      "mergedAt": "2026-05-19T07:54:37Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(omap): avoid deadlock calling locked methods inside ForEach",
+      "url": "https://github.com/yaklang/yaklang/pull/4440",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-14T09:10:33Z",
+      "updatedAt": "2026-05-15T02:57:09Z",
+      "mergedAt": "2026-05-15T02:57:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/linkprep runtime syms",
+      "url": "https://github.com/yaklang/yaklang/pull/4421",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-05-11T08:31:20Z",
+      "updatedAt": "2026-05-14T06:40:59Z",
+      "mergedAt": "2026-05-14T06:40:57Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: rebalance essential ssa suites and improve failure summary",
+      "url": "https://github.com/yaklang/yaklang/pull/4271",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-10T09:34:55Z",
+      "updatedAt": "2026-05-11T07:17:52Z",
+      "mergedAt": "2026-04-13T07:03:20Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(code_security_audit): pass dir_explore target_path via AttachedResource",
+      "url": "https://github.com/yaklang/yaklang/pull/4347",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-27T08:23:45Z",
+      "updatedAt": "2026-04-27T08:53:28Z",
+      "mergedAt": "2026-04-27T08:53:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(csrf-poc): add auto-submit PoC option",
+      "url": "https://github.com/yaklang/yakit/pull/3398",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-02-10T03:32:13Z",
+      "updatedAt": "2026-04-24T03:50:13Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "feat(jar-decompiler): export zip via backend path, restore export menu",
+      "url": "https://github.com/yaklang/yakit/pull/3387",
+      "repository": "yaklang/yakit",
+      "createdAt": "2026-02-06T06:48:42Z",
+      "updatedAt": "2026-04-24T03:50:13Z",
+      "mergedAt": "2026-02-06T08:50:19Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(php): handle trailing ?> in nowdoc/heredoc for PHP ",
+      "url": "https://github.com/yaklang/yaklang/pull/4331",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-23T04:03:56Z",
+      "updatedAt": "2026-04-23T06:25:27Z",
+      "mergedAt": "2026-04-23T06:25:25Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: improve essential test failure summaries",
+      "url": "https://github.com/yaklang/yaklang/pull/4287",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-15T04:12:32Z",
+      "updatedAt": "2026-04-17T07:29:35Z",
+      "mergedAt": "2026-04-17T07:29:33Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(ssa): clean up compile cache saves and benchmark ssa-compile",
+      "url": "https://github.com/yaklang/yaklang/pull/4264",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-09T15:42:55Z",
+      "updatedAt": "2026-04-14T02:43:28Z",
+      "mergedAt": "2026-04-14T02:43:25Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/obfuscation foundation",
+      "url": "https://github.com/yaklang/yaklang/pull/4268",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-10T06:42:54Z",
+      "updatedAt": "2026-04-10T07:30:57Z",
+      "mergedAt": "2026-04-10T07:30:55Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/php project ast perf",
+      "url": "https://github.com/yaklang/yaklang/pull/4260",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-09T07:13:45Z",
+      "updatedAt": "2026-04-09T09:15:00Z",
+      "mergedAt": "2026-04-09T09:14:57Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(go2ssa): ignore fixture corpus files",
+      "url": "https://github.com/yaklang/yaklang/pull/4248",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-07T09:21:12Z",
+      "updatedAt": "2026-04-07T10:06:27Z",
+      "mergedAt": "2026-04-07T10:06:25Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/go project ast perf",
+      "url": "https://github.com/yaklang/yaklang/pull/4235",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-03T07:58:55Z",
+      "updatedAt": "2026-04-07T06:36:00Z",
+      "mergedAt": "2026-04-07T06:35:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/python project ast perf",
+      "url": "https://github.com/yaklang/yaklang/pull/4236",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-03T08:12:27Z",
+      "updatedAt": "2026-04-03T08:34:31Z",
+      "mergedAt": "2026-04-03T08:34:28Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/java project ast perf",
+      "url": "https://github.com/yaklang/yaklang/pull/4233",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-02T10:11:34Z",
+      "updatedAt": "2026-04-03T03:34:21Z",
+      "mergedAt": "2026-04-03T03:34:20Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/obf ssa function call",
+      "url": "https://github.com/yaklang/yaklang/pull/4211",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-31T07:22:40Z",
+      "updatedAt": "2026-04-02T06:54:37Z",
+      "mergedAt": "2026-04-02T06:54:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "ci: 通过预编译套件缩短 essential-tests 用时",
+      "url": "https://github.com/yaklang/yaklang/pull/4146",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-19T09:01:15Z",
+      "updatedAt": "2026-04-01T09:18:57Z",
+      "mergedAt": "2026-04-01T09:18:54Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/java sideeffect bind member scope",
+      "url": "https://github.com/yaklang/yaklang/pull/4213",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-04-01T02:36:39Z",
+      "updatedAt": "2026-04-01T06:03:46Z",
+      "mergedAt": "2026-04-01T06:03:44Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/support complex function call",
+      "url": "https://github.com/yaklang/yaklang/pull/4205",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-31T02:52:31Z",
+      "updatedAt": "2026-03-31T07:08:19Z",
+      "mergedAt": "2026-03-31T07:08:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(php): stabilize pfsense parsing and defined() compile path",
+      "url": "https://github.com/yaklang/yaklang/pull/4165",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-23T13:00:48Z",
+      "updatedAt": "2026-03-24T05:21:54Z",
+      "mergedAt": "2026-03-24T05:21:51Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/compile java 0319",
+      "url": "https://github.com/yaklang/yaklang/pull/4164",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-23T11:27:15Z",
+      "updatedAt": "2026-03-24T05:20:04Z",
+      "mergedAt": "2026-03-24T05:20:02Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix: preserve custom syntaxflow rule metadata",
+      "url": "https://github.com/yaklang/yaklang/pull/4140",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-19T03:33:51Z",
+      "updatedAt": "2026-03-19T07:56:23Z",
+      "mergedAt": "2026-03-19T07:56:21Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(syntaxflow): unify analysis/check/evaluate into sfanalysis",
+      "url": "https://github.com/yaklang/yaklang/pull/4143",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-19T04:47:32Z",
+      "updatedAt": "2026-03-19T07:55:43Z",
+      "mergedAt": "2026-03-19T07:55:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(sfanalyzer): no error for blank rules",
+      "url": "https://github.com/yaklang/yaklang/pull/4132",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-18T02:36:05Z",
+      "updatedAt": "2026-03-19T05:10:11Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "Enhance/ssa/antlr clean cache",
+      "url": "https://github.com/yaklang/yaklang/pull/4139",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-18T17:34:14Z",
+      "updatedAt": "2026-03-19T02:27:20Z",
+      "mergedAt": "2026-03-19T02:27:18Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/syntaxflow preview editor",
+      "url": "https://github.com/yaklang/ssa.to/pull/25",
+      "repository": "yaklang/ssa.to",
+      "createdAt": "2026-03-17T09:09:28Z",
+      "updatedAt": "2026-03-17T09:15:07Z",
+      "mergedAt": "2026-03-17T09:15:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "ssa2llvm: embed runtime + support --stdlib-compile",
+      "url": "https://github.com/yaklang/yaklang/pull/4123",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-17T04:04:03Z",
+      "updatedAt": "2026-03-17T09:09:32Z",
+      "mergedAt": "2026-03-17T09:09:30Z",
+      "state": "merged"
+    },
+    {
+      "title": "Refactor/sfvm/value condition",
+      "url": "https://github.com/yaklang/yaklang/pull/4108",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-12T08:47:12Z",
+      "updatedAt": "2026-03-17T06:55:09Z",
+      "mergedAt": "2026-03-17T06:55:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/basic obfuscation framework",
+      "url": "https://github.com/yaklang/yaklang/pull/4107",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-12T08:24:47Z",
+      "updatedAt": "2026-03-12T09:28:06Z",
+      "mergedAt": "2026-03-12T09:28:04Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/programoverlayer should exist in programlist",
+      "url": "https://github.com/yaklang/yaklang/pull/4092",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-10T09:44:38Z",
+      "updatedAt": "2026-03-12T08:51:27Z",
+      "mergedAt": "2026-03-12T08:51:26Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa2llvm/implement yak lib",
+      "url": "https://github.com/yaklang/yaklang/pull/4100",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-11T07:25:09Z",
+      "updatedAt": "2026-03-12T02:42:17Z",
+      "mergedAt": "2026-03-12T02:42:15Z",
+      "state": "merged"
+    },
+    {
+      "title": "docs(cli): restructure usage guides into dedicated sections",
+      "url": "https://github.com/yaklang/ssa.to/pull/24",
+      "repository": "yaklang/ssa.to",
+      "createdAt": "2026-03-04T08:48:14Z",
+      "updatedAt": "2026-03-04T09:49:53Z",
+      "mergedAt": "2026-03-04T09:49:53Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(ssacli): unify compile path and config options",
+      "url": "https://github.com/yaklang/yaklang/pull/4066",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-03-04T08:48:11Z",
+      "updatedAt": "2026-03-04T09:49:39Z",
+      "mergedAt": "2026-03-04T09:49:36Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(schema): add PacketPair and PacketPairList",
+      "url": "https://github.com/yaklang/yaklang/pull/3989",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-11T02:52:15Z",
+      "updatedAt": "2026-02-28T05:14:50Z",
+      "mergedAt": "2026-02-28T05:14:48Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/editor cache and processinfof",
+      "url": "https://github.com/yaklang/yaklang/pull/4040",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-27T09:55:28Z",
+      "updatedAt": "2026-02-28T03:02:00Z",
+      "mergedAt": "2026-02-28T03:01:58Z",
+      "state": "merged"
+    },
+    {
+      "title": "Enhance/ssa/codescan-support-namepool",
+      "url": "https://github.com/yaklang/yaklang/pull/4019",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-24T09:04:21Z",
+      "updatedAt": "2026-02-27T09:15:35Z",
+      "mergedAt": "2026-02-27T09:15:34Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support llvm memory gc",
+      "url": "https://github.com/yaklang/yaklang/pull/4033",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-27T03:04:11Z",
+      "updatedAt": "2026-02-27T08:03:35Z",
+      "mergedAt": "2026-02-27T08:03:33Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(cli): update import paths to use local urfavecli package",
+      "url": "https://github.com/yaklang/yaklang/pull/4034",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-27T03:25:39Z",
+      "updatedAt": "2026-02-27T06:59:37Z",
+      "mergedAt": "2026-02-27T06:59:36Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(cli): embed urfave/cli v1 fork with AllowUnknownFlags ",
+      "url": "https://github.com/yaklang/yaklang/pull/3977",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-06T11:23:54Z",
+      "updatedAt": "2026-02-27T02:42:42Z",
+      "mergedAt": "2026-02-27T02:42:40Z",
+      "state": "merged"
+    },
+    {
+      "title": "code-scan: improve config and diagnostics handling",
+      "url": "https://github.com/yaklang/yaklang/pull/4017",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-24T08:38:23Z",
+      "updatedAt": "2026-02-24T09:40:24Z",
+      "mergedAt": "2026-02-24T09:40:22Z",
+      "state": "merged"
+    },
+    {
+      "title": "support csrf poc auto-submit via grpc option",
+      "url": "https://github.com/yaklang/yaklang/pull/3982",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-10T03:29:49Z",
+      "updatedAt": "2026-02-11T02:47:37Z",
+      "mergedAt": "2026-02-11T02:47:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/slow sql/support databasepath",
+      "url": "https://github.com/yaklang/yaklang/pull/3970",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-06T06:13:28Z",
+      "updatedAt": "2026-02-06T08:13:04Z",
+      "mergedAt": "2026-02-06T08:13:01Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(java-decompiler): export zip to backend file and return path",
+      "url": "https://github.com/yaklang/yaklang/pull/3971",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-06T06:48:21Z",
+      "updatedAt": "2026-02-06T07:39:39Z",
+      "mergedAt": "2026-02-06T07:39:37Z",
+      "state": "merged"
+    },
+    {
+      "title": "Refactor/db/support drop cache",
+      "url": "https://github.com/yaklang/yaklang/pull/3964",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-05T07:37:19Z",
+      "updatedAt": "2026-02-06T03:12:01Z",
+      "mergedAt": "2026-02-06T03:11:59Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(regen): expand {n} when n>1000 ",
+      "url": "https://github.com/yaklang/yaklang/pull/3953",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-04T04:02:06Z",
+      "updatedAt": "2026-02-05T16:25:34Z",
+      "mergedAt": "2026-02-05T16:25:32Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/cli/force sync",
+      "url": "https://github.com/yaklang/yaklang/pull/3955",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-04T07:06:49Z",
+      "updatedAt": "2026-02-05T07:27:42Z",
+      "mergedAt": "2026-02-05T07:27:41Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor: replace custom file system interfaces with ResourceMonitor …",
+      "url": "https://github.com/yaklang/yaklang/pull/3948",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-03T07:25:39Z",
+      "updatedAt": "2026-02-03T08:17:50Z",
+      "mergedAt": "2026-02-03T08:17:48Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fixup/mitm/filter suffix",
+      "url": "https://github.com/yaklang/yaklang/pull/3946",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-02-03T03:35:54Z",
+      "updatedAt": "2026-02-03T07:37:54Z",
+      "mergedAt": "2026-02-03T07:37:52Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(router): remove 'static code analysis' sidebar item and routes",
+      "url": "https://github.com/yaklang/wizard/pull/12",
+      "repository": "yaklang/wizard",
+      "createdAt": "2026-01-28T07:45:58Z",
+      "updatedAt": "2026-01-29T07:50:20Z",
+      "mergedAt": "2026-01-29T07:50:19Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support llvm golang runtime",
+      "url": "https://github.com/yaklang/yaklang/pull/3935",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-29T06:34:30Z",
+      "updatedAt": "2026-01-29T07:46:33Z",
+      "mergedAt": "2026-01-29T07:46:31Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/php2ssa/fixup antlr",
+      "url": "https://github.com/yaklang/yaklang/pull/3920",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-27T09:07:39Z",
+      "updatedAt": "2026-01-29T07:27:43Z",
+      "mergedAt": "2026-01-29T07:27:41Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/support sast",
+      "url": "https://github.com/yaklang/wizard/pull/10",
+      "repository": "yaklang/wizard",
+      "createdAt": "2026-01-26T03:51:55Z",
+      "updatedAt": "2026-01-26T09:45:07Z",
+      "mergedAt": "2026-01-26T09:45:05Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/support/cli parameter",
+      "url": "https://github.com/yaklang/wizard/pull/9",
+      "repository": "yaklang/wizard",
+      "createdAt": "2025-12-02T07:51:25Z",
+      "updatedAt": "2026-01-23T03:23:37Z",
+      "mergedAt": "2026-01-23T03:23:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support llvm musllib",
+      "url": "https://github.com/yaklang/yaklang/pull/3904",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-22T09:15:36Z",
+      "updatedAt": "2026-01-23T02:35:01Z",
+      "mergedAt": "2026-01-23T02:35:00Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support llvm basic",
+      "url": "https://github.com/yaklang/yaklang/pull/3891",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-21T06:59:00Z",
+      "updatedAt": "2026-01-21T07:30:10Z",
+      "mergedAt": "2026-01-21T07:30:08Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssacli/improve ssa db",
+      "url": "https://github.com/yaklang/yaklang/pull/3836",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-12T06:51:19Z",
+      "updatedAt": "2026-01-21T07:21:29Z",
+      "mergedAt": "2026-01-21T07:21:28Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/python support class",
+      "url": "https://github.com/yaklang/yaklang/pull/3860",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-15T03:34:38Z",
+      "updatedAt": "2026-01-19T09:41:38Z",
+      "mergedAt": "2026-01-19T09:41:36Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(yak): update NewProgram to accept context  and streamline exclude file patterns",
+      "url": "https://github.com/yaklang/yaklang/pull/3851",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-14T02:49:57Z",
+      "updatedAt": "2026-01-14T03:56:14Z",
+      "mergedAt": "2026-01-14T03:56:12Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feat(memedit):  folder path normalization and hash correct ",
+      "url": "https://github.com/yaklang/yaklang/pull/3840",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-12T09:58:30Z",
+      "updatedAt": "2026-01-14T03:31:58Z",
+      "mergedAt": "2026-01-14T03:31:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/language/python support",
+      "url": "https://github.com/yaklang/yaklang/pull/3829",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-01-09T08:53:34Z",
+      "updatedAt": "2026-01-14T03:04:19Z",
+      "mergedAt": "2026-01-14T03:04:17Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssa/support multiple layer program",
+      "url": "https://github.com/yaklang/yaklang/pull/3766",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-25T09:54:16Z",
+      "updatedAt": "2025-12-26T04:06:45Z",
+      "mergedAt": "2025-12-26T04:06:43Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/exclude file",
+      "url": "https://github.com/yaklang/yaklang/pull/3753",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-23T09:11:55Z",
+      "updatedAt": "2025-12-25T09:00:31Z",
+      "mergedAt": "2025-12-25T09:00:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "Feature/ssacli/code scan support folder",
+      "url": "https://github.com/yaklang/yaklang/pull/3677",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-08T08:43:07Z",
+      "updatedAt": "2025-12-09T03:01:26Z",
+      "mergedAt": "2025-12-09T03:01:25Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/linux/ast parse error",
+      "url": "https://github.com/yaklang/yaklang/pull/3658",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-04T08:18:31Z",
+      "updatedAt": "2025-12-08T06:54:14Z",
+      "mergedAt": "2025-12-08T06:54:13Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssaconfig):restore json tag",
+      "url": "https://github.com/yaklang/yaklang/pull/3671",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-08T03:41:40Z",
+      "updatedAt": "2025-12-08T04:15:04Z",
+      "mergedAt": "2025-12-08T04:15:03Z",
+      "state": "merged"
+    },
+    {
+      "title": "Refactor/utils/diagnostic",
+      "url": "https://github.com/yaklang/yaklang/pull/3630",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-12-01T06:29:01Z",
+      "updatedAt": "2025-12-02T09:34:30Z",
+      "mergedAt": "2025-12-02T09:34:29Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: log timeout warnings during database initialization",
+      "url": "https://github.com/yaklang/yaklang/pull/3591",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-25T09:18:59Z",
+      "updatedAt": "2025-11-26T00:40:58Z",
+      "mergedAt": "2025-11-26T00:40:56Z",
+      "state": "merged"
+    },
+    {
+      "title": "Refactor/utils/diagnostic",
+      "url": "https://github.com/yaklang/yaklang/pull/3581",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-24T07:55:56Z",
+      "updatedAt": "2025-11-24T09:48:33Z",
+      "mergedAt": null,
+      "state": "closed"
+    },
+    {
+      "title": "Feature/cmd/check local grpc",
+      "url": "https://github.com/yaklang/yaklang/pull/3525",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-12T07:32:02Z",
+      "updatedAt": "2025-11-20T08:51:56Z",
+      "mergedAt": "2025-11-20T08:51:54Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(ssaapi):use ssaconfig in compile time",
+      "url": "https://github.com/yaklang/yaklang/pull/3561",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-18T06:06:02Z",
+      "updatedAt": "2025-11-19T07:16:45Z",
+      "mergedAt": "2025-11-19T07:16:43Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(ssaconfig): add support for applying extra options in derived co…",
+      "url": "https://github.com/yaklang/yaklang/pull/3552",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-17T04:00:03Z",
+      "updatedAt": "2025-11-17T07:17:22Z",
+      "mergedAt": "2025-11-17T07:17:21Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/pass for builtin script and aitool ",
+      "url": "https://github.com/yaklang/yaklang/pull/3510",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-10T06:58:04Z",
+      "updatedAt": "2025-11-11T08:43:38Z",
+      "mergedAt": "2025-11-11T08:43:36Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(grpc):syntaxflow scan active process show in frontend",
+      "url": "https://github.com/yaklang/yaklang/pull/3477",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-04T03:29:54Z",
+      "updatedAt": "2025-11-07T02:46:37Z",
+      "mergedAt": "2025-11-07T02:46:35Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ci): enhance WIP detection logic and skip CI for non-WIP changes",
+      "url": "https://github.com/yaklang/yaklang/pull/3497",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-06T06:40:20Z",
+      "updatedAt": "2025-11-07T02:45:04Z",
+      "mergedAt": "2025-11-07T02:45:03Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(grpc_fuzzer): http response contain extractedResult",
+      "url": "https://github.com/yaklang/yaklang/pull/3496",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-06T06:28:29Z",
+      "updatedAt": "2025-11-06T15:19:25Z",
+      "mergedAt": "2025-11-06T15:19:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(yakurl): add ID field to EventSet and update event handler",
+      "url": "https://github.com/yaklang/yaklang/pull/3494",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-06T02:37:49Z",
+      "updatedAt": "2025-11-06T09:49:01Z",
+      "mergedAt": "2025-11-06T09:48:59Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix:test ci restart",
+      "url": "https://github.com/yaklang/yaklang/pull/3488",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-05T07:13:24Z",
+      "updatedAt": "2025-11-06T02:13:25Z",
+      "mergedAt": "2025-11-06T02:13:24Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(sca):add recover and string check ",
+      "url": "https://github.com/yaklang/yaklang/pull/3482",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-04T09:32:40Z",
+      "updatedAt": "2025-11-05T07:13:10Z",
+      "mergedAt": "2025-11-05T07:13:08Z",
+      "state": "merged"
+    },
+    {
+      "title": "Fix/ssa/remove debug info fixup panic ",
+      "url": "https://github.com/yaklang/yaklang/pull/3471",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2025-11-03T06:15:53Z",
+      "updatedAt": "2025-11-03T08:54:52Z",
+      "mergedAt": "2025-11-03T08:54:51Z",
+      "state": "merged"
+    }
+  ]
+}

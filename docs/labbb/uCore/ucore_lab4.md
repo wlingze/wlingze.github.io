@@ -1,5 +1,5 @@
 ---
-title: ucore_lab4
+title: uCore 实验 4：内核线程
 date: 2021-08-07 09:01:09
 permalink: /pages/4069d3/
 categories:

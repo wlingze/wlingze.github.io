@@ -1,5 +1,5 @@
 ---
-title: ucore_lab2
+title: uCore 实验 2：物理内存管理
 date: 2021-07-29
 permalink: /pages/ac25ef/
 categories:

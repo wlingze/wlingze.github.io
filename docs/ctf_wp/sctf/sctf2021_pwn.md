@@ -1,5 +1,5 @@
 ---
-title: sctf2021_pwn
+title: SCTF 2021 Pwn 出题思路
 date: 2021-12-29 01:59:02
 permalink: /pages/6d05cb/
 categories:

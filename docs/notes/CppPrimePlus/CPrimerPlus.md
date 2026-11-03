@@ -1,5 +1,5 @@
 ---
-title: CPrimerPlus
+title: C Primer Plus 读书笔记
 date: 2021-01-30 15:06:25
 permalink: /pages/30e29e/
 categories:

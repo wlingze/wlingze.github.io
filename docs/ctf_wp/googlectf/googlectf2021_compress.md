@@ -1,5 +1,5 @@
 ---
-title: googlectf2021_compress
+title: Google CTF 2021 compress 题解
 date: 2021-07-19 15:14:31
 permalink: /pages/1d8e16/
 categories:
