@@ -23,7 +23,7 @@
     "@fontsource/hanken-grotesk": "^5.2.8",
     "@fontsource/ibm-plex-mono": "^5.2.7",
     "@fontsource/newsreader": "^5.2.8",
-    "astro": "^7.4.4",
+    "astro": "^7.4.7",
     "gray-matter": "^4.0.3",
     "markdown-it": "^15.0.3",
     "markdown-it-anchor": "^10.0.0",
