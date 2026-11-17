@@ -7,7 +7,7 @@ import { articles, stamp } from '../lib/content.mjs';
 
 const { contributions, activity } = github;
 const byId = new Map(github.projects.map((project) => [project.id, project]));
-const featured = ['muxterm', 'yaklang', 'ecapture', 'irify'].map((id) => byId.get(id)).filter(Boolean);
+const featured = ['muxterm', 'intentflow', 'yaklang', 'ecapture', 'irify'].map((id) => byId.get(id)).filter(Boolean);
 const latest = articles.slice(0, 5);
 const merged = activity.filter((item) => item.state === 'merged');
 const recent = merged.slice(0, 3);
@@ -17,14 +17,14 @@ const linkOf = (project) => project.url || project.site;
 ---
 <Base
   title="令则"
-  description="令则（wlingze）的个人站点：YakSSA、SyntaxFlow、Muxterm 与 eCapture 的开发记录，以及 2019 年以来的技术文章索引。"
+  description="令则（wlingze）的个人站点：YakSSA、SyntaxFlow、Muxterm、intentflow 与 eCapture 的开发记录，以及 2019 年以来的技术文章索引。"
 >
   <div class="wrap home">
     <aside class="identity" aria-labelledby="identity-name">
       <img class="identity__avatar" src="/img/avatar2.jpg" width="56" height="56" alt="令则的头像" loading="lazy" decoding="async" />
       <h1 class="identity__name" id="identity-name">令则</h1>
       <p class="identity__handle">wlingze · 程序分析与终端应用</p>
-      <p class="identity__note">YakSSA、SyntaxFlow 与 Muxterm，代码在 <a href="https://github.com/wlingze" rel="noopener noreferrer">GitHub</a>。</p>
+      <p class="identity__note">YakSSA、SyntaxFlow、Muxterm 与 intentflow，代码在 <a href="https://github.com/wlingze" rel="noopener noreferrer">GitHub</a>。</p>
       <dl class="identity__facts">
         <div><dt>现在</dt><dd>yaklang.io</dd></div>
         <div><dt>写作</dt><dd>{articles.length} 篇</dd></div>

@@ -1,89 +1,19 @@
 {
   "account": "wlingze",
-  "fetchedAt": "2026-11-03T07:13:46.935Z",
+  "fetchedAt": "2026-11-17T02:59:02.451Z",
   "profile": {
     "login": "wlingze",
     "name": "wang lingze",
     "twitter": "wlingze",
     "blog": "https://wlingze.github.io/",
     "followers": 97,
-    "publicRepos": 35
+    "publicRepos": 36
   },
   "contributions": {
-    "from": "2025-11-03",
-    "to": "2026-11-03",
-    "total": 2920,
+    "from": "2025-11-17",
+    "to": "2026-11-17",
+    "total": 3293,
     "days": [
-      {
-        "date": "2025-11-03",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-11-04",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-11-05",
-        "count": 7,
-        "level": 1
-      },
-      {
-        "date": "2025-11-06",
-        "count": 18,
-        "level": 1
-      },
-      {
-        "date": "2025-11-07",
-        "count": 7,
-        "level": 1
-      },
-      {
-        "date": "2025-11-08",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-09",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-10",
-        "count": 9,
-        "level": 1
-      },
-      {
-        "date": "2025-11-11",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-11-12",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-11-13",
-        "count": 1,
-        "level": 1
-      },
-      {
-        "date": "2025-11-14",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-11-15",
-        "count": 0,
-        "level": 0
-      },
-      {
-        "date": "2025-11-16",
-        "count": 0,
-        "level": 0
-      },
       {
         "date": "2025-11-17",
         "count": 4,
@@ -1426,7 +1356,7 @@
       },
       {
         "date": "2026-08-12",
-        "count": 44,
+        "count": 45,
         "level": 3
       },
       {
@@ -1436,7 +1366,7 @@
       },
       {
         "date": "2026-08-14",
-        "count": 64,
+        "count": 67,
         "level": 4
       },
       {
@@ -1451,22 +1381,22 @@
       },
       {
         "date": "2026-08-17",
-        "count": 67,
+        "count": 74,
         "level": 4
       },
       {
         "date": "2026-08-18",
-        "count": 49,
+        "count": 54,
         "level": 3
       },
       {
         "date": "2026-08-19",
-        "count": 19,
-        "level": 1
+        "count": 21,
+        "level": 2
       },
       {
         "date": "2026-08-20",
-        "count": 52,
+        "count": 58,
         "level": 3
       },
       {
@@ -1486,12 +1416,12 @@
       },
       {
         "date": "2026-08-24",
-        "count": 15,
+        "count": 16,
         "level": 1
       },
       {
         "date": "2026-08-25",
-        "count": 49,
+        "count": 53,
         "level": 3
       },
       {
@@ -1661,17 +1591,17 @@
       },
       {
         "date": "2026-09-28",
-        "count": 39,
-        "level": 2
+        "count": 41,
+        "level": 3
       },
       {
         "date": "2026-09-29",
-        "count": 28,
+        "count": 37,
         "level": 2
       },
       {
         "date": "2026-09-30",
-        "count": 8,
+        "count": 17,
         "level": 1
       },
       {
@@ -1716,8 +1646,8 @@
       },
       {
         "date": "2026-10-09",
-        "count": 20,
-        "level": 1
+        "count": 22,
+        "level": 2
       },
       {
         "date": "2026-10-10",
@@ -1736,78 +1666,78 @@
       },
       {
         "date": "2026-10-13",
-        "count": 10,
-        "level": 1
-      },
-      {
-        "date": "2026-10-14",
         "count": 12,
         "level": 1
       },
       {
+        "date": "2026-10-14",
+        "count": 14,
+        "level": 1
+      },
+      {
         "date": "2026-10-15",
-        "count": 16,
+        "count": 19,
         "level": 1
       },
       {
         "date": "2026-10-16",
-        "count": 6,
+        "count": 12,
         "level": 1
       },
       {
         "date": "2026-10-17",
-        "count": 2,
-        "level": 1
+        "count": 27,
+        "level": 2
       },
       {
         "date": "2026-10-18",
-        "count": 1,
+        "count": 8,
         "level": 1
       },
       {
         "date": "2026-10-19",
-        "count": 16,
-        "level": 1
+        "count": 29,
+        "level": 2
       },
       {
         "date": "2026-10-20",
-        "count": 7,
+        "count": 14,
         "level": 1
       },
       {
         "date": "2026-10-21",
-        "count": 5,
+        "count": 20,
         "level": 1
       },
       {
         "date": "2026-10-22",
-        "count": 35,
-        "level": 2
+        "count": 52,
+        "level": 3
       },
       {
         "date": "2026-10-23",
-        "count": 11,
-        "level": 1
+        "count": 51,
+        "level": 3
       },
       {
         "date": "2026-10-24",
-        "count": 18,
-        "level": 1
+        "count": 45,
+        "level": 3
       },
       {
         "date": "2026-10-25",
-        "count": 3,
+        "count": 17,
         "level": 1
       },
       {
         "date": "2026-10-26",
-        "count": 11,
+        "count": 16,
         "level": 1
       },
       {
         "date": "2026-10-27",
-        "count": 0,
-        "level": 0
+        "count": 1,
+        "level": 1
       },
       {
         "date": "2026-10-28",
@@ -1816,12 +1746,12 @@
       },
       {
         "date": "2026-10-29",
-        "count": 19,
-        "level": 1
+        "count": 21,
+        "level": 2
       },
       {
         "date": "2026-10-30",
-        "count": 7,
+        "count": 17,
         "level": 1
       },
       {
@@ -1836,11 +1766,81 @@
       },
       {
         "date": "2026-11-02",
-        "count": 2,
+        "count": 8,
         "level": 1
       },
       {
         "date": "2026-11-03",
+        "count": 16,
+        "level": 1
+      },
+      {
+        "date": "2026-11-04",
+        "count": 24,
+        "level": 2
+      },
+      {
+        "date": "2026-11-05",
+        "count": 24,
+        "level": 2
+      },
+      {
+        "date": "2026-11-06",
+        "count": 17,
+        "level": 1
+      },
+      {
+        "date": "2026-11-07",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-11-08",
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-11-09",
+        "count": 13,
+        "level": 1
+      },
+      {
+        "date": "2026-11-10",
+        "count": 7,
+        "level": 1
+      },
+      {
+        "date": "2026-11-11",
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-11-12",
+        "count": 26,
+        "level": 2
+      },
+      {
+        "date": "2026-11-13",
+        "count": 21,
+        "level": 2
+      },
+      {
+        "date": "2026-11-14",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-11-15",
+        "count": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-11-16",
+        "count": 21,
+        "level": 2
+      },
+      {
+        "date": "2026-11-17",
         "count": 0,
         "level": 0
       }
@@ -1855,11 +1855,27 @@
       "role": "个人项目",
       "description": "把本地、SSH 与 tmux 工作放进同一个原生终端。",
       "detail": "跨平台原生终端：Rust Core 配合 GTK4、SwiftUI、TUI 与 CLI 前端，把本地 shell、SSH 会话和 tmux 工作区收进同一个窗口。",
-      "site": null,
-      "siteLabel": null,
+      "site": "https://wlingze.github.io/muxterm/",
+      "siteLabel": "wlingze.github.io/muxterm",
       "url": "https://github.com/wlingze/muxterm",
-      "updatedAt": "2026-10-30T08:32:49Z",
+      "updatedAt": "2026-11-06T05:59:19Z",
       "language": "Rust",
+      "stars": 3,
+      "archived": false
+    },
+    {
+      "id": "intentflow",
+      "title": "intentflow",
+      "repository": "wlingze/intentflow",
+      "group": "personal",
+      "role": "个人项目",
+      "description": "本地 diff 工作台：逐文件读改动、写评论，把评审复制给 AI。",
+      "detail": "单文件二进制，运行时只依赖 Git；按文件与 hunk 阅读改动，支持行级与跨行评论、全仓符号引用与全局搜索，导出 Markdown 或 JSON 交给 Claude Code、Codex 或 pi。",
+      "site": "https://wlingze.github.io/intentflow/",
+      "siteLabel": "wlingze.github.io/intentflow",
+      "url": "https://github.com/wlingze/intentflow",
+      "updatedAt": "2026-11-16T15:54:52Z",
+      "language": "TypeScript",
       "stars": 1,
       "archived": false
     },
@@ -1874,9 +1890,9 @@
       "site": "https://yaklang.io/",
       "siteLabel": "yaklang.io",
       "url": "https://github.com/yaklang/yaklang",
-      "updatedAt": "2026-11-03T07:06:10Z",
+      "updatedAt": "2026-11-17T02:42:28Z",
       "language": "Go",
-      "stars": 649,
+      "stars": 654,
       "archived": false
     },
     {
@@ -1906,9 +1922,9 @@
       "site": "https://ecapture.cc/",
       "siteLabel": "ecapture.cc",
       "url": "https://github.com/gojue/ecapture",
-      "updatedAt": "2026-10-31T15:58:04Z",
+      "updatedAt": "2026-11-14T01:58:50Z",
       "language": "C",
-      "stars": 15527,
+      "stars": 15549,
       "archived": false
     },
     {
@@ -1982,8 +1998,8 @@
       "role": "参与开发",
       "description": "Yaklang 的代码审计平台。",
       "detail": "把 SyntaxFlow 规则、检测模式与误报分级做成可用的审计产品；参与规则覆盖、扫描性能与结果解释。",
-      "site": "https://yaklang.io/irify/",
-      "siteLabel": "yaklang.io/irify",
+      "site": "https://ssa.to/",
+      "siteLabel": "ssa.to",
       "url": null,
       "repository": null,
       "language": null,
@@ -1992,6 +2008,132 @@
     }
   ],
   "activity": [
+    {
+      "title": "feat(reify): add Thumb, s390x, loong64, COFF, ar, MZ and .NET detection",
+      "url": "https://github.com/yaklang/yaklang/pull/5456",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-16T03:10:12Z",
+      "updatedAt": "2026-11-16T17:09:51Z",
+      "mergedAt": null,
+      "state": "open"
+    },
+    {
+      "title": "feat: add the test suite, CI and the official site",
+      "url": "https://github.com/wlingze/intentflow/pull/1",
+      "repository": "wlingze/intentflow",
+      "createdAt": "2026-11-16T15:46:35Z",
+      "updatedAt": "2026-11-16T15:54:53Z",
+      "mergedAt": "2026-11-16T15:52:40Z",
+      "state": "merged"
+    },
+    {
+      "title": "enhance(ssa2llvm): make LLVM 18 build self-contained",
+      "url": "https://github.com/yaklang/yaklang/pull/5457",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-16T03:26:07Z",
+      "updatedAt": "2026-11-16T09:46:16Z",
+      "mergedAt": "2026-11-16T09:46:13Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(ssa): cut core and yaklang scan time, memory and IR database size",
+      "url": "https://github.com/yaklang/yaklang/pull/5445",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-12T18:56:38Z",
+      "updatedAt": "2026-11-13T07:02:05Z",
+      "mergedAt": "2026-11-13T07:02:03Z",
+      "state": "merged"
+    },
+    {
+      "title": "refactor(syntaxflow): regroup builtin rules by evidence and tighten the scan file pool",
+      "url": "https://github.com/yaklang/yaklang/pull/5421",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-09T07:47:47Z",
+      "updatedAt": "2026-11-13T07:01:48Z",
+      "mergedAt": "2026-11-13T07:01:44Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(reify): recover native executables to LowIR, YakSSA and source",
+      "url": "https://github.com/yaklang/yaklang/pull/5441",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-12T07:26:43Z",
+      "updatedAt": "2026-11-13T03:00:36Z",
+      "mergedAt": "2026-11-13T03:00:34Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa): 修正 Python 2/模板源码误报与风险范围重复",
+      "url": "https://github.com/yaklang/yaklang/pull/5414",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-06T05:39:00Z",
+      "updatedAt": "2026-11-06T08:17:44Z",
+      "mergedAt": "2026-11-06T08:17:42Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(release): add Applications shortcut to macOS DMG",
+      "url": "https://github.com/wlingze/muxterm/pull/36",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-11-06T04:08:31Z",
+      "updatedAt": "2026-11-06T05:35:09Z",
+      "mergedAt": "2026-11-06T05:35:07Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat: add OSC 7501 program status and macOS window controls",
+      "url": "https://github.com/wlingze/muxterm/pull/35",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-11-05T08:35:46Z",
+      "updatedAt": "2026-11-06T03:30:23Z",
+      "mergedAt": "2026-11-06T03:30:20Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(ssa2llvm): stabilize AOT mustpass and runtime dispatch",
+      "url": "https://github.com/yaklang/yaklang/pull/5304",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-10-15T08:04:38Z",
+      "updatedAt": "2026-11-06T03:12:17Z",
+      "mergedAt": "2026-11-06T03:12:15Z",
+      "state": "merged"
+    },
+    {
+      "title": "perf(ssa): 复用单元编译计划并前置语言源码准备",
+      "url": "https://github.com/yaklang/yaklang/pull/5401",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-05T05:25:29Z",
+      "updatedAt": "2026-11-05T09:25:15Z",
+      "mergedAt": "2026-11-05T09:25:12Z",
+      "state": "merged"
+    },
+    {
+      "title": "feat(website): add the official static site with bilingual dark/light themes",
+      "url": "https://github.com/wlingze/muxterm/pull/34",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-11-05T04:12:46Z",
+      "updatedAt": "2026-11-05T05:11:20Z",
+      "mergedAt": "2026-11-05T05:11:18Z",
+      "state": "merged"
+    },
+    {
+      "title": "enhance(ssa): 并行单元编译与 IR 持久化存储优化",
+      "url": "https://github.com/yaklang/yaklang/pull/5398",
+      "repository": "yaklang/yaklang",
+      "createdAt": "2026-11-04T08:35:22Z",
+      "updatedAt": "2026-11-05T03:24:42Z",
+      "mergedAt": "2026-11-05T03:24:40Z",
+      "state": "merged"
+    },
+    {
+      "title": "fix(macos): stabilize the terminal grid, Herdr streams and idle cost",
+      "url": "https://github.com/wlingze/muxterm/pull/33",
+      "repository": "wlingze/muxterm",
+      "createdAt": "2026-11-04T06:07:22Z",
+      "updatedAt": "2026-11-04T09:02:41Z",
+      "mergedAt": "2026-11-04T09:02:38Z",
+      "state": "merged"
+    },
     {
       "title": "fix(decompiler): recover Coremail stubs and register the rounds",
       "url": "https://github.com/yaklang/javajive/pull/15",
@@ -2072,15 +2214,6 @@
       "updatedAt": "2026-10-20T03:00:41Z",
       "mergedAt": "2026-10-20T03:00:38Z",
       "state": "merged"
-    },
-    {
-      "title": "fix(ssa2llvm): stabilize AOT mustpass and runtime dispatch",
-      "url": "https://github.com/yaklang/yaklang/pull/5304",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2026-10-15T08:04:38Z",
-      "updatedAt": "2026-10-19T08:51:14Z",
-      "mergedAt": null,
-      "state": "open"
     },
     {
       "title": "feat(macos): polish windows, settings, and remote attach",
@@ -4033,78 +4166,6 @@
       "createdAt": "2025-11-17T04:00:03Z",
       "updatedAt": "2025-11-17T07:17:22Z",
       "mergedAt": "2025-11-17T07:17:21Z",
-      "state": "merged"
-    },
-    {
-      "title": "Fix/ssa/pass for builtin script and aitool ",
-      "url": "https://github.com/yaklang/yaklang/pull/3510",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-10T06:58:04Z",
-      "updatedAt": "2025-11-11T08:43:38Z",
-      "mergedAt": "2025-11-11T08:43:36Z",
-      "state": "merged"
-    },
-    {
-      "title": "feat(grpc):syntaxflow scan active process show in frontend",
-      "url": "https://github.com/yaklang/yaklang/pull/3477",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-04T03:29:54Z",
-      "updatedAt": "2025-11-07T02:46:37Z",
-      "mergedAt": "2025-11-07T02:46:35Z",
-      "state": "merged"
-    },
-    {
-      "title": "fix(ci): enhance WIP detection logic and skip CI for non-WIP changes",
-      "url": "https://github.com/yaklang/yaklang/pull/3497",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-06T06:40:20Z",
-      "updatedAt": "2025-11-07T02:45:04Z",
-      "mergedAt": "2025-11-07T02:45:03Z",
-      "state": "merged"
-    },
-    {
-      "title": "fix(grpc_fuzzer): http response contain extractedResult",
-      "url": "https://github.com/yaklang/yaklang/pull/3496",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-06T06:28:29Z",
-      "updatedAt": "2025-11-06T15:19:25Z",
-      "mergedAt": "2025-11-06T15:19:24Z",
-      "state": "merged"
-    },
-    {
-      "title": "feat(yakurl): add ID field to EventSet and update event handler",
-      "url": "https://github.com/yaklang/yaklang/pull/3494",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-06T02:37:49Z",
-      "updatedAt": "2025-11-06T09:49:01Z",
-      "mergedAt": "2025-11-06T09:48:59Z",
-      "state": "merged"
-    },
-    {
-      "title": "fix:test ci restart",
-      "url": "https://github.com/yaklang/yaklang/pull/3488",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-05T07:13:24Z",
-      "updatedAt": "2025-11-06T02:13:25Z",
-      "mergedAt": "2025-11-06T02:13:24Z",
-      "state": "merged"
-    },
-    {
-      "title": "fix(sca):add recover and string check ",
-      "url": "https://github.com/yaklang/yaklang/pull/3482",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-04T09:32:40Z",
-      "updatedAt": "2025-11-05T07:13:10Z",
-      "mergedAt": "2025-11-05T07:13:08Z",
-      "state": "merged"
-    },
-    {
-      "title": "Fix/ssa/remove debug info fixup panic ",
-      "url": "https://github.com/yaklang/yaklang/pull/3471",
-      "repository": "yaklang/yaklang",
-      "createdAt": "2025-11-03T06:15:53Z",
-      "updatedAt": "2025-11-03T08:54:52Z",
-      "mergedAt": "2025-11-03T08:54:51Z",
       "state": "merged"
     }
   ]

@@ -20,7 +20,13 @@ const definitions = [
     repo: 'wlingze/muxterm', title: 'Muxterm', group: 'personal', role: '个人项目',
     description: '把本地、SSH 与 tmux 工作放进同一个原生终端。',
     detail: '跨平台原生终端：Rust Core 配合 GTK4、SwiftUI、TUI 与 CLI 前端，把本地 shell、SSH 会话和 tmux 工作区收进同一个窗口。',
-    site: null,
+    site: 'https://wlingze.github.io/muxterm/', siteLabel: 'wlingze.github.io/muxterm',
+  },
+  {
+    repo: 'wlingze/intentflow', title: 'intentflow', group: 'personal', role: '个人项目',
+    description: '本地 diff 工作台：逐文件读改动、写评论，把评审复制给 AI。',
+    detail: '单文件二进制，运行时只依赖 Git；按文件与 hunk 阅读改动，支持行级与跨行评论、全仓符号引用与全局搜索，导出 Markdown 或 JSON 交给 Claude Code、Codex 或 pi。',
+    site: 'https://wlingze.github.io/intentflow/', siteLabel: 'wlingze.github.io/intentflow',
   },
   {
     repo: 'yaklang/yaklang', title: 'Yaklang / YakSSA', group: 'work', role: '参与开发',
@@ -71,7 +77,7 @@ const staticEntries = [
     id: 'irify', title: 'IRify', group: 'work', role: '参与开发',
     description: 'Yaklang 的代码审计平台。',
     detail: '把 SyntaxFlow 规则、检测模式与误报分级做成可用的审计产品；参与规则覆盖、扫描性能与结果解释。',
-    site: 'https://yaklang.io/irify/', siteLabel: 'yaklang.io/irify',
+    site: 'https://ssa.to/', siteLabel: 'ssa.to',
     url: null, repository: null, language: null, updatedAt: null, stars: null,
   },
 ];
